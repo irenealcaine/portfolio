@@ -1,0 +1,19 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 2px solid white;
+  box-shadow: 0 0 5px white, 0 0 10px white;
+  background-color: #000d;
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+}

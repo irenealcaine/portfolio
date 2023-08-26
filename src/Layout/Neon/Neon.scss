@@ -1,0 +1,154 @@
+:root {
+  --pink: #f000cc;
+  --purple: #9500ff;
+  --green: #74ee15;
+  --yellow: #ffe700;
+  --light-blue: #4DEEEA;
+  --blue: #001eff;
+  --orange: #FF7000;
+  --red: #FF1818;
+}
+
+.neon {
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: 3px solid #fff7;
+  outline: solid;
+  outline-offset: 3px;
+  outline-color: #fff7;
+  color: #fffc;
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &:has(.icon) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+  &.on {
+    animation: neonBlink 10s ease infinite;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--color);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover:before {
+      opacity: 0.05;
+
+    }
+  }
+
+  &.pink {
+    --color: var(--pink);
+    animation-delay: 250ms;
+  }
+
+  &.green {
+    --color: var(--green);
+    animation-delay: 500ms;
+  }
+
+  &.yellow {
+    --color: var(--yellow);
+    animation-delay: 300ms;
+  }
+
+  &.lightBlue {
+    --color: var(--light-blue);
+    animation-delay: 100ms;
+  }
+
+  &.blue {
+    --color: var(--blue);
+    animation-delay: 200ms;
+  }
+
+  &.orange {
+    --color: var(--orange);
+    animation-delay: 275ms;
+  }
+
+  &.red {
+    --color: var(--red);
+    animation-delay: 175ms;
+  }
+
+  &.purple {
+    --color: var(--purple);
+    animation-delay: 175ms;
+  }
+
+  .icon {
+    font-size: 60px;
+
+    display: block;
+    margin: 0 auto;
+
+    &.on {
+      filter:
+        drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color)) drop-shadow(0 0 20px var(--color));
+    }
+  }
+}
+
+@keyframes neonBlink {
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    border: 3px solid #fff;
+    outline-color: #fff;
+    color: #fff;
+    box-shadow:
+      0 0 2px #fff,
+      0 0 5px var(--color),
+      0 0 10px var(--color),
+      0 0 20px var(--color),
+      0 0 40px var(--color),
+      0 0 50px var(--color),
+      inset 0 0 2px #fff,
+      inset 0 0 5px var(--color),
+      inset 0 0 10px var(--color),
+      inset 0 0 20px var(--color);
+    text-shadow:
+      0 0 2px #fff,
+      0 0 5px var(--color),
+      0 0 10px var(--color),
+      0 0 20px var(--color);
+  }
+
+  20%,
+  24%,
+  55% {
+    box-shadow:
+      0 0 2px #ffffff,
+      0 0 5px var(--color),
+      0 0 12px var(--color),
+      0 0 50px var(--color),
+      inset 0 0 2px #ffffff,
+      inset 0 0 5px var(--color),
+      inset 0 0 12px var(--color),
+      inset 0 0 22px var(--color);
+    text-shadow:
+      0 0 1px #ffffff,
+      0 0 5px var(--color),
+      0 0 12px var(--color),
+      0 0 22px var(--color);
+  }
+}

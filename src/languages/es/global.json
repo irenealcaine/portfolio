@@ -1,0 +1,23 @@
+{
+  "about": {
+    "presentation": "Hola, que tal",
+    "button": "Ver mas"
+  },
+  "projects": {
+    "title": "Portafolio",
+    "description": "Colección de webs y proyectos"
+  },
+  "languageSelector": "ES",
+  "aboutPage": {
+    "title": "Sobre mí"
+  },
+  "portfolioPage": {
+    "title": "Portafolio",
+    "webs": "Webs",
+    "projects": "Proyectos",
+    "buttons": {
+      "web": "Sitio web",
+      "github": "Repositorio"
+    }
+  }
+}

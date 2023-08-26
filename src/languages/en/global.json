@@ -1,0 +1,23 @@
+{
+  "about": {
+    "presentation": "Hey, whats up",
+    "button": "See more"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Collection of webs and projects"
+  },
+  "languageSelector": "EN",
+  "aboutPage": {
+    "title": "About me"
+  },
+  "portfolioPage": {
+    "title": "Portfolio",
+    "webs": "Websites",
+    "projects": "Projects",
+    "buttons": {
+      "web": "Live demo",
+      "github": "Repository"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;1,200&family=Poppins:wght@100;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(to bottom, #000000ed, #000000fd),
+    url("https://cdn.pixabay.com/photo/2012/03/03/23/06/wall-21534_1280.jpg");
+  background-size: 1900px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  color: white;
+  // scrollbar-color: rebeccapurple green;
+  // scrollbar-gutter: stable both-edges;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Exo 2', sans-serif;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
