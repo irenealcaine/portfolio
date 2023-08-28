@@ -1,16 +1,16 @@
-import React from 'react'
-import Header from '../../Components/Header/Header'
-import Footer from '../../Components/Footer/Footer'
-import "./MainLayout.scss"
+import React from "react";
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
+import "./MainLayout.scss";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className='mainLayout'>
+    <div className="mainLayout">
       <Header />
-      {children}
+      <div className="main">{children}</div>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

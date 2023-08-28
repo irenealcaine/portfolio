@@ -13,6 +13,7 @@
   },
   "portfolioPage": {
     "title": "Portfolio",
+    "selector": "All",
     "webs": "Websites",
     "projects": "Projects",
     "buttons": {

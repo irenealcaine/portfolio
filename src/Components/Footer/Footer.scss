@@ -1,19 +1,33 @@
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  padding: 10px 20px;
+  padding: 10px 15px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   border-top: 2px solid white;
+  border-right: 2px solid white;
   box-shadow: 0 0 5px white, 0 0 10px white;
   background-color: #000d;
+  border-top-right-radius: 10px;
 
   nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+
+    & div {
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px #fff)
+          drop-shadow(0 0 10px #fff);
+      }
+    }
   }
 }

@@ -10,13 +10,14 @@ header {
   box-shadow: 0 0 5px white, 0 0 10px white;
   font-size: 25px;
   background-color: #000d;
-
+  z-index: 20;
 
   .backButton {
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 
     &:hover {
-      filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff)
+      filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px #fff)
+        drop-shadow(0 0 10px #fff);
     }
   }
 
@@ -26,13 +27,17 @@ header {
     align-items: center;
     gap: 20px;
 
-    & .icon {
-      transition: all .2s ease;
+    & div {
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
-        filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff)
+        filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px #fff)
+          drop-shadow(0 0 10px #fff);
       }
-
     }
   }
 }

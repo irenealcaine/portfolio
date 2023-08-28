@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;1,200&family=Poppins:wght@100;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;1,200&family=Poppins:wght@100;300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -8,11 +8,11 @@
 
 body {
   min-height: 100vh;
-  background-image:
-    linear-gradient(to bottom, #000000ed, #000000fd),
+  background-image: linear-gradient(to bottom, #000000da, #000000ff),
     url("https://cdn.pixabay.com/photo/2012/03/03/23/06/wall-21534_1280.jpg");
   background-size: 1900px;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 
   color: white;
   // scrollbar-color: rebeccapurple green;
@@ -23,7 +23,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-style: italic;
 }
 
@@ -35,9 +35,13 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  font-size: 25px;
+}
+
 p {
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
