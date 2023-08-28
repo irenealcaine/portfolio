@@ -94,8 +94,8 @@ const Portfolio = () => {
   //   .map(renderProject);
 
   return (
-    <div>
-      <MainLayout>
+    <MainLayout>
+      <div className="portfolio">
         <h1>{t("portfolioPage.title")}</h1>
         <div className="selector">
           {filterOptions.map((option) => {
@@ -111,7 +111,7 @@ const Portfolio = () => {
                 onClick={() => handleFilterChange(option.value)}
                 className={option.value === filter ? "selected" : ""}
               >
-                {option.text}
+                {t("portfolioPage.selector")}
               </p>
             );
           })}
@@ -126,8 +126,8 @@ const Portfolio = () => {
             setSelectedProject={setSelectedProject}
           />
         )}
-      </MainLayout>
-    </div>
+      </div>
+    </MainLayout>
   );
 };
 

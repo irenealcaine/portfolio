@@ -194,7 +194,7 @@ export const projects = [
     github: "https://github.com/irenealcaine/cryptotracker",
     web: "https://deft-moonbeam-671bbb.netlify.app",
     es: {
-      title: "Seguimiento de criptomonedas",
+      title: "Seguimiento de cryptos",
       description:
         "Información actualizada de las criptomonedas más populares utilizando la API de coingecko. Precios y gráficas de variación de precios del último año de 100 criptomonedas, así como el precio y market cap en tiempo real, tanto en euros como en dólares.",
     },
