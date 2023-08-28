@@ -11,13 +11,13 @@
     transition: all 0.2s ease;
 
     &:hover {
-      text-shadow: 0 0 5px white;
-      filter: drop-shadow(0 0 5px white);
+      text-shadow: 0 0 5px pink;
+      filter: drop-shadow(0 0 5px pink);
     }
   }
   & .selected {
-    text-shadow: 0 0 5px white;
-    filter: drop-shadow(0 0 5px white);
+    text-shadow: 0 0 5px darkmagenta;
+    filter: drop-shadow(0 0 5px darkmagenta);
   }
 }
 

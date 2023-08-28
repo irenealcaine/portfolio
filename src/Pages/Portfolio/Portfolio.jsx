@@ -102,13 +102,15 @@ const Portfolio = () => {
             return option.icon ? (
               <p
                 onClick={() => handleFilterChange(option.value)}
-                className={option.value === filter.value ? "selected" : ""}
+                className={option.value === filter ? "selected" : ""}
               >
                 {option.icon}
-                {console.log(option.value, filter.value)}
               </p>
             ) : (
-              <p onClick={() => handleFilterChange(option.value)}>
+              <p
+                onClick={() => handleFilterChange(option.value)}
+                className={option.value === filter ? "selected" : ""}
+              >
                 {option.text}
               </p>
             );
