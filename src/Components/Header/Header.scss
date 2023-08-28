@@ -27,7 +27,8 @@ header {
     align-items: center;
     gap: 20px;
 
-    & .icon {
+    & div {
+      cursor: pointer;
       transition: all 0.2s ease;
       display: flex;
       justify-content: center;
