@@ -109,7 +109,7 @@ export const projects = [
       main: amigaria,
       icon: amigaria,
     },
-    tech: ["ReactJS", "TailwindCSS"],
+    tech: ["ReactJS", "MaterialUI", "Sass", "Firebase"],
     category: "project",
     github: "https://github.com/irenealcaine/react-sass-mui",
     web: "https://vermillion-starburst-865331.netlify.app/",
@@ -210,7 +210,7 @@ export const projects = [
       icon: crypto,
     },
     tech: ["VueJS", "MaterialUI"],
-    category: "web",
+    category: "project",
     github: "https://github.com/irenealcaine/tic-tac-toe-in-vue",
     web: "https://coruscating-mooncake-d025e2.netlify.app/",
     es: {
