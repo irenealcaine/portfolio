@@ -14,7 +14,7 @@
   overflow: auto;
   border: 5px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 0 20px darkmagenta, inset 0 0 20px darkmagenta;
+  box-shadow: 0 0 20px var(--blue), inset 0 0 20px var(--blue);
 
   padding: 50px 40px;
 
@@ -25,10 +25,6 @@
     font-size: 35px;
     color: rgb(255, 112, 112);
     filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px red);
-  }
-
-  & p {
-    // margin-top: -180px;
   }
 
   & img {
@@ -42,34 +38,30 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgba(255, 0, 183, 0.178);
+    background: var(--blue);
     border-radius: 100px;
 
     &:hover {
-      background: rgba(255, 0, 183, 0.393);
+      background: var(--blue);
     }
   }
   & .techs {
     margin-top: 15px;
+    width: 100%;
     display: flex;
     gap: 10px;
 
     & .tech {
-      background-color: rgba(139, 0, 139, 0.473);
+      background-color: var(--blue);
       padding: 5px 15px;
       border-radius: 20px;
     }
   }
 
   & .links {
-    margin-top: 15px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 30px;
-
-    & a {
-      // display: flex;
-      // justify-content: center;
-    }
   }
 }

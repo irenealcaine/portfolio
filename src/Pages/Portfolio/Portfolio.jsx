@@ -12,16 +12,10 @@ import {
 } from "react-icons/bi";
 import { SiMui } from "react-icons/si";
 import { RiBootstrapLine } from "react-icons/ri";
-// import { TbWorldWww } from "react-icons/tb";
-// import { FiGithub } from "react-icons/fi";
 
 const Portfolio = () => {
   const { i18n, t } = useTranslation("global");
   const [selectedProject, setSelectedProject] = useState(null);
-
-  // const selectProject = () => {
-  //   i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en');
-  // };
 
   const filterOptions = [
     { text: "Todos", value: "all" },
@@ -38,11 +32,21 @@ const Portfolio = () => {
     { icon: <BiLogoFirebase />, value: "Firebase" },
   ];
 
+  const colors = [
+    "pink",
+    "green",
+    "yellow",
+    "lightBlue",
+    "orange",
+    "red",
+    "purple",
+  ];
+
   const renderProject = (project) => (
     <div
       key={project.id}
       onClick={() => setSelectedProject(project)}
-      className="project"
+      className={`project ${colors[Math.floor(Math.random() * colors.length)]}`}
     >
       <h3>{i18n.language === "es" ? project.es.title : project.en.title}</h3>
       <img src={project.images.icon} alt={`${project.en.title} icon`} />
@@ -53,21 +57,16 @@ const Portfolio = () => {
             (option) => option.value === tech
           );
           if (matchingOption) {
-            return <div key={index}>{matchingOption.icon}</div>;
+            return (
+              <div key={index} className="tech">
+                {matchingOption.icon}
+              </div>
+            );
           } else {
             return <p key={index}>{tech}</p>;
           }
         })}
       </div>
-
-      {/* <div className="links">
-        <a href={project.web}>
-          <TbWorldWww />
-        </a>
-        <a href={project.github}>
-          <FiGithub />
-        </a>
-      </div> */}
     </div>
   );
 
@@ -89,9 +88,6 @@ const Portfolio = () => {
 
     return filteredProjects.map(renderProject);
   };
-  // projects
-  //   .filter(project => project.category === category && (filter === "all" ? project.tech : project.tech.includes(filter)))
-  //   .map(renderProject);
 
   return (
     <MainLayout>

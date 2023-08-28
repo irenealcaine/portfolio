@@ -1,6 +1,6 @@
 .portfolio {
   h1 {
-    text-shadow: 0 0 5px darkmagenta, 0 0 10px darkmagenta;
+    filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
   }
 
   .selector {
@@ -8,21 +8,24 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     margin-top: 30px;
+
     & p {
       font-size: 30px;
       cursor: pointer;
       transition: all 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
-        text-shadow: 0 0 5px red;
-        filter: drop-shadow(0 0 5px red);
+        filter: drop-shadow(0 0 5px var(--light-blue))
+          drop-shadow(0 0 10px var(--light-blue));
       }
     }
     & .selected {
-      text-shadow: 0 0 5px darkmagenta;
-      filter: drop-shadow(0 0 5px darkmagenta);
+      filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
     }
   }
 
@@ -30,7 +33,7 @@
     margin-top: 30px;
     margin-bottom: 20px;
     text-decoration: underline;
-    text-shadow: 0 0 5px darkmagenta, 0 0 10px darkmagenta;
+    filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
   }
 
   .projects {
@@ -49,11 +52,45 @@
       flex-direction: column;
       border: 3px solid white;
       border-radius: 10px;
-      box-shadow: 0 0 5px darkmagenta, 0 0 10px darkmagenta,
-        inset 0 0 5px darkmagenta, inset 0 0 10px darkmagenta;
+      box-shadow: 0 0 5px var(--color), 0 0 10px var(--color),
+        inset 0 0 5px var(--color), inset 0 0 10px var(--color);
+
+      &.pink {
+        --color: var(--pink);
+      }
+
+      &.green {
+        --color: var(--green);
+      }
+
+      &.yellow {
+        --color: var(--yellow);
+      }
+
+      &.lightBlue {
+        --color: var(--light-blue);
+      }
+
+      &.blue {
+        --color: var(--blue);
+      }
+
+      &.orange {
+        --color: var(--orange);
+      }
+
+      &.red {
+        --color: var(--red);
+      }
+
+      &.purple {
+        --color: var(--purple);
+        animation-delay: 175ms;
+      }
 
       & h3 {
         margin-bottom: 15px;
+        text-shadow: 0 0 5px var(--color), 0 0 10px var(--color);
       }
       & img {
         width: 250px;
@@ -65,14 +102,11 @@
         justify-content: center;
         font-size: 30px;
         gap: 15px;
-      }
 
-      & .links {
-        display: flex;
-        width: 100%;
-        font-size: 20px;
-        justify-content: flex-end;
-        gap: 15px;
+        & .tech {
+          filter: drop-shadow(0 0 5px var(--color))
+            drop-shadow(0 0 10px var(--color));
+        }
       }
     }
   }

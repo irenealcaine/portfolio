@@ -114,7 +114,7 @@ export const projects = [
     github: "https://github.com/irenealcaine/react-sass-mui",
     web: "https://vermillion-starburst-865331.netlify.app/",
     es: {
-      title: "Dashboard de administrador",
+      title: "Dashboard",
       description:
         "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
     },
@@ -154,7 +154,7 @@ export const projects = [
     github: "https://github.com/irenealcaine/weather-API",
     web: "https://prismatic-chaja-00b433.netlify.app",
     es: {
-      title: "App de previsión del tiempo",
+      title: "App del tiempo",
       description:
         "Web de pronóstico del tiempo que proporciona información detallada sobre el clima actual y los pronósticos para los próximos días utilizando la API de Openweathermap. Con detección automática de ubicación, muestra la fecha y hora actual, así como la temperatura, humedad y velocidad del viento. Además, muestra una gráfica de las próximas 12 horas con la temperatura y probabilidad de lluvia, y una vista de siete días con información sobre la temperatura, humedad, velocidad del viento y probabilidad de lluvia para cada día.",
     },
@@ -174,7 +174,7 @@ export const projects = [
     github: "https://github.com/irenealcaine/todo-vue",
     web: "https://melodic-pony-2cdb8b.netlify.app",
     es: {
-      title: "App de lista de tareas pendientes",
+      title: "App de lista de tareas",
       description:
         "Web de lista de tareas pendientes, cada tarea está asignada a una categoría (trabajo o personal) y se muestran con colores diferentes. Cada tarea se puede editar, marcar como realizada o borrar. Los datos se almacenan en localStorage.",
     },
