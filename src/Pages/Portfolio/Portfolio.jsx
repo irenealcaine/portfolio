@@ -113,6 +113,7 @@ const Portfolio = () => {
           })}
         </div>
         <h2>{t("portfolioPage.webs")}</h2>
+        {/* <hr /> */}
         <div className="projects">{renderProjectsByCategory("web")}</div>
         <h2>{t("portfolioPage.projects")}</h2>
         <div className="projects">{renderProjectsByCategory("project")}</div>

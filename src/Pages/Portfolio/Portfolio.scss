@@ -20,12 +20,13 @@
       align-items: center;
 
       &:hover {
-        filter: drop-shadow(0 0 5px var(--light-blue))
-          drop-shadow(0 0 10px var(--light-blue));
+        filter: drop-shadow(0 0 5px var(--blue))
+          drop-shadow(0 0 10px var(--blue)) drop-shadow(0 0 12px var(--blue));
       }
     }
     & .selected {
-      filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
+      filter: drop-shadow(0 0 2px var(--blue)) drop-shadow(0 0 5px var(--blue))
+        drop-shadow(0 0 8px var(--blue));
     }
   }
 
