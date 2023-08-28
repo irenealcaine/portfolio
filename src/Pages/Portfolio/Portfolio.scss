@@ -15,11 +15,17 @@
       filter: drop-shadow(0 0 5px white);
     }
   }
+  & .selected {
+    text-shadow: 0 0 5px white;
+    filter: drop-shadow(0 0 5px white);
+  }
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 20px;
+  text-decoration: underline;
+  text-shadow: 0 0 5px darkmagenta, 0 0 10px darkmagenta;
 }
 
 .projects {

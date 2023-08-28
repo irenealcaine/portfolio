@@ -100,8 +100,12 @@ const Portfolio = () => {
         <div className="selector">
           {filterOptions.map((option) => {
             return option.icon ? (
-              <p onClick={() => handleFilterChange(option.value)}>
+              <p
+                onClick={() => handleFilterChange(option.value)}
+                className={option.value === filter.value ? "selected" : ""}
+              >
                 {option.icon}
+                {console.log(option.value, filter.value)}
               </p>
             ) : (
               <p onClick={() => handleFilterChange(option.value)}>
