@@ -53,42 +53,42 @@
 
   &.pink {
     --color: var(--pink);
-    animation-delay: 250ms;
+    animation-delay: 200ms;
   }
 
   &.green {
     --color: var(--green);
-    animation-delay: 500ms;
+    animation-delay: 750ms;
   }
 
   &.yellow {
     --color: var(--yellow);
-    animation-delay: 300ms;
+    animation-delay: 400ms;
   }
 
   &.lightBlue {
     --color: var(--light-blue);
-    animation-delay: 100ms;
+    animation-delay: 600ms;
   }
 
   &.blue {
     --color: var(--blue);
-    animation-delay: 200ms;
+    animation-delay: 800ms;
   }
 
   &.orange {
     --color: var(--orange);
-    animation-delay: 275ms;
+    animation-delay: 600ms;
   }
 
   &.red {
     --color: var(--red);
-    animation-delay: 175ms;
+    animation-delay: 1000ms;
   }
 
   &.purple {
     --color: var(--purple);
-    animation-delay: 175ms;
+    animation-delay: 800ms;
   }
 
   .icon {

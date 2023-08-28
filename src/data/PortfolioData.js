@@ -209,12 +209,12 @@ export const projects = [
       main: crypto,
       icon: crypto,
     },
-    tech: ["VueJS", "MaterialUI"],
+    tech: ["VueJS", "TailwindCSS"],
     category: "project",
     github: "https://github.com/irenealcaine/tic-tac-toe-in-vue",
     web: "https://coruscating-mooncake-d025e2.netlify.app/",
     es: {
-      title: "Juego del tres en raya",
+      title: "Tres en raya",
       description:
         "Juego del tres en raya, que indica a que jugador le toca jugar, además de un contador de victorias. Cuando acaba el juego aparece un cartel diciendo el ganador o si es un empate, así como un botón para resetear el juego y empezar otra partida.",
     },
