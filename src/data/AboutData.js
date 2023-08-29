@@ -15,8 +15,9 @@ export const experience = [
     },
     en: {
       title: "Shoper",
-      ubication: "Charter, Valencia, Casinos",
-      date: "Jan 2021 - Jun 2021",
+      company: "Frutos Secos El Rincón",
+      ubication: "Zaragoza",
+      date: "Nov 2016 - Jun 2017",
       description: ["ReactJS", "TailwindCSS"],
     },
   },

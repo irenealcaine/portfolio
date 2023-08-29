@@ -55,6 +55,44 @@ const About = () => {
           </ul>
         </div>
         <h2>{t("aboutPage.education")}</h2>
+        <div className="container">
+          <ul className="timeline">
+            {experience.toReversed().map((exp, index) => {
+              const expInfo = isSpanish ? exp.es : exp.en;
+
+              return (
+                <li
+                  key={index}
+                  className={`timeline-block-${
+                    index % 2 !== 0 ? "right" : "left"
+                  }`}
+                >
+                  <div className="marker"></div>
+                  <div className="timeline-panel">
+                    <div className="timeline-header">
+                      <h3>{expInfo.title}</h3>
+                      <p>
+                        <span>{expInfo.company}</span> | {expInfo.ubication}
+                      </p>
+                    </div>
+                    <div className="timeline-body">
+                      <ul>
+                        {expInfo.description.map((desc, descIndex) => (
+                          <li key={descIndex}>
+                            <p>{desc}</p>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="timeline-footer">
+                      <p>{expInfo.date}</p>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
         <h2>{t("aboutPage.contact")}</h2>
       </div>
     </MainLayout>
