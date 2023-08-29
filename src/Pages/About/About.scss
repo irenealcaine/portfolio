@@ -41,17 +41,29 @@
         }
       }
 
+      & .timeline-body {
+        & p {
+          font-size: 14px;
+        }
+      }
+
       & .timeline-footer {
         margin-top: 10px;
       }
 
       &.timeline-block-right {
         float: right;
+        & ul {
+          margin-left: 15px;
+        }
       }
 
       &.timeline-block-left {
         float: left;
         direction: rtl;
+        & ul {
+          margin-right: 15px;
+        }
 
         & .timeline-header {
           text-align: right;
@@ -66,7 +78,6 @@
         }
         & .timeline-footer {
           text-align: right;
-          margin-top: 10px;
         }
       }
 
@@ -110,6 +121,10 @@
         &.timeline-block-left {
           float: none;
           direction: ltr;
+
+          & ul {
+            margin-left: 15px;
+          }
 
           & .timeline-header,
           & .timeline-footer {
