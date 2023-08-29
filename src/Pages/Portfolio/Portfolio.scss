@@ -61,39 +61,41 @@
       &:hover {
         transform: scale(1.02);
       }
+      &.on {
+        &.pink {
+          --color: var(--pink);
+        }
 
-      &.pink {
-        --color: var(--pink);
+        &.green {
+          --color: var(--green);
+        }
+
+        &.yellow {
+          --color: var(--yellow);
+        }
+
+        &.lightBlue {
+          --color: var(--light-blue);
+        }
+
+        &.blue {
+          --color: var(--blue);
+        }
+
+        &.orange {
+          --color: var(--orange);
+        }
+
+        &.red {
+          --color: var(--red);
+        }
+
+        &.purple {
+          --color: var(--purple);
+          animation-delay: 175ms;
+        }
       }
 
-      &.green {
-        --color: var(--green);
-      }
-
-      &.yellow {
-        --color: var(--yellow);
-      }
-
-      &.lightBlue {
-        --color: var(--light-blue);
-      }
-
-      &.blue {
-        --color: var(--blue);
-      }
-
-      &.orange {
-        --color: var(--orange);
-      }
-
-      &.red {
-        --color: var(--red);
-      }
-
-      &.purple {
-        --color: var(--purple);
-        animation-delay: 175ms;
-      }
       &:before {
         content: "";
         position: absolute;
