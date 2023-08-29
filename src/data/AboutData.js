@@ -14,11 +14,16 @@ export const experience = [
       ],
     },
     en: {
-      title: "Shoper",
+      title: "Shop Assistant",
       company: "Frutos Secos El Rincón",
       ubication: "Zaragoza",
       date: "Nov 2016 - Jun 2017",
-      description: ["ReactJS", "TailwindCSS"],
+      description: [
+        "Customer service",
+        "Cleaning and maintenance of the premises",
+        "Preparation of bread and pastries, as well as management of ingredients and various products",
+        "Responsible for stock, rotation, and orders to the supplier",
+      ],
     },
   },
   {

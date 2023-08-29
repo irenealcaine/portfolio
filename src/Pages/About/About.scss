@@ -48,6 +48,7 @@
 
         & p {
           margin-bottom: 10px;
+
           span {
             font-weight: 700;
           }
@@ -67,8 +68,6 @@
       &.timeline-block-right {
         float: right;
         & ul {
-          margin-left: 15px;
-
           & li {
             margin-bottom: 5px;
           }
@@ -79,7 +78,6 @@
         float: left;
         direction: rtl;
         & ul {
-          margin-right: 15px;
           text-align: right;
 
           & li {
@@ -117,7 +115,6 @@
 
       & .timeline-panel {
         width: 95%;
-        padding: 0 15px;
       }
     }
   }
@@ -148,7 +145,6 @@
           direction: ltr;
 
           & ul {
-            margin-left: 15px;
             text-align: left;
           }
 
