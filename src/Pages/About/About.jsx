@@ -12,6 +12,7 @@ const About = () => {
     <MainLayout>
       <div className="about">
         <h1>{t("aboutPage.title")}</h1>
+        <p>Blablalba</p>
         {/* <h2>{t("aboutPage.skills")}</h2> */}
         <h2>{t("aboutPage.experience")}</h2>
         <div className="container">
@@ -36,7 +37,9 @@ const About = () => {
                     <div className="timeline-body">
                       <ul>
                         {exp.es.description.map((m, index) => (
-                          <li key={index}>{m}</li>
+                          <li key={index}>
+                            <p>{m}</p>
+                          </li>
                         ))}
                       </ul>
                     </div>

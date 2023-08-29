@@ -1,13 +1,14 @@
 .about {
   h1,
-  h2 {
+  h2,
+  h3 {
     filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
   }
 
   .timeline {
     width: 80%;
-    padding: 50px 0;
-    margin: 50px auto;
+    padding: 20px 0;
+    margin: 0px auto;
     position: relative;
     overflow: hidden;
 
@@ -19,7 +20,7 @@
       margin-left: -1px;
       width: 2px;
       height: 100%;
-      background: linear-gradient(transparent, var(--pink), transparent);
+      background: linear-gradient(transparent 0%, var(--pink), transparent 90%);
       z-index: 1;
     }
 
@@ -28,6 +29,21 @@
       display: flex;
       justify-content: space-between;
       clear: both;
+
+      & .timeline-header {
+        & h3 {
+          margin-bottom: 5px;
+          text-decoration: underline;
+        }
+
+        & h4 {
+          margin-bottom: 10px;
+        }
+      }
+
+      & .timeline-footer {
+        margin-top: 10px;
+      }
 
       &.timeline-block-right {
         float: right;
@@ -39,9 +55,18 @@
 
         & .timeline-header {
           text-align: right;
+
+          & h3 {
+            margin-bottom: 5px;
+          }
+
+          & h4 {
+            margin-bottom: 10px;
+          }
         }
         & .timeline-footer {
           text-align: right;
+          margin-top: 10px;
         }
       }
 
