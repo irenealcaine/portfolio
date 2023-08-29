@@ -94,7 +94,7 @@ export const education = [
   {
     id: "3",
     es: {
-      title: "wEB",
+      title: "Web",
       ubication: "Charter, Valencia, Casinos",
       date: "Ene 2021 - Jun 2021",
       description: ["ReactJS", "TailwindCSS"],
