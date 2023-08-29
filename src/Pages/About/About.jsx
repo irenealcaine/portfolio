@@ -2,7 +2,7 @@ import React from "react";
 import MainLayout from "../../Layout/MainLayout/MainLayout";
 import { useTranslation } from "react-i18next";
 import "./About.scss";
-import { experience } from "../../data/AboutData";
+import { education, experience } from "../../data/AboutData";
 
 const About = () => {
   const { i18n, t } = useTranslation("global");
@@ -57,8 +57,8 @@ const About = () => {
         <h2>{t("aboutPage.education")}</h2>
         <div className="container">
           <ul className="timeline">
-            {experience.toReversed().map((exp, index) => {
-              const expInfo = isSpanish ? exp.es : exp.en;
+            {education.toReversed().map((edu, index) => {
+              const eduInfo = isSpanish ? edu.es : edu.en;
 
               return (
                 <li
@@ -70,14 +70,14 @@ const About = () => {
                   <div className="marker"></div>
                   <div className="timeline-panel">
                     <div className="timeline-header">
-                      <h3>{expInfo.title}</h3>
+                      <h3>{eduInfo.title}</h3>
                       <p>
-                        <span>{expInfo.company}</span> | {expInfo.ubication}
+                        <span>{eduInfo.company}</span> | {eduInfo.ubication}
                       </p>
                     </div>
                     <div className="timeline-body">
                       <ul>
-                        {expInfo.description.map((desc, descIndex) => (
+                        {eduInfo.description.map((desc, descIndex) => (
                           <li key={descIndex}>
                             <p>{desc}</p>
                           </li>
@@ -85,7 +85,7 @@ const About = () => {
                       </ul>
                     </div>
                     <div className="timeline-footer">
-                      <p>{expInfo.date}</p>
+                      <p>{eduInfo.date}</p>
                     </div>
                   </div>
                 </li>
