@@ -1,0 +1,6 @@
+.about {
+  h1,
+  h2 {
+    filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
+  }
+}
