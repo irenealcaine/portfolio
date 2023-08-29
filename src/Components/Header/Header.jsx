@@ -30,7 +30,7 @@ const Header = () => {
         <div className="icon" onClick={() => dispatch({ type: "TOGGLE" })}>
           <AiOutlinePoweroff />
         </div>
-        <div className="icon">
+        {/* <div className="icon">
           <AiOutlineCodepen />
         </div>
         <div className="icon">
@@ -38,7 +38,7 @@ const Header = () => {
         </div>
         <div className="icon">
           <SlSocialLinkedin />
-        </div>
+        </div> */}
         <div className="icon">
           <AiOutlineMail />
         </div>
