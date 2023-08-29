@@ -5,6 +5,11 @@
     filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
   }
 
+  > p {
+    margin: 15px auto 30px auto;
+    width: 70%;
+  }
+
   .timeline {
     width: 100%;
     padding: 20px 0;
@@ -115,6 +120,9 @@
 
 @media screen and (max-width: 768px) {
   .about {
+    > p {
+      width: 90%;
+    }
     .timeline {
       overflow: visible;
       &:before {

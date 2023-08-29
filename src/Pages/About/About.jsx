@@ -14,7 +14,15 @@ const About = () => {
     <MainLayout>
       <div className="about">
         <h1>{t("aboutPage.title")}</h1>
-        <p>Blablalba</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
+          deserunt autem nemo quasi commodi odio obcaecati. Labore ut tenetur,
+          commodi expedita assumenda cupiditate minus beatae ad unde vero cumque
+          sed! Tempore aspernatur eligendi consequatur illo voluptates iusto
+          facere repudiandae reprehenderit expedita minus cupiditate, debitis
+          delectus vel pariatur error numquam nostrum voluptatem quos quidem
+          quod sunt sed? Possimus aut itaque aspernatur?
+        </p>
         <h2>{t("aboutPage.experience")}</h2>
         <div className="container">
           <ul className="timeline">
