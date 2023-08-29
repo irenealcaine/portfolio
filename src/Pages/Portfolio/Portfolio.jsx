@@ -17,7 +17,7 @@ import { NeonOnContext } from "../../Context/neonOnContext";
 const Portfolio = () => {
   const { i18n, t } = useTranslation("global");
   const [selectedProject, setSelectedProject] = useState(null);
-  const { dispatch, neonOn } = useContext(NeonOnContext);
+  const { neonOn } = useContext(NeonOnContext);
 
   const filterOptions = [
     { text: "Todos", value: "all" },
@@ -48,9 +48,8 @@ const Portfolio = () => {
     <div
       key={project.id}
       onClick={() => setSelectedProject(project)}
-      className={`project ${
-        colors[Math.floor(Math.random() * colors.length)]
-      } ${neonOn && "on"}`}
+      className={`project ${colors[Math.floor(Math.random() * colors.length)]
+        } ${neonOn && "on"}`}
     >
       <h3>{i18n.language === "es" ? project.es.title : project.en.title}</h3>
       <img src={project.images.icon} alt={`${project.en.title} icon`} />

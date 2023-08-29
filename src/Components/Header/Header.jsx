@@ -3,11 +3,8 @@ import "./Header.scss";
 import { IoChevronBackOutline } from "react-icons/io5";
 import {
   AiOutlineMail,
-  AiOutlineCodepen,
   AiOutlinePoweroff,
 } from "react-icons/ai";
-import { FiGithub } from "react-icons/fi";
-import { SlSocialLinkedin } from "react-icons/sl";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { NeonOnContext } from "../../Context/neonOnContext";

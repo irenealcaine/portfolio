@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./Home.scss";
 import Neon from "../../Layout/Neon/Neon";
 import {
