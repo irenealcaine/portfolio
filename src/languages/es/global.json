@@ -9,7 +9,11 @@
   },
   "languageSelector": "ES",
   "aboutPage": {
-    "title": "Sobre mí"
+    "title": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "education": "Formación",
+    "contact": "Contacto"
   },
   "portfolioPage": {
     "title": "Portafolio",

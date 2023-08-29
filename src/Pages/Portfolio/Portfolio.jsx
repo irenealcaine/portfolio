@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import MainLayout from "../../Layout/MainLayout/MainLayout";
 import { projects } from "../../data/PortfolioData";
 import { useTranslation } from "react-i18next";
@@ -12,10 +12,12 @@ import {
 } from "react-icons/bi";
 import { SiMui } from "react-icons/si";
 import { RiBootstrapLine } from "react-icons/ri";
+import { NeonOnContext } from "../../Context/neonOnContext";
 
 const Portfolio = () => {
   const { i18n, t } = useTranslation("global");
   const [selectedProject, setSelectedProject] = useState(null);
+  const { dispatch, neonOn } = useContext(NeonOnContext);
 
   const filterOptions = [
     { text: "Todos", value: "all" },
@@ -46,7 +48,9 @@ const Portfolio = () => {
     <div
       key={project.id}
       onClick={() => setSelectedProject(project)}
-      className={`project ${colors[Math.floor(Math.random() * colors.length)]}`}
+      className={`project ${
+        colors[Math.floor(Math.random() * colors.length)]
+      } ${neonOn && "on"}`}
     >
       <h3>{i18n.language === "es" ? project.es.title : project.en.title}</h3>
       <img src={project.images.icon} alt={`${project.en.title} icon`} />
