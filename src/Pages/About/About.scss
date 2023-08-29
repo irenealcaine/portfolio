@@ -6,7 +6,7 @@
   }
 
   .timeline {
-    width: 80%;
+    width: 100%;
     padding: 20px 0;
     margin: 0px auto;
     position: relative;
@@ -36,8 +36,11 @@
           text-decoration: underline;
         }
 
-        & h4 {
+        & p {
           margin-bottom: 10px;
+          span {
+            font-weight: 700;
+          }
         }
       }
 
@@ -55,6 +58,10 @@
         float: right;
         & ul {
           margin-left: 15px;
+
+          & li {
+            margin-bottom: 5px;
+          }
         }
       }
 
@@ -63,6 +70,11 @@
         direction: rtl;
         & ul {
           margin-right: 15px;
+          text-align: right;
+
+          & li {
+            margin-bottom: 5px;
+          }
         }
 
         & .timeline-header {
@@ -110,7 +122,7 @@
         width: 2px;
       }
 
-      > li {
+      & li {
         width: 100%;
         margin-bottom: 30px;
 
@@ -124,6 +136,7 @@
 
           & ul {
             margin-left: 15px;
+            text-align: left;
           }
 
           & .timeline-header,

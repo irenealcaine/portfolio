@@ -8,50 +8,47 @@ const About = () => {
   const { i18n, t } = useTranslation("global");
   console.log(i18n.language);
 
+  const isSpanish = i18n.language === "es";
+
   return (
     <MainLayout>
       <div className="about">
         <h1>{t("aboutPage.title")}</h1>
         <p>Blablalba</p>
-        {/* <h2>{t("aboutPage.skills")}</h2> */}
         <h2>{t("aboutPage.experience")}</h2>
         <div className="container">
           <ul className="timeline">
             {experience.toReversed().map((exp, index) => {
-              return i18n.language === "es" ? (
+              const expInfo = isSpanish ? exp.es : exp.en;
+
+              return (
                 <li
                   key={index}
-                  className={`${
-                    index % 2 !== 0
-                      ? "timeline-block-right"
-                      : "timeline-block-left"
+                  className={`timeline-block-${
+                    index % 2 !== 0 ? "right" : "left"
                   }`}
                 >
-                  <div class="marker"></div>
+                  <div className="marker"></div>
                   <div className="timeline-panel">
                     <div className="timeline-header">
-                      <h3>{exp.es.title}</h3>
-                      <h4>{exp.en.ubication}</h4>
+                      <h3>{expInfo.title}</h3>
+                      <p>
+                        <span>{expInfo.company}</span> | {expInfo.ubication}
+                      </p>
                     </div>
-
                     <div className="timeline-body">
                       <ul>
-                        {exp.es.description.map((m, index) => (
-                          <li key={index}>
-                            <p>{m}</p>
+                        {expInfo.description.map((desc, descIndex) => (
+                          <li key={descIndex}>
+                            <p>{desc}</p>
                           </li>
                         ))}
                       </ul>
                     </div>
                     <div className="timeline-footer">
-                      <p>{exp.es.date}</p>
+                      <p>{expInfo.date}</p>
                     </div>
                   </div>
-                </li>
-              ) : (
-                <li key={index}>
-                  <p>{exp.en.title}</p>
-                  <p>{exp.en.description}</p>
                 </li>
               );
             })}
