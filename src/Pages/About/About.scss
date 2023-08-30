@@ -34,6 +34,17 @@
       z-index: 1;
     }
   }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+    text-decoration: underline;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -47,6 +58,9 @@
         left: 4px;
         width: 2px;
       }
+    }
+    .contact {
+      gap: 15px;
     }
   }
 }

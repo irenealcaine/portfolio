@@ -2,9 +2,10 @@ import React, { useContext } from "react";
 import MainLayout from "../../Layout/MainLayout/MainLayout";
 import { useTranslation } from "react-i18next";
 import "./About.scss";
-import { education, experience } from "../../data/AboutData";
+import { education, experience, contact } from "../../data/AboutData";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import TimelineItem from "../../Components/TimelineItem/TimelineItem";
+import ContactItem from "../../Components/ContactItem/ContactItem";
 
 const About = () => {
   const { i18n, t } = useTranslation("global");
@@ -59,6 +60,18 @@ const About = () => {
         </ul>
 
         <h2>{t("aboutPage.contact")}</h2>
+        <div className="contact">
+          {contact.map((cont, index) => (
+            <ContactItem
+              key={index}
+              index={index}
+              item={cont}
+              isSpanish={isSpanish}
+              colors={colors}
+              neonOn={neonOn}
+            />
+          ))}
+        </div>
       </div>
     </MainLayout>
   );

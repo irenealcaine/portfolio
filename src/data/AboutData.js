@@ -130,3 +130,31 @@ export const education = [
     },
   },
 ];
+
+export const contact = [
+  {
+    id: "1",
+    text: "irenealcainealvarez@gmail.com",
+    href: "mailto:irenealcainealvarez@gmail.com?Subject=Charlemos",
+  },
+  {
+    id: "2",
+    text: "irenealcainealvarez@gmail.com",
+    href: "mailto:irenealcainealvarez@gmail.com?Subject=Charlemos",
+  },
+  {
+    id: "3",
+    text: "github.com/irenealcaine",
+    href: "https://github.com/irenealcaine",
+  },
+  {
+    id: "4",
+    text: "linkedin.com/in/irenealcaine/",
+    href: "https://www.linkedin.com/in/irenealcaine/",
+  },
+  {
+    id: "5",
+    text: "irenealcainealvarez@gmail.com",
+    href: "mailto:irenealcainealvarez@gmail.com?Subject=Charlemos",
+  },
+];

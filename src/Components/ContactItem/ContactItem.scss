@@ -1,0 +1,45 @@
+.contact-item {
+  &.on {
+    &.pink {
+      --color: var(--pink);
+    }
+
+    &.green {
+      --color: var(--green);
+    }
+
+    &.yellow {
+      --color: var(--yellow);
+    }
+
+    &.lightBlue {
+      --color: var(--light-blue);
+    }
+
+    &.blue {
+      --color: var(--blue);
+    }
+
+    &.orange {
+      --color: var(--orange);
+    }
+
+    &.red {
+      --color: var(--red);
+    }
+
+    &.purple {
+      --color: var(--purple);
+    }
+  }
+
+  & p {
+    filter: drop-shadow(0 0 8px var(--color));
+    transition: all 0.2s ease;
+
+    &:hover {
+      filter: drop-shadow(0 0 5px var(--color))
+        drop-shadow(0 0 10px var(--color));
+    }
+  }
+}
