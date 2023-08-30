@@ -71,3 +71,22 @@
     box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    #about {
+      grid-column: 1 / 3;
+      grid-row: 2 / 4;
+    }
+
+    #projects {
+      grid-column: 1/3;
+    }
+    .toggle {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+  }
+}
