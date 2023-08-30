@@ -134,3 +134,11 @@
       0 0 22px var(--color);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .neon {
+    .icon {
+      font-size: 30px;
+    }
+  }
+}
