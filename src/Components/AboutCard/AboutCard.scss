@@ -16,10 +16,15 @@
     right: 0;
     height: calc(100% + 40px);
     margin-top: -20px;
-    opacity: 0.9;
+    opacity: 0.5;
     z-index: 0;
-    filter: drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--color))
-      drop-shadow(0 0 10px var(--color));
+    filter: grayscale(1);
+
+    &.on {
+      filter: grayscale(0) drop-shadow(0 0 1px white)
+        drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
+      opacity: 1;
+    }
   }
 }
 @media screen and (max-width: 768px) {

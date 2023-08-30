@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import me from "../../Assets/Images/me.png";
+import { NeonOnContext } from "../../Context/neonOnContext";
 import "./AboutCard.scss";
 
 const AboutCard = () => {
   const { t } = useTranslation("global");
+  const { neonOn } = useContext(NeonOnContext);
 
   return (
     <div className="about-card">
@@ -17,6 +19,7 @@ const AboutCard = () => {
         src={me}
         // src="https://agcnwo.com/wp-content/uploads/2020/09/avatar-placeholder.png"
         alt="me"
+        className={neonOn && "on"}
       />
     </div>
   );
