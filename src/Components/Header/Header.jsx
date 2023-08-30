@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Header.scss";
 import { IoChevronBackOutline } from "react-icons/io5";
-import { AiOutlineMail, AiOutlinePoweroff } from "react-icons/ai";
+import { AiOutlinePoweroff } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { NeonOnContext } from "../../Context/neonOnContext";

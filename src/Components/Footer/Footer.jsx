@@ -4,6 +4,7 @@ import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import "./Footer.scss";
 import { NeonOnContext } from "../../Context/neonOnContext";
+import { contact } from "../../data/AboutData";
 
 const Footer = () => {
   const { neonOn } = useContext(NeonOnContext);
@@ -12,22 +13,17 @@ const Footer = () => {
     <footer>
       <nav>
 
-        
-        <a
-          href="https://codepen.io/ialcaine"
-          className={`icon purple ${neonOn && "on"}`}
-        >
-          <AiOutlineCodepen />
-        </a>
-        <div className={`icon yellow ${neonOn && "on"}`}>
-          <FiGithub />
-        </div>
-        <div className={`icon lightBlue ${neonOn && "on"}`}>
-          <SlSocialLinkedin />
-        </div>
-        <div className={`icon red ${neonOn && "on"}`}>
-          <AiOutlineMail />
-        </div>
+        {contact.map((item, index) => (
+          <a
+            key={index}
+            href={item.href}
+            className={`icon ${item.color} ${neonOn && "on"}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {item.icon}
+          </a>
+        ))}
       </nav>
     </footer>
   );
