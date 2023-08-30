@@ -1,4 +1,5 @@
 import React from "react";
+import "./TimelineItem.scss";
 
 const TimelineItem = ({ item, index, isSpanish, colors, neonOn }) => {
   const itemInfo = isSpanish ? item.es : item.en;
@@ -6,9 +7,9 @@ const TimelineItem = ({ item, index, isSpanish, colors, neonOn }) => {
   return (
     <li
       key={index}
-      className={`timeline-block-${index % 2 !== 0 ? "right" : "left"} ${
-        colors[Math.floor(Math.random() * colors.length)]
-      } ${neonOn && "on"}`}
+      className={`timeline-item timeline-block-${
+        index % 2 !== 0 ? "right" : "left"
+      } ${colors[Math.floor(Math.random() * colors.length)]} ${neonOn && "on"}`}
     >
       <div className="marker"></div>
       <div className="timeline-panel">
