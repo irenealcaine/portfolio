@@ -1,6 +1,6 @@
 {
   "about": {
-    "presentation": "Hola, que tal",
+    "presentation": "¡Hola! Soy una apasionada del mundo del desarrollo frontend y me he especializado en **React**. Mi camino en este emocionante campo ha sido **autodidacta**, lo que me ha permitido explorar y aprender constantemente. Me encanta crear interfaces de usuario atractivas y funcionales que brinden experiencias excepcionales a los usuarios. Siempre estoy emocionada por los nuevos desafíos que el desarrollo frontend tiene para ofrecer y estoy comprometida en seguir expandiendo mis habilidades y conocimientos en este fascinante ámbito.",
     "button": "Ver mas"
   },
   "projects": {
@@ -10,7 +10,7 @@
   "languageSelector": "ES",
   "aboutPage": {
     "title": "Sobre mí",
-    "description": "ESPAÑOL Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, deserunt autem nemo quasi commodi odio obcaecati. Labore ut tenetur, commodi expedita assumenda cupiditate minus beatae ad unde vero cumque sed! Tempore aspernatur eligendi consequatur illo voluptates iusto          facere repudiandae reprehenderit expedita minus cupiditate, debitis          delectus vel pariatur error numquam nostrum voluptatem quos quidem quod sunt sed? Possimus aut itaque aspernatur?",
+    "description": "ESPAÑOL Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, deserunt autem nemo quasi commodi odio obcaecati. Labore ut tenetur, commodi expedita assumenda cupiditate minus beatae ad unde vero cumque sed! Tempore aspernatur eligendi consequatur illo voluptates iusto  facere repudiandae reprehenderit expedita minus cupiditate, debitis          delectus vel pariatur error numquam nostrum voluptatem quos quidem quod sunt sed? Possimus aut itaque aspernatur?",
     "skills": "Habilidades",
     "experience": "Experiencia",
     "education": "Formación",

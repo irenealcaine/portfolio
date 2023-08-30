@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import me from "../../Assets/Images/me.png";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import "./AboutCard.scss";
+import ReactMarkdown from 'react-markdown';
 
 const AboutCard = () => {
   const { t } = useTranslation("global");
@@ -13,7 +14,9 @@ const AboutCard = () => {
       <h1>Irene Alcaine</h1>
       <h2>Frontend developer</h2>
       {/* <p>{global[lang].about}</p> */}
-      <p>{t("about.presentation")}</p>
+      <ReactMarkdown className="presentation">
+        {t("about.presentation")}
+      </ReactMarkdown>
       <p>{t("about.button")}</p>
       <img
         src={me}
