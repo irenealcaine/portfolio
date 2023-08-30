@@ -6,10 +6,11 @@ import { education, experience, contact } from "../../data/AboutData";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import TimelineItem from "../../Components/TimelineItem/TimelineItem";
 import ContactItem from "../../Components/ContactItem/ContactItem";
+import CV from "../../Assets/CV/CV_Irene_Alcaine.pdf";
+import { BsDownload } from "react-icons/bs";
 
 const About = () => {
   const { i18n, t } = useTranslation("global");
-  console.log(i18n.language);
 
   const isSpanish = i18n.language === "es";
 
@@ -58,6 +59,14 @@ const About = () => {
             />
           ))}
         </ul>
+
+        <a
+          className={`cv ${neonOn && "on"}`}
+          href={CV}
+          download="CV_Irene_Alcaine.pdf"
+        >
+          <p>Descargar CV <BsDownload /></p>
+        </a>
 
         <h2>{t("aboutPage.contact")}</h2>
         <div className="contact">

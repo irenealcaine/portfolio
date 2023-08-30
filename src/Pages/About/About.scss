@@ -35,6 +35,23 @@
     }
   }
 
+  .cv {
+    width: 100%;
+    display: block;
+    text-align: end;
+    padding: 0 40px;
+    margin-bottom: 50px;
+    &.on {
+      filter: drop-shadow(0 0 2px var(--pink)) drop-shadow(0 0 8px var(--pink));
+      transition: all 0.2s ease;
+
+      &:hover {
+        filter: drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--pink))
+          drop-shadow(0 0 10px var(--pink));
+      }
+    }
+  }
+
   .contact {
     display: flex;
     justify-content: center;

@@ -40,10 +40,15 @@ export const experience = [
       ],
     },
     en: {
-      title: "Shoper",
-      ubication: "Charter, Valencia, Casinos",
-      date: "Jan 2021 - Jun 2021",
-      description: ["Atención al cliente", "TailwindCSS"],
+      title: "Bet operator",
+      company: "RetaBet",
+      ubication: "Zaragoza",
+      date: "May 2018 - Dec 2020",
+      description: [
+        "Customer service",
+        "Maintenance and cleaning of the premises",
+        "Opening and monitoring of incidents",
+      ],
     },
   },
   {
@@ -60,10 +65,15 @@ export const experience = [
       ],
     },
     en: {
-      title: "Shoper",
-      ubication: "Charter, Valencia, Casinos",
-      date: "Jan 2021 - Jun 2021",
-      description: ["ReactJS", "TailwindCSS"],
+      title: "Cashier",
+      company: "Charter",
+      ubication: "Casinos, Valencia",
+      date: "Oct 2021 - Jan 2022",
+      description: [
+        "Customer service",
+        "Maintenance and cleaning of the premises",
+        "Preparation of bread and pastries, monitoring order rotation and stock",
+      ],
     },
   },
 ];
@@ -83,11 +93,15 @@ export const education = [
       ],
     },
     en: {
-      title: "Shoper",
-      company: "Frutos Secos El Rincón",
+      title: "Bachelor's Degree in Mechanical Engineering",
+      company: "Higher Polytechnic Center (CPS)",
       ubication: "Zaragoza",
-      date: "Nov 2016 - Jun 2017",
-      description: ["ReactJS", "TailwindCSS"],
+      date: "Sep 2011 - Dec 2019",
+      description: [
+        "Specialization in machinery and engines",
+        "Final degree project: Simulation of peristaltic movements in ducts using finite element analysis",
+        "Erasmus exchange program in Viseu, Portugal from Sep 2015 to Feb 2016",
+      ],
     },
   },
   {
@@ -104,10 +118,15 @@ export const education = [
       ],
     },
     en: {
-      title: "Shoper",
-      ubication: "Charter, Valencia, Casinos",
-      date: "Jan 2021 - Jun 2021",
-      description: ["ReactJS", "TailwindCSS"],
+      title: "Front-End Web Programming and Design",
+      company: "School of Industrial Organization (EOI)",
+      ubication: "Online",
+      date: "Mar 2022 - Jun 2022",
+      description: [
+        "Online bootcamp with 265 instructional hours",
+        "Content: HTML5, advanced CSS3, JavaScript, Git, NPM, PostCSS, Vue.js, Vuex, responsive design, CSS frameworks, SEO, optimization, among other topics",
+        "Group project involving the development of a complete website, www.amigaria.com, a fully accessible web app for social integration",
+      ],
     },
   },
   {
@@ -123,10 +142,14 @@ export const education = [
       ],
     },
     en: {
-      title: "Shoper",
-      ubication: "Charter, Valencia, Casinos",
-      date: "Jan 2021 - Jun 2021",
-      description: ["ReactJS", "TailwindCSS"],
+      title: "Web Design and Publishing",
+      company: "Casinos City Hall",
+      ubication: "Casinos, Valencia",
+      date: "Dec 2022 - Dec 2023",
+      description: [
+        "One-year paid training program",
+        "Team projects based on the municipality's needs, involving the development of new websites and the maintenance and improvement of existing ones",
+      ],
     },
   },
 ];
