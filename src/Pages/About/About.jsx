@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import "./About.scss";
 import { education, experience } from "../../data/AboutData";
 import { NeonOnContext } from "../../Context/neonOnContext";
+import TimelineItem from "../../Components/TimelineItem/TimelineItem";
 
 const About = () => {
   const { i18n, t } = useTranslation("global");
@@ -36,86 +37,33 @@ const About = () => {
           delectus vel pariatur error numquam nostrum voluptatem quos quidem
           quod sunt sed? Possimus aut itaque aspernatur?
         </p>
+
         <h2>{t("aboutPage.experience")}</h2>
-
         <ul className="timeline">
-          {experience.toReversed().map((exp, index) => {
-            const expInfo = isSpanish ? exp.es : exp.en;
-
-            return (
-              <li
-                key={index}
-                className={`timeline-block-${
-                  index % 2 !== 0 ? "right" : "left"
-                } ${colors[Math.floor(Math.random() * colors.length)]} ${
-                  neonOn && "on"
-                }`}
-              >
-                <div className="marker"></div>
-                <div className="timeline-panel">
-                  <div className="timeline-header">
-                    <h3>{expInfo.title}</h3>
-                    <p>
-                      <span>{expInfo.company}</span> | {expInfo.ubication}
-                    </p>
-                  </div>
-                  <div className="timeline-body">
-                    <ul>
-                      {expInfo.description.map((desc, descIndex) => (
-                        <li key={descIndex}>
-                          <p>{desc}</p>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="timeline-footer">
-                    <p>{expInfo.date}</p>
-                  </div>
-                </div>
-              </li>
-            );
-          })}
+          {experience.toReversed().map((exp, index) => (
+            <TimelineItem
+              key={index}
+              item={exp}
+              index={index}
+              isSpanish={isSpanish}
+              colors={colors}
+              neonOn={neonOn}
+            />
+          ))}
         </ul>
 
         <h2>{t("aboutPage.education")}</h2>
-
         <ul className="timeline">
-          {education.toReversed().map((edu, index) => {
-            const eduInfo = isSpanish ? edu.es : edu.en;
-
-            return (
-              <li
-                key={index}
-                className={`timeline-block-${
-                  index % 2 !== 0 ? "right" : "left"
-                } ${colors[Math.floor(Math.random() * colors.length)]} ${
-                  neonOn && "on"
-                }`}
-              >
-                <div className="marker"></div>
-                <div className="timeline-panel">
-                  <div className="timeline-header">
-                    <h3>{eduInfo.title}</h3>
-                    <p>
-                      <span>{eduInfo.company}</span> | {eduInfo.ubication}
-                    </p>
-                  </div>
-                  <div className="timeline-body">
-                    <ul>
-                      {eduInfo.description.map((desc, descIndex) => (
-                        <li key={descIndex}>
-                          <p>{desc}</p>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="timeline-footer">
-                    <p>{eduInfo.date}</p>
-                  </div>
-                </div>
-              </li>
-            );
-          })}
+          {education.toReversed().map((edu, index) => (
+            <TimelineItem
+              key={index}
+              item={edu}
+              index={index}
+              isSpanish={isSpanish}
+              colors={colors}
+              neonOn={neonOn}
+            />
+          ))}
         </ul>
 
         <h2>{t("aboutPage.contact")}</h2>
