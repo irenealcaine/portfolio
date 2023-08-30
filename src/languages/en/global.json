@@ -1,6 +1,6 @@
 {
   "about": {
-    "presentation": "Hey, whats up",
+    "presentation": "Hello! I'm passionate about the world of frontend development, and I've specialized in React. My journey in this exciting field has been self-directed, allowing me to explore and learn consistently. I love creating appealing and functional user interfaces that provide exceptional experiences for users. I'm always excited about the new challenges that frontend development has to offer, and I'm committed to continuously expanding my skills and knowledge in this fascinating domain.",
     "button": "See more"
   },
   "projects": {
@@ -10,7 +10,7 @@
   "languageSelector": "EN",
   "aboutPage": {
     "title": "About me",
-    "description": "INGLES Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,          deserunt autem nemo quasi commodi odio obcaecati. Labore ut tenetur,          commodi expedita assumenda cupiditate minus beatae ad unde vero cumque          sed! Tempore aspernatur eligendi consequatur illo voluptates iusto          facere repudiandae reprehenderit expedita minus cupiditate, debitis          delectus vel pariatur error numquam nostrum voluptatem quos quidem          quod sunt sed? Possimus aut itaque aspernatur?",
+    "description": "INGLES Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, deserunt autem nemo quasi commodi odio obcaecati. Labore ut tenetur, delectus vel pariatur error numquam nostrum voluptatem quos quidem          quod sunt sed? Possimus aut itaque aspernatur?",
     "skills": "Skills",
     "experience": "Experience",
     "education": "Education",
