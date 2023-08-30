@@ -139,8 +139,8 @@ export const contact = [
   },
   {
     id: "2",
-    text: "irenealcainealvarez@gmail.com",
-    href: "mailto:irenealcainealvarez@gmail.com?Subject=Charlemos",
+    text: "629882129",
+    href: "https://api.whatsapp.com/send?phone=346298821291&text=Hola, ¡charlemos!",
   },
   {
     id: "3",
@@ -154,7 +154,7 @@ export const contact = [
   },
   {
     id: "5",
-    text: "irenealcainealvarez@gmail.com",
-    href: "mailto:irenealcainealvarez@gmail.com?Subject=Charlemos",
+    text: "codepen.io/ialcaine",
+    href: "https://codepen.io/ialcaine",
   },
 ];
