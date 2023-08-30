@@ -43,7 +43,13 @@
     margin-bottom: 50px;
     margin-top: -20px;
     &.on {
-      filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
+      filter: drop-shadow(0 0 2px var(--pink)) drop-shadow(0 0 8px var(--pink));
+      transition: all 0.2s ease;
+
+      &:hover {
+        filter: drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--pink))
+          drop-shadow(0 0 10px var(--pink));
+      }
     }
   }
 
