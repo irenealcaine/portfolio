@@ -11,9 +11,12 @@ const Footer = () => {
   return (
     <footer>
       <nav>
-        <div className={`icon purple ${neonOn && "on"}`}>
+        <a
+          href="https://codepen.io/ialcaine"
+          className={`icon purple ${neonOn && "on"}`}
+        >
           <AiOutlineCodepen />
-        </div>
+        </a>
         <div className={`icon yellow ${neonOn && "on"}`}>
           <FiGithub />
         </div>
