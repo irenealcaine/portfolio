@@ -2,7 +2,7 @@ import { createContext, useReducer } from "react";
 import NeonOnReducer from "./neonOnReducer";
 
 const INITIAL_STATE = {
-  neonOn: false,
+  neonOn: true,
 };
 
 export const NeonOnContext = createContext(INITIAL_STATE);
