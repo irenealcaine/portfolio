@@ -16,18 +16,39 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 
-    & div {
+    & .icon {
       cursor: pointer;
       transition: all 0.2s ease;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 25px;
 
-      &:hover {
-        filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px #fff)
-          drop-shadow(0 0 10px #fff);
+      &.purple {
+        --color: var(--purple);
+      }
+
+      &.lightBlue {
+        --color: var(--light-blue);
+      }
+
+      &.yellow {
+        --color: var(--yellow);
+      }
+
+      &.red {
+        --color: var(--red);
+      }
+
+      &.on {
+        filter: drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--color))
+          drop-shadow(0 0 10px var(--color));
+        &:hover {
+          filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px #fff)
+            drop-shadow(0 0 10px #fff);
+        }
       }
     }
   }
