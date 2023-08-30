@@ -34,11 +34,11 @@
   }
 
   & p {
-    filter: drop-shadow(0 0 8px var(--color));
+    filter: drop-shadow(0 0 2px var(--color)) drop-shadow(0 0 8px var(--color));
     transition: all 0.2s ease;
 
     &:hover {
-      filter: drop-shadow(0 0 5px var(--color))
+      filter: drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--color))
         drop-shadow(0 0 10px var(--color));
     }
   }

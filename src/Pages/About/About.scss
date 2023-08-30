@@ -35,6 +35,18 @@
     }
   }
 
+  .cv {
+    width: 100%;
+    display: block;
+    text-align: end;
+    padding: 0 40px;
+    margin-bottom: 50px;
+    margin-top: -20px;
+    &.on {
+      filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
+    }
+  }
+
   .contact {
     display: flex;
     justify-content: center;
