@@ -2,9 +2,18 @@ import React from 'react'
 import "./Neon.scss"
 import { Link } from 'react-router-dom'
 
-const Neon = ({ color, onClick, children, id, to }) => {
+const Neon = ({ color, children, id, to, target, rel, onClick }) => {
   return (
-    <Link to={to} id={id} onClick={onClick} className={`neon ${color}`}>{children}</Link>
+    <Link
+      to={to}
+      id={id}
+      className={`neon ${color}`}
+      target={target}
+      rel={rel}
+      onClick={onClick}
+    >
+      {children}
+    </Link>
   )
 }
 

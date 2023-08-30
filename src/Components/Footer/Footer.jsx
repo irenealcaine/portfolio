@@ -1,7 +1,4 @@
 import React, { useContext } from "react";
-import { AiOutlineMail, AiOutlineCodepen } from "react-icons/ai";
-import { FiGithub } from "react-icons/fi";
-import { SlSocialLinkedin } from "react-icons/sl";
 import "./Footer.scss";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import { contact } from "../../data/AboutData";
