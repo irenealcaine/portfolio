@@ -77,14 +77,15 @@
       right: 15px;
       font-size: 25px;
     }
+    & .techs {
+      justify-content: center;
+    }
 
     & .links {
       width: 100%;
       padding-left: 10px;
       flex-direction: column;
       gap: 10px;
-      justify-content: flex-start;
-      align-items: flex-start;
     }
   }
 }
