@@ -36,13 +36,13 @@ const About = () => {
         <h1>{t("aboutPage.title")}</h1>
         <p>{t("aboutPage.description")}</p>
 
-        <h2>{t("aboutPage.experience")}</h2>
-        <p>{t("aboutPage.experienceSubtitle")}</p>
+        <h2>{t("aboutPage.education")}</h2>
+        <p>{t("aboutPage.educationSubtitle")}</p>
         <ul className="timeline">
-          {experience.toReversed().map((exp, index) => (
+          {education.toReversed().map((edu, index) => (
             <TimelineItem
               key={index}
-              item={exp}
+              item={edu}
               index={index}
               isSpanish={isSpanish}
               colors={colors}
@@ -51,13 +51,13 @@ const About = () => {
           ))}
         </ul>
 
-        <h2>{t("aboutPage.education")}</h2>
-        <p>{t("aboutPage.educationSubtitle")}</p>
+        <h2>{t("aboutPage.experience")}</h2>
+        <p>{t("aboutPage.experienceSubtitle")}</p>
         <ul className="timeline">
-          {education.toReversed().map((edu, index) => (
+          {experience.toReversed().map((exp, index) => (
             <TimelineItem
               key={index}
-              item={edu}
+              item={exp}
               index={index}
               isSpanish={isSpanish}
               colors={colors}
