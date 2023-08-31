@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import MainLayout from "../../Layout/MainLayout/MainLayout";
 import { projects } from "../../data/PortfolioData";
 import { useTranslation } from "react-i18next";
@@ -15,6 +15,9 @@ import { RiBootstrapLine } from "react-icons/ri";
 import { NeonOnContext } from "../../Context/neonOnContext";
 
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
   const { i18n, t } = useTranslation("global");
   const [selectedProject, setSelectedProject] = useState(null);
   const { neonOn } = useContext(NeonOnContext);

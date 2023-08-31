@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Home.scss";
 import Neon from "../../Layout/Neon/Neon";
 import {
@@ -17,6 +17,10 @@ import { NeonOnContext } from "../../Context/neonOnContext";
 // import { global } from "../../languages/global"
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // const [isOn, setIsOn] = useState(false);
   const { i18n } = useTranslation("global");
   const { dispatch, neonOn } = useContext(NeonOnContext);
@@ -45,7 +49,12 @@ const Home = () => {
         <LanguageSelector />
       </Neon>
 
-      <Neon color={`yellow ${neonOn && "on"}`} to={"https://github.com/irenealcaine"} target={"_blank"} rel={"noopener noreferrer"}>
+      <Neon
+        color={`yellow ${neonOn && "on"}`}
+        to={"https://github.com/irenealcaine"}
+        target={"_blank"}
+        rel={"noopener noreferrer"}
+      >
         <FiGithub className={`icon ${neonOn && "on"}`} />
       </Neon>
 
@@ -53,19 +62,39 @@ const Home = () => {
         <ProjectsCard />
       </Neon>
 
-      <Neon color={`red ${neonOn && "on"}`} to={"mailto:irenealcainealvarez@gmail.com?Subject=Charlemos"} target={"_blank"} rel={"noopener noreferrer"}>
+      <Neon
+        color={`red ${neonOn && "on"}`}
+        to={"mailto:irenealcainealvarez@gmail.com?Subject=Charlemos"}
+        target={"_blank"}
+        rel={"noopener noreferrer"}
+      >
         <AiOutlineMail className={`icon ${neonOn && "on"}`} />
       </Neon>
 
-      <Neon color={`lightBlue ${neonOn && "on"}`} to={"https://www.linkedin.com/in/irenealcaine/"} target={"_blank"} rel={"noopener noreferrer"}>
+      <Neon
+        color={`lightBlue ${neonOn && "on"}`}
+        to={"https://www.linkedin.com/in/irenealcaine/"}
+        target={"_blank"}
+        rel={"noopener noreferrer"}
+      >
         <SlSocialLinkedin className={`icon ${neonOn && "on"}`} />
       </Neon>
 
-      <Neon color={`purple ${neonOn && "on"}`} to={"https://codepen.io/ialcaine"} target={"_blank"} rel={"noopener noreferrer"}>
+      <Neon
+        color={`purple ${neonOn && "on"}`}
+        to={"https://codepen.io/ialcaine"}
+        target={"_blank"}
+        rel={"noopener noreferrer"}
+      >
         <AiOutlineCodepen className={`icon ${neonOn && "on"}`} />
       </Neon>
 
-      <Neon color={`green ${neonOn && "on"}`} to={"https://api.whatsapp.com/send?phone=+346298821291&text=Hola"} target={"_blank"} rel={"noopener noreferrer"}>
+      <Neon
+        color={`green ${neonOn && "on"}`}
+        to={"https://api.whatsapp.com/send?phone=+346298821291&text=Hola"}
+        target={"_blank"}
+        rel={"noopener noreferrer"}
+      >
         <AiOutlineWhatsApp className={`icon ${neonOn && "on"}`} />
       </Neon>
     </div>
