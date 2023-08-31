@@ -125,6 +125,10 @@
   & .timeline-panel {
     width: 95%;
     padding: 0 10px;
+
+    & .timeline-body {
+      width: 80%;
+    }
   }
 }
 
@@ -148,6 +152,11 @@
       & .timeline-header,
       & .timeline-footer {
         text-align: left;
+      }
+      & .timeline-panel {
+        & .timeline-body {
+          width: 100%;
+        }
       }
     }
   }
