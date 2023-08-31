@@ -11,7 +11,7 @@ import { BsDownload } from "react-icons/bs";
 
 const About = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Hace scroll hasta arriba al montar el componente
+    window.scrollTo(0, 0);
   }, []);
 
   const { i18n, t } = useTranslation("global");

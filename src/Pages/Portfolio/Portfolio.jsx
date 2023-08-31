@@ -16,7 +16,7 @@ import { NeonOnContext } from "../../Context/neonOnContext";
 
 const Portfolio = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Hace scroll hasta arriba al montar el componente
+    window.scrollTo(0, 0); 
   }, []);
   const { i18n, t } = useTranslation("global");
   const [selectedProject, setSelectedProject] = useState(null);

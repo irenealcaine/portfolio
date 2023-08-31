@@ -18,7 +18,7 @@ import { NeonOnContext } from "../../Context/neonOnContext";
 
 const Home = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Hace scroll hasta arriba al montar el componente
+    window.scrollTo(0, 0);
   }, []);
 
   // const [isOn, setIsOn] = useState(false);
