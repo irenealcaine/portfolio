@@ -1,13 +1,21 @@
 import amigaria from "../Assets/Images/amigaria.png";
-import mascotas from "../Assets/Images/mascotas.png";
-import crypto from "../Assets/Images/crypto.png";
+import amigarialogo from "../Assets/Images/amigarialogo.svg";
+import mascotas from "../Assets/Images/mascotas.PNG";
+import mascotaslogo from "../Assets/Images/mascotaslogo.png";
+import cryptologo from "../Assets/Images/cryptologo.png";
+import dashboardlogo from "../Assets/Images/dashboardlogo.png";
+import ERDNPlogo from "../Assets/Images/ERDNPlogo.svg";
+import netfliclonlogo from "../Assets/Images/netfliclonlogo.jpg";
+import shoplogo from "../Assets/Images/shoplogo.png";
+import spotylogo from "../Assets/Images/spotylogo.png";
+import weatherlogo from "../Assets/Images/weatherlogo.png";
 
 export const projects = [
   {
     id: "canguro-de-mascotas",
     images: {
       main: mascotas,
-      icon: mascotas,
+      icon: mascotaslogo,
     },
     tech: ["ReactJS", "TailwindCSS"],
     category: "web",
@@ -27,7 +35,7 @@ export const projects = [
     id: "amigaria",
     images: {
       main: amigaria,
-      icon: amigaria,
+      icon: amigarialogo,
     },
     tech: ["VueJS", "Sass", "Firebase"],
     category: "web",
@@ -47,7 +55,7 @@ export const projects = [
     id: "el-rincon-de-no-pensar",
     images: {
       main: amigaria,
-      icon: amigaria,
+      icon: ERDNPlogo,
     },
     tech: ["ReactJS", "TailwindCSS"],
     category: "web",
@@ -67,7 +75,7 @@ export const projects = [
     id: "netfliclon",
     images: {
       main: amigaria,
-      icon: amigaria,
+      icon: netfliclonlogo,
     },
     tech: ["ReactJS", "TailwindCSS", "Firebase"],
     category: "web",
@@ -87,7 +95,7 @@ export const projects = [
     id: "catalogo",
     images: {
       main: amigaria,
-      icon: amigaria,
+      icon: shoplogo,
     },
     tech: ["ReactJS", "Bootstrap"],
     category: "project",
@@ -107,7 +115,7 @@ export const projects = [
     id: "dashboard",
     images: {
       main: amigaria,
-      icon: amigaria,
+      icon: dashboardlogo,
     },
     tech: ["ReactJS", "MaterialUI", "Sass", "Firebase"],
     category: "project",
@@ -127,7 +135,7 @@ export const projects = [
     id: "spotyclon",
     images: {
       main: amigaria,
-      icon: amigaria,
+      icon: spotylogo,
     },
     tech: ["ReactJS", "TailwindCSS"],
     category: "web",
@@ -147,7 +155,7 @@ export const projects = [
     id: "weaher-app",
     images: {
       main: amigaria,
-      icon: amigaria,
+      icon: weatherlogo,
     },
     tech: ["JavaScript", "TailwindCSS"],
     category: "project",
@@ -167,7 +175,7 @@ export const projects = [
     id: "todo-list",
     images: {
       main: amigaria,
-      icon: amigaria,
+      icon: todologo,
     },
     tech: ["VueJS", "TailwindCSS"],
     category: "project",
@@ -187,7 +195,7 @@ export const projects = [
     id: "cryptotracker",
     images: {
       main: crypto,
-      icon: crypto,
+      icon: cryptologo,
     },
     tech: ["ReactJS", "MaterialUI"],
     category: "web",
@@ -207,7 +215,7 @@ export const projects = [
     id: "tic-tac-toe",
     images: {
       main: crypto,
-      icon: crypto,
+      icon: tttlogo,
     },
     tech: ["VueJS", "TailwindCSS"],
     category: "project",

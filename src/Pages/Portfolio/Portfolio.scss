@@ -1,5 +1,4 @@
 .portfolio {
-
   h1,
   h2 {
     filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
@@ -26,12 +25,14 @@
       align-items: center;
 
       &:hover {
-        filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue)) drop-shadow(0 0 12px var(--blue));
+        filter: drop-shadow(0 0 5px var(--blue))
+          drop-shadow(0 0 10px var(--blue)) drop-shadow(0 0 12px var(--blue));
       }
     }
 
     & .selected {
-      filter: drop-shadow(0 0 2px var(--blue)) drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 8px var(--blue));
+      filter: drop-shadow(0 0 2px var(--blue)) drop-shadow(0 0 5px var(--blue))
+        drop-shadow(0 0 8px var(--blue));
     }
   }
 
@@ -52,14 +53,15 @@
       margin: 10px;
       padding: 10px 20px;
       position: relative;
-
+      width: 300px;
       display: flex;
       align-items: center;
       flex-direction: column;
       border: 3px solid white;
       border-radius: 10px;
-      box-shadow: 0 0 5px var(--color), 0 0 10px var(--color), 0 0 20px var(--color),
-        inset 0 0 5px var(--color), inset 0 0 10px var(--color), inset 0 0 20px var(--color);
+      box-shadow: 0 0 5px var(--color), 0 0 10px var(--color),
+        0 0 20px var(--color), inset 0 0 5px var(--color),
+        inset 0 0 10px var(--color), inset 0 0 20px var(--color);
       transition: all 0.2s ease;
 
       &:hover {
@@ -123,9 +125,11 @@
       }
 
       & img {
-        width: 300px;
+        width: 100%;
         margin-bottom: 20px;
-        // filter: drop-shadow(0 0 1px white) drop-shadow(0 0 2px white) drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
+        border-radius: 15px;
+        filter: drop-shadow(0 0 1px white) drop-shadow(0 0 2px white)
+          drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
       }
 
       & .techs {
@@ -136,7 +140,8 @@
         gap: 15px;
 
         & .tech {
-          filter: drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
+          filter: drop-shadow(0 0 5px var(--color))
+            drop-shadow(0 0 10px var(--color));
         }
       }
     }
@@ -155,9 +160,7 @@
 
     .projects {
       .project {
-        img {
-          width: 200px;
-        }
+        width: 250px;
       }
     }
   }
