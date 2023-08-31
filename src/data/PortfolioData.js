@@ -2,14 +2,22 @@ import amigaria from "../Assets/Images/amigaria.png";
 import amigarialogo from "../Assets/Images/amigarialogo.svg";
 import mascotas from "../Assets/Images/mascotas.PNG";
 import mascotaslogo from "../Assets/Images/mascotaslogo.png";
+import crypto from "../Assets/Images/crypto.PNG";
 import cryptologo from "../Assets/Images/cryptologo.png";
 import dashboardlogo from "../Assets/Images/dashboardlogo.png";
+import ERDNP from "../Assets/Images/ERDNP.PNG";
 import ERDNPlogo from "../Assets/Images/ERDNPlogo.svg";
+import netfliclon from "../Assets/Images/netfliclon.PNG";
 import netfliclonlogo from "../Assets/Images/netfliclonlogo.jpg";
+import shop from "../Assets/Images/shop.PNG";
 import shoplogo from "../Assets/Images/shoplogo.png";
+import spoty from "../Assets/Images/spoty.PNG";
 import spotylogo from "../Assets/Images/spotylogo.png";
+import weather from "../Assets/Images/weather.PNG";
 import weatherlogo from "../Assets/Images/weatherlogo.png";
+import ttt from "../Assets/Images/ttt.PNG";
 import tttlogo from "../Assets/Images/tttlogo.svg";
+import todo from "../Assets/Images/todo.PNG";
 import todologo from "../Assets/Images/todologo.png";
 
 export const projects = [
@@ -33,30 +41,30 @@ export const projects = [
       description: "Pets nursery",
     },
   },
-  {
-    id: "amigaria",
-    images: {
-      main: amigaria,
-      icon: amigarialogo,
-    },
-    tech: ["VueJS", "Sass", "Firebase"],
-    category: "web",
-    github: "https://github.com/AmigariaWeb/web-app",
-    web: "https://amigaria-app.vercel.app/login",
-    es: {
-      title: "Amigaria",
-      description:
-        "Web de integración social 100% accesible y para todos los públicos. Red social donde colgar en forma de ticket tus peticiones de ayuda, que cuando otro usuario acepta, ésta se elimina del tablón para el resto de usuarios. Cada ticket consta de un título, una breve descripción, fecha, categoría y autor. Hay una sección personal donde aparecen tus tickets, los cuales se pueden editar o borrar y los de otros usuarios que tu hayas aceptado.",
-    },
-    en: {
-      title: "Pet nanny",
-      description: "Pets nursery",
-    },
-  },
+  // {
+  //   id: "amigaria",
+  //   images: {
+  //     main: amigaria,
+  //     icon: amigarialogo,
+  //   },
+  //   tech: ["VueJS", "Sass", "Firebase"],
+  //   category: "web",
+  //   github: "https://github.com/AmigariaWeb/web-app",
+  //   web: "https://amigaria-app.vercel.app/login",
+  //   es: {
+  //     title: "Amigaria",
+  //     description:
+  //       "Web de integración social 100% accesible y para todos los públicos. Red social donde colgar en forma de ticket tus peticiones de ayuda, que cuando otro usuario acepta, ésta se elimina del tablón para el resto de usuarios. Cada ticket consta de un título, una breve descripción, fecha, categoría y autor. Hay una sección personal donde aparecen tus tickets, los cuales se pueden editar o borrar y los de otros usuarios que tu hayas aceptado.",
+  //   },
+  //   en: {
+  //     title: "Pet nanny",
+  //     description: "Pets nursery",
+  //   },
+  // },
   {
     id: "el-rincon-de-no-pensar",
     images: {
-      main: amigaria,
+      main: ERDNP,
       icon: ERDNPlogo,
     },
     tech: ["ReactJS", "TailwindCSS"],
@@ -76,7 +84,7 @@ export const projects = [
   {
     id: "netfliclon",
     images: {
-      main: amigaria,
+      main: netfliclon,
       icon: netfliclonlogo,
     },
     tech: ["ReactJS", "TailwindCSS", "Firebase"],
@@ -96,7 +104,7 @@ export const projects = [
   {
     id: "catalogo",
     images: {
-      main: amigaria,
+      main: shop,
       icon: shoplogo,
     },
     tech: ["ReactJS", "Bootstrap"],
@@ -136,7 +144,7 @@ export const projects = [
   {
     id: "spotyclon",
     images: {
-      main: amigaria,
+      main: spoty,
       icon: spotylogo,
     },
     tech: ["ReactJS", "TailwindCSS"],
@@ -156,7 +164,7 @@ export const projects = [
   {
     id: "weaher-app",
     images: {
-      main: amigaria,
+      main: weather,
       icon: weatherlogo,
     },
     tech: ["JavaScript", "TailwindCSS"],
@@ -176,7 +184,7 @@ export const projects = [
   {
     id: "todo-list",
     images: {
-      main: amigaria,
+      main: todo,
       icon: todologo,
     },
     tech: ["VueJS", "TailwindCSS"],
@@ -216,7 +224,7 @@ export const projects = [
   {
     id: "tic-tac-toe",
     images: {
-      main: crypto,
+      main: ttt,
       icon: tttlogo,
     },
     tech: ["VueJS", "TailwindCSS"],
