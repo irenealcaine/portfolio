@@ -68,7 +68,8 @@ const About = () => {
           download="CV_Irene_Alcaine.pdf"
         >
           <p>
-            Descargar CV <BsDownload />
+            {t("aboutPage.CV")}
+            {"  "} <BsDownload />
           </p>
         </a>
 
