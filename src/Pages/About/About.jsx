@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import MainLayout from "../../Layout/MainLayout/MainLayout";
 import { useTranslation } from "react-i18next";
 import "./About.scss";
@@ -10,6 +10,10 @@ import CV from "../../Assets/CV/CV_Irene_Alcaine.pdf";
 import { BsDownload } from "react-icons/bs";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Hace scroll hasta arriba al montar el componente
+  }, []);
+
   const { i18n, t } = useTranslation("global");
 
   const isSpanish = i18n.language === "es";
