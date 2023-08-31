@@ -1,5 +1,5 @@
-import amigaria from "../Assets/Images/amigaria.png";
-import amigarialogo from "../Assets/Images/amigarialogo.svg";
+// import amigaria from "../Assets/Images/amigaria.png";
+// import amigarialogo from "../Assets/Images/amigarialogo.svg";
 import mascotas from "../Assets/Images/mascotas.PNG";
 import mascotaslogo from "../Assets/Images/mascotaslogo.png";
 import crypto from "../Assets/Images/crypto.PNG";
