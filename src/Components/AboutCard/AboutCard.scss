@@ -6,20 +6,42 @@
   h2,
   p {
     position: relative;
-
     z-index: 2;
+  }
+  h1 {
+    margin-bottom: 5px;
   }
 
   .presentation {
     margin-top: 20px;
-    width: 70%
+    width: 70%;
+  }
+
+  .button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #000a;
+    width: fit-content;
+    font-size: 14px;
+    border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      font-size: 20px;
+      &.on {
+        filter: drop-shadow(0 0 5px var(--pink))
+          drop-shadow(0 0 10px var(--pink));
+      }
+    }
   }
 
   img {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
+    right: -10px;
     height: calc(100% + 40px);
     margin-top: -20px;
     opacity: 0.5;
@@ -27,7 +49,8 @@
     filter: grayscale(1);
 
     &.on {
-      filter: grayscale(0) drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
+      filter: grayscale(0) drop-shadow(0 0 1px white)
+        drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
       opacity: 1;
     }
   }
@@ -35,6 +58,9 @@
 
 @media screen and (max-width: 768px) {
   .about-card {
+    .presentation {
+      width: 100%;
+    }
     img {
       display: none;
     }

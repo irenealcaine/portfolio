@@ -3,7 +3,8 @@ import { useTranslation } from "react-i18next";
 import me from "../../Assets/Images/me.png";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import "./AboutCard.scss";
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from "react-markdown";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const AboutCard = () => {
   const { t } = useTranslation("global");
@@ -17,13 +18,11 @@ const AboutCard = () => {
       <ReactMarkdown className="presentation">
         {t("about.presentation")}
       </ReactMarkdown>
-      <p>{t("about.button")}</p>
-      <img
-        src={me}
-        // src="https://agcnwo.com/wp-content/uploads/2020/09/avatar-placeholder.png"
-        alt="me"
-        className={neonOn && "on"}
-      />
+      <p className="button">
+        <span>{t("about.button")}</span>{" "}
+        <MdKeyboardDoubleArrowRight className={`arow ${neonOn && "on"}`} />
+      </p>
+      <img src={me} alt="me" className={neonOn && "on"} />
     </div>
   );
 };

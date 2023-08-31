@@ -1,7 +1,7 @@
 {
   "about": {
-    "presentation": "Hello! I'm passionate about the world of frontend development, and I've specialized in React. My journey in this exciting field has been self-directed, allowing me to explore and learn consistently. I love creating appealing and functional user interfaces that provide exceptional experiences for users. I'm always excited about the new challenges that frontend development has to offer, and I'm committed to continuously expanding my skills and knowledge in this fascinating domain.",
-    "button": "See more"
+    "presentation": "Hello! I love frontend development, especially **React**. My journey in this field has been mostly **self-taught**, which has allowed me to constantly explore and learn. What I enjoy the most is creating **appealing** and **functional** user interfaces that provide users with a great experience. I'm always looking for new challenges that frontend development offers, and I'm committed to refining my skills and knowledge.",
+    "button": "Click to learn more"
   },
   "projects": {
     "title": "Projects",
