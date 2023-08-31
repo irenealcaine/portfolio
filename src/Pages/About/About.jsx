@@ -33,6 +33,7 @@ const About = () => {
         <p>{t("aboutPage.description")}</p>
 
         <h2>{t("aboutPage.experience")}</h2>
+        <p>{t("aboutPage.experienceSubtitle")}</p>
         <ul className="timeline">
           {experience.toReversed().map((exp, index) => (
             <TimelineItem
@@ -47,6 +48,7 @@ const About = () => {
         </ul>
 
         <h2>{t("aboutPage.education")}</h2>
+        <p>{t("aboutPage.educationSubtitle")}</p>
         <ul className="timeline">
           {education.toReversed().map((edu, index) => (
             <TimelineItem
@@ -65,7 +67,9 @@ const About = () => {
           href={CV}
           download="CV_Irene_Alcaine.pdf"
         >
-          <p>Descargar CV <BsDownload /></p>
+          <p>
+            Descargar CV <BsDownload />
+          </p>
         </a>
 
         <h2>{t("aboutPage.contact")}</h2>

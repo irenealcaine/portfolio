@@ -10,10 +10,12 @@
   "languageSelector": "ES",
   "aboutPage": {
     "title": "Sobre mí",
-    "description": "ESPAÑOL Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, deserunt autem nemo quasi commodi odio obcaecati. Labore ut tenetur, commodi expedita assumenda cupiditate minus beatae ad unde vero cumque sed! Tempore aspernatur eligendi consequatur illo voluptates iusto  facere repudiandae reprehenderit expedita minus cupiditate, debitis          delectus vel pariatur error numquam nostrum voluptatem quos quidem quod sunt sed? Possimus aut itaque aspernatur?",
+    "description": "¡Hola! Soy Irene Alcaine, graduada en Ingeniería. Sin embargo, tras obtener mi título, descubrí que mi verdadera pasión es el desarrollo web. Estoy ansiosa por tener la oportunidad de demostrar mis capacidades profesionalmente en el mundo de la programación, al que tanto cariño le tengo.",
     "skills": "Habilidades",
     "experience": "Experiencia",
+    "experienceSubtitle": "A pesar de que mi experiencia laboral no está directamente relacionada con la programación, he trabajado en varios sitios que han perfeccionado mis habilidades en atención al cliente, trabajo en equipo y bajo presión y organización del tiempo.",
     "education": "Formación",
+    "educationSubtitle": "Desde principios de 2022, he estado saciando mi curiosidad y aprendiendo por mi cuenta. Además, he realizado algunos cursos de frontend y publicación de páginas web.",
     "contact": "Contacto"
   },
   "portfolioPage": {

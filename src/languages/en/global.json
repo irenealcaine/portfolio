@@ -10,10 +10,12 @@
   "languageSelector": "EN",
   "aboutPage": {
     "title": "About me",
-    "description": "INGLES Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, deserunt autem nemo quasi commodi odio obcaecati. Labore ut tenetur, delectus vel pariatur error numquam nostrum voluptatem quos quidem          quod sunt sed? Possimus aut itaque aspernatur?",
+    "description": "Hello! I'm Irene Alcaine, a graduate in Engineering. However, after obtaining my degree, I discovered that my true passion is web development. I'm eager to have the opportunity to showcase my abilities professionally in the programming world, a field that I hold dear to my heart.",
     "skills": "Skills",
     "experience": "Experience",
+    "experienceSubtitle": "Even though my work experience is not directly related to programming, I've worked in various roles that have honed my skills in customer service, teamwork, handling pressure, and time management.",
     "education": "Education",
+    "educationSubtitle": "Since early 2022, I've been satisfying my curiosity and learning on my own. Furthermore, I've taken some frontend courses and web page publishing.",
     "contact": "Contact"
   },
   "portfolioPage": {
