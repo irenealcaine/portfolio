@@ -9,6 +9,8 @@ import netfliclonlogo from "../Assets/Images/netfliclonlogo.jpg";
 import shoplogo from "../Assets/Images/shoplogo.png";
 import spotylogo from "../Assets/Images/spotylogo.png";
 import weatherlogo from "../Assets/Images/weatherlogo.png";
+import tttlogo from "../Assets/Images/tttlogo.svg";
+import todologo from "../Assets/Images/todologo.png";
 
 export const projects = [
   {

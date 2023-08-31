@@ -48,27 +48,30 @@ const Portfolio = () => {
     <div
       key={project.id}
       onClick={() => setSelectedProject(project)}
-      className={`project ${colors[Math.floor(Math.random() * colors.length)]
-        } ${neonOn && "on"}`}
+      className={`project ${
+        colors[Math.floor(Math.random() * colors.length)]
+      } ${neonOn && "on"}`}
     >
       <h3>{i18n.language === "es" ? project.es.title : project.en.title}</h3>
-      <img src={project.images.icon} alt={`${project.en.title} icon`} />
+      <div className="project-body">
+        <img src={project.images.icon} alt={`${project.en.title} icon`} />
 
-      <div className="techs">
-        {project.tech.map((tech, index) => {
-          const matchingOption = filterOptions.find(
-            (option) => option.value === tech
-          );
-          if (matchingOption) {
-            return (
-              <div key={index} className="tech">
-                {matchingOption.icon}
-              </div>
+        <div className="techs">
+          {project.tech.map((tech, index) => {
+            const matchingOption = filterOptions.find(
+              (option) => option.value === tech
             );
-          } else {
-            return <p key={index}>{tech}</p>;
-          }
-        })}
+            if (matchingOption) {
+              return (
+                <div key={index} className="tech">
+                  {matchingOption.icon}
+                </div>
+              );
+            } else {
+              return <p key={index}>{tech}</p>;
+            }
+          })}
+        </div>
       </div>
     </div>
   );
