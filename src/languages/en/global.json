@@ -28,5 +28,15 @@
       "web": "Live demo",
       "github": "Repository"
     }
+  },
+  "notFoundPage": {
+    "title": "Ooops!",
+    "subtitle": "Something went wrong",
+    "list": {
+      "header":"You can try the following:",
+      "option1" :"Check that the URL you entered is correct. Sometimes, a simple typographical error can be the cause of the issue.",
+      "option2": "Return to the homepage."
+    }
+
   }
 }
