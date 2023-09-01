@@ -16,7 +16,7 @@
     "experienceSubtitle": "Even though my work experience is not directly related to programming, I've worked in various roles that have honed my skills in customer service, teamwork, handling pressure, and time management.",
     "education": "Education",
     "educationSubtitle": "Since early 2022, I've been satisfying my curiosity and learning on my own. Furthermore, I've taken some frontend courses and web page publishing.",
-    "CV":"Download CV",
+    "CV": "Download CV",
     "contact": "Contact"
   },
   "portfolioPage": {
@@ -33,10 +33,9 @@
     "title": "Ooops!",
     "subtitle": "Something went wrong",
     "list": {
-      "header":"You can try the following:",
-      "option1" :"Check that the URL you entered is correct. Sometimes, a simple typographical error can be the cause of the issue.",
-      "option2": "Return to the homepage."
+      "header": "It seems that something has gone wrong and you have reached this error page, but you can try the following:",
+      "option1": "Check that the URL you entered is correct. Sometimes, a simple typographical error can be the cause of the issue.",
+      "option2": "If that doesn't work, return to the homepage."
     }
-
   }
 }

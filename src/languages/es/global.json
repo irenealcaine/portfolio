@@ -33,10 +33,9 @@
     "title": "¡Ups!",
     "subtitle": "Algo ha ido mal",
     "list": {
-      "header":"Puedes intentar lo siguiente:",
-      "option1" :"Comprueba que la URL que escribiste es correcta. A veces, un simple error tipográfico puede ser la causa del problema.",
-      "option2": "Vuelve a la página principal."
+      "header": "Parece ser que algo ha fallado y has llegado a esta página de error, pero puedes intentar lo siguiente:",
+      "option1": "Comprueba que la URL que escribiste es correcta. A veces, un simple error tipográfico puede ser la causa del problema.",
+      "option2": "Si eso no funciona, vuelve a la página principal."
     }
-
   }
 }

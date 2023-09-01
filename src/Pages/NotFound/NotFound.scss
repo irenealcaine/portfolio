@@ -1,12 +1,47 @@
-.notFound{
-    h1{
-        filter: drop-shadow(0 0 5px var(--green))
+.notFound {
+    width: 70%;
+    margin: 0 auto;
+
+    h1 {
+        filter: drop-shadow(0 0 5px var(--green)) drop-shadow(0 0 10px var(--green));
+        margin-bottom: 15px;
     }
 
-    h2{
-        &.on{
-            filter: drop-shadow(0 0 5px var(--green))
+    h2 {
+        margin-bottom: 20px;
+
+        &.on {
+            filter: drop-shadow(0 0 5px var(--green)) drop-shadow(0 0 10px var(--green));
         }
-        
+
+    }
+
+    & .message {
+        padding: 10px 20px;
+
+        & ul {
+            margin-left: 25px;
+            margin-top: 10px;
+            list-style: circle;
+
+
+        }
+
+        & a {
+            text-decoration: underline;
+            margin-top: 10px;
+            display: inline-block;
+
+            &.on {
+                filter: drop-shadow(0 0 5px var(--green)) drop-shadow(0 0 10px var(--green));
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .notFound {
+        width: 90%;
+
     }
 }
