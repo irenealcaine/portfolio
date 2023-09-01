@@ -14,7 +14,6 @@ const AboutCard = () => {
     <div className="about-card">
       <h1>Irene Alcaine</h1>
       <h2>Frontend developer</h2>
-      {/* <p>{global[lang].about}</p> */}
       <ReactMarkdown className="presentation">
         {t("about.presentation")}
       </ReactMarkdown>
