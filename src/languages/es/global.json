@@ -28,5 +28,15 @@
       "web": "Sitio web",
       "github": "Repositorio"
     }
+  },
+  "notFoundPage": {
+    "title": "¡Ups!",
+    "subtitle": "Algo ha ido mal",
+    "list": {
+      "header":"Puedes intentar esto:",
+      "option1" :"Recarga",
+      "option2": "Ve atrás"
+    }
+
   }
 }

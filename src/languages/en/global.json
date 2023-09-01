@@ -28,5 +28,15 @@
       "web": "Live demo",
       "github": "Repository"
     }
+  },
+  "notFoundPage": {
+    "title": "Ooops!",
+    "subtitle": "Something went wrong",
+    "list": {
+      "header":"You can try this:",
+      "option1" :"recharge",
+      "option2": "go back"
+    }
+
   }
 }
