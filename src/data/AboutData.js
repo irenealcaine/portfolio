@@ -173,7 +173,7 @@ export const contact = [
   {
     id: "2",
     text: "629882129",
-    href: "https://api.whatsapp.com/send?phone=+346298821291&text=Hola",
+    href: "https://api.whatsapp.com/send?phone=629882129&text=Hola",
     icon: <AiOutlineWhatsApp />,
     color: "green"
   },
