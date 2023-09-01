@@ -1,27 +1,31 @@
+import React, { useContext} from "react";
 import MainLayout from "../../Layout/MainLayout/MainLayout";
 import { useTranslation } from "react-i18next";
+import "./NotFound.scss"
+import { NeonOnContext } from "../../Context/neonOnContext";
+
 
 const NotFound = () => {
   const {t } = useTranslation("global");
+  const { neonOn } = useContext(NeonOnContext);
+
 
     return (
         <MainLayout>
+<div className="notFound">
             <h1>{t("notFoundPage.title")}</h1>
-            <h2>{t("notFoundPage.subtitle")}</h2>
+            <h2 className={neonOn && "on"}>{t("notFoundPage.subtitle")}</h2>
             <p>{t("notFoundPage.list.header")}</p>
             <ul>
-                {/* {for(i=1, i<3, i++){
-                    <li><p>{t(`notFoundPage.list.option${i}`)}</p></li>
-                }} */}
 
-{[1, 2].map((i) => (
-    <li key={i}>
-      <p>{t(`notFoundPage.list.option${i}`)}</p>
-    </li>
-  ))}
+                {[1, 2].map((i) => (
+                  <li key={i}>
+                    <p>{t(`notFoundPage.list.option${i}`)}</p>
+                  </li>
+                ))}
                 
-                <li><p>{t("notFoundPage.list.option2")}</p></li>
             </ul>
+</div>
         </MainLayout>
     
     )
