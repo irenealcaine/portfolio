@@ -1,20 +1,21 @@
 import { useTranslation } from "react-i18next";
-import {SlSocialSpotify} from "react-icons/sl"
+import { SlSocialSpotify } from "react-icons/sl"
+import "./SpotifyCard.scss"
 
 const SpotifyCard = () => {
 
-    const {  t } = useTranslation("global");
+  const { t } = useTranslation("global");
 
-    return (
-        <a href="https://developer.spotify.com/" className='spotifyCard'>
-             <div className="">
-          <p><SlSocialSpotify/> {t("aboutPage.spotify.recent")}</p>
-          <h3 className="">
-            Nombre cancion
-          </h3>
-        </div>
-        </a>
-    )
+  return (
+    <a href="https://developer.spotify.com/" className='spotifyCard'>
+
+      <p className="title">{t("aboutPage.spotify.recent")} <span><SlSocialSpotify /> </span></p>
+      <h3 className="">
+        Nombre cancion
+      </h3>
+
+    </a>
+  )
 }
 
 export default SpotifyCard
