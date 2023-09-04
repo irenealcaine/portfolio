@@ -81,6 +81,7 @@ margin-top:40px ;
       padding: 5px 20px;
       display: inline-block;
       cursor: pointer;
+      width: 70%;
 
       &.on {
         filter: drop-shadow(0 0 2px var(--color)) drop-shadow(0 0 8px var(--color));
@@ -115,6 +116,9 @@ margin-top:40px ;
       .others{
         flex-direction: row;
         justify-content:center;
+        .discord, .spotify{
+          width:40%
+        }
       }
     }
    }
@@ -144,6 +148,9 @@ margin-top:40px ;
     }
     .others{
       flex-direction: column;
+      .discord, .spotify{
+        width:90%
+      }
     }
       }
     }
