@@ -20,6 +20,8 @@ import ttt from "../Assets/Images/ttt.PNG";
 import tttlogo from "../Assets/Images/tttlogo.svg";
 import todo from "../Assets/Images/todo.PNG";
 import todologo from "../Assets/Images/todologo.png";
+import gallery from "../Assets/Images/gallery.png";
+import gallerylogo from "../Assets/Images/gallerylogo.png";
 
 export const projects = [
   {
@@ -145,6 +147,27 @@ export const projects = [
       title: "Dashboard",
       description:
         "Administrator dashboard with user registration and authentication using different databases. Real-time statistics on new users and products from the last month, including the percentage growth compared to the previous month, as well as profit and earnings statistics. User tables with the option to add new users, and tables for products and orders that can be deleted.",
+    },
+  },
+  {
+    id: "gallery",
+    images: {
+      main: gallery,
+      icon: gallerylogo,
+    },
+    tech: ["ReactJS", "Firebase"],
+    category: "project",
+    github: "https://github.com/irenealcaine/gallery",
+    web: "https://cosmic-cheesecake-074bb8.netlify.app",
+    es: {
+      title: "Galería",
+      description:
+        "Galería donde puedes subir tus fotos mediante Firebase. Al darle click a una foto se puede ver en tamaño aumentado.",
+    },
+    en: {
+      title: "Gallery",
+      description:
+        "Gallery where you can upload your photos using Firebase. By clicking on a photo, you can view it in an enlarged size.",
     },
   },
   {
