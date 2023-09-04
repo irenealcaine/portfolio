@@ -17,7 +17,10 @@
     "education": "Education",
     "educationSubtitle": "Since early 2022, I've been satisfying my curiosity and learning on my own. Furthermore, I've taken some frontend courses and web page publishing.",
     "CV": "Download CV",
-    "contact": "Contact"
+    "contact": "Contact",
+    "spotify":{
+      "recent":"Recently listened"
+    }
   },
   "portfolioPage": {
     "title": "Portfolio",

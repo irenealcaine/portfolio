@@ -60,9 +60,8 @@
 .personal{
   .contact {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     width: 80%;
     margin: 50px auto;
@@ -71,15 +70,33 @@
   
   .others{
     display:flex;
-    gap:40px;
+    gap:20px;
     flex-direction: column;
     align-items:center;
+margin-top:40px ;
 
     .discord, .spotify{
       border: 2px solid white;
       border-radius: 10px;
       padding: 5px 20px;
       display: inline-block;
+      cursor: pointer;
+
+      &.on {
+        filter: drop-shadow(0 0 2px var(--color)) drop-shadow(0 0 8px var(--color));
+        transition: all 0.2s ease;
+  
+        &:hover {
+          filter: drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--color))
+            drop-shadow(0 0 10px var(--color));
+        }
+      }
+    }
+    .discord{
+      --color: var(--purple)
+    }
+    .spotify{
+      --color: var(--green)
     }
   }
 }
@@ -92,6 +109,9 @@
     flex-direction:column;
    
     .personal{
+      .contact{
+        justify-content: center;
+      }
       .others{
         flex-direction: row;
         justify-content:center;
