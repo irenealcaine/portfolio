@@ -35,7 +35,8 @@ const About = () => {
       <div className="about">
         <h1>{t("aboutPage.title")}</h1>
         <p>{t("aboutPage.description")}</p>
-
+<div className="container">
+<div className="work">
         <h2>{t("aboutPage.education")}</h2>
         <p>{t("aboutPage.educationSubtitle")}</p>
         <ul className="timeline">
@@ -65,7 +66,6 @@ const About = () => {
             />
           ))}
         </ul>
-
         <a
           className={`cv ${neonOn && "on"}`}
           href={CV}
@@ -76,6 +76,8 @@ const About = () => {
             {"  "} <BsDownload />
           </p>
         </a>
+        </div>
+<div className="personal">
 
         <h2>{t("aboutPage.contact")}</h2>
         <div className="contact">
@@ -89,6 +91,8 @@ const About = () => {
               neonOn={neonOn}
             />
           ))}
+        </div>
+        </div>
         </div>
       </div>
     </MainLayout>
