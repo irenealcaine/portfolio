@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import {SlSocialSpotify} from "react-icons/sl"
 
 const SpotifyCard = () => {
 
@@ -7,13 +8,10 @@ const SpotifyCard = () => {
     return (
         <a href="https://developer.spotify.com/" className='spotifyCard'>
              <div className="">
-          <p>{t("aboutPage.spotify.recent")}</p>
+          <p><SlSocialSpotify/> {t("aboutPage.spotify.recent")}</p>
           <h3 className="">
             Nombre cancion
           </h3>
-          <p className="">
-            Artista
-          </p>
         </div>
         </a>
     )

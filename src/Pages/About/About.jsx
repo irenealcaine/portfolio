@@ -9,6 +9,7 @@ import ContactItem from "../../Components/ContactItem/ContactItem";
 import CV from "../../Assets/CV/CV_Irene_Alcaine.pdf";
 import { BsDownload } from "react-icons/bs";
 import SpotifyCard from "../../Components/SpotifyCard/SpotifyCard"
+import DiscordCard from "../../Components/DiscordCard/DiscordCard"
 
 const About = () => {
   useEffect(() => {
@@ -94,7 +95,9 @@ const About = () => {
           ))}
         </div>
         <div className="others">
-        {/* <div className={`discord ${neonOn && "on"}`}>Discord</div> */}
+        <div className={`discord ${neonOn && "on"}`}>
+          <DiscordCard/>
+          </div>
         <div className={`spotify ${neonOn && "on"}`}>
           <SpotifyCard/>
         </div>
