@@ -97,11 +97,19 @@
       }
     }
       }
-    }
-   
-    .contact {
+
+      .personal{
+        .contact {
       gap: 15px;
       margin: 30px auto;
     }
+    .others{
+      display:flex;
+      gap:40px
+    }
+      }
+    }
+   
+    
   }
 }

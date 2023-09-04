@@ -92,6 +92,10 @@ const About = () => {
             />
           ))}
         </div>
+        <div className="others">
+        <div className="discord">Discord</div>
+        <div className="spotify">Spoty</div>
+        </div>
         </div>
         </div>
       </div>
