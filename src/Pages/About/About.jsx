@@ -94,14 +94,14 @@ const About = () => {
                 />
               ))}
             </div>
-            {/* <div className="others">
+            <div className="others">
               <div className={`discord ${neonOn && "on"}`}>
                 <DiscordCard />
               </div>
               <div className={`spotify ${neonOn && "on"}`}>
                 <SpotifyCard />
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
