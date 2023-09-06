@@ -98,9 +98,9 @@ const About = () => {
               <div className={`discord ${neonOn && "on"}`}>
                 <DiscordCard />
               </div>
-              {/* <div className={`spotify ${neonOn && "on"}`}>
+              <div className={`spotify ${neonOn && "on"}`}>
                 <SpotifyCard />
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
