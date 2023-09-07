@@ -8,8 +8,6 @@ const SpotifyCard = () => {
 
   const { t } = useTranslation("global");
 
-  
-
   const randomSong = Math.floor(Math.random() * favouriteSongs.length)
 
     const { status } = useLanyard({
