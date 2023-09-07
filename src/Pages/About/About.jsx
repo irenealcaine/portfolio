@@ -48,37 +48,13 @@ const About = () => {
         <p>{t("aboutPage.description")}</p>
         <div className="container">
           <div className="work">
+
             <h2>{t("aboutPage.education")}</h2>
             <p>{t("aboutPage.educationSubtitle")}</p>
-            {/* <ul className="timeline">
-              {education.toReversed().map((edu, index) => (
-                <TimelineItem
-                  key={index}
-                  item={edu}
-                  index={index}
-                  isSpanish={isSpanish}
-                  colors={colors}
-                  neonOn={neonOn}
-                />
-              ))}
-            </ul> */}
 <ul className="timeline">{renderTimelineItems(education)}</ul>
 
             <h2>{t("aboutPage.experience")}</h2>
             <p>{t("aboutPage.experienceSubtitle")}</p>
-            {/* <ul className="timeline">
-              {experience.toReversed().map((exp, index) => (
-                <TimelineItem
-                  key={index}
-                  item={exp}
-                  index={index}
-                  isSpanish={isSpanish}
-                  colors={colors}
-                  neonOn={neonOn}
-                />
-              ))}
-            </ul> */}
-
 <ul className="timeline">{renderTimelineItems(experience)}</ul>
 
             <a
@@ -107,6 +83,7 @@ const About = () => {
                 />
               ))}
             </div>
+            
             <div className="others">
               <div className={`maps ${neonOn && "on"}`}>
                 <MapsCard />
