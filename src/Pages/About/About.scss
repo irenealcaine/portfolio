@@ -87,7 +87,7 @@
         margin-top: 40px;
 
         .discord,
-        .spotify, .maps {
+        .spotify, .maps, .birthday {
           border: 2px solid white;
           border-radius: 10px;
           padding: 5px 20px;
@@ -115,6 +115,9 @@
         .maps {
           --color: var(--yellow)
         }
+        .birthday{
+          --color: var(--pink)
+        }
       }
     }
   }
@@ -136,7 +139,7 @@
           justify-content: center;
 
           .discord,
-          .spotify, .maps {
+          .spotify, .maps, .birthday {
             width: 40%
           }
         }
@@ -173,7 +176,7 @@
           flex-direction: column;
 
           .discord,
-          .spotify, .maps {
+          .spotify, .maps, .birthday {
             width: 90%
           }
         }

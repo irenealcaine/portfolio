@@ -20,7 +20,8 @@
     "contact": "Contacto",
     "spotify":{
       "recent":"Escuchando"
-    }
+    },
+    "birthday": "Días hasta mi cumpleaños"
   },
   "portfolioPage": {
     "title": "Portafolio",
