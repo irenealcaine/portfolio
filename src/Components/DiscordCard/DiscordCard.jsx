@@ -12,11 +12,13 @@ const DiscordCard = () => {
     });
 
   return (
-    <a href="https://discordapp.com/users/952910556250136586" className="discordCard" target="_blank" rel="noreferrer">
+    <a href="https://discordapp.com/users/952910556250136586" 
+    className="discordCard" 
+    target="_blank" 
+    rel="noreferrer">
       <p className="title">
       {/* <Status />  */}
       {status?.discord_status}
-      {console.log(status)}
        <span><RiDiscordLine /> </span>
       </p>
       <h3 className="">

@@ -11,6 +11,7 @@ import { BsDownload } from "react-icons/bs";
 import SpotifyCard from "../../Components/SpotifyCard/SpotifyCard"
 import DiscordCard from "../../Components/DiscordCard/DiscordCard"
 import MapsCard from "../../Components/MapsCard/MapsCard";
+import BirthdayCard from "../../Components/BirthdayCard/BirthdayCard";
 
 const About = () => {
   useEffect(() => {
@@ -104,6 +105,9 @@ const About = () => {
               </div>
               <div className={`spotify ${neonOn && "on"}`}>
                 <SpotifyCard />
+              </div>
+              <div className={`birthday ${neonOn && "on"}`}>
+                <BirthdayCard />
               </div>
             </div>
           </div>
