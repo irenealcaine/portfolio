@@ -2,36 +2,13 @@ import { useTranslation } from "react-i18next";
 import { SlSocialSpotify } from "react-icons/sl"
 import "./SpotifyCard.scss"
 import { useLanyard } from "react-use-lanyard";
+import {favouriteSongs} from "../../Utils/Constants"
 
 const SpotifyCard = () => {
 
   const { t } = useTranslation("global");
 
-  const favouriteSongs =[
-    {
-      "song":"Melendi", 
-      "artist":"Caminando por la vida"
-    },{
-      "song":"Estopa", 
-      "artist":"Como Camarón"
-    },
-  {
-    "song": "Ricky Martin",
-    "artist": "Livin' la Vida Loca"
-  },
-  {
-    "song": "Chayanne",
-    "artist": "Torero"
-  },
-  {
-    "song": "Shakira",
-    "artist": "Ciega, Sordomuda"
-  },
-  {
-    "song": "Juanes",
-    "artist": "A Dios le Pido"
-  }
-  ]
+  
 
   const randomSong = Math.floor(Math.random() * favouriteSongs.length)
 
