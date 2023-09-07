@@ -1,0 +1,11 @@
+.mapsCard {
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    span {
+      font-size: 30px;
+    }
+  }
+}

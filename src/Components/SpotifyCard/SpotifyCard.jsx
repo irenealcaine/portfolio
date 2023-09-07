@@ -3,53 +3,39 @@ import { SlSocialSpotify } from "react-icons/sl"
 import SpotifyWebApi from "spotify-web-api-node";
 import "./SpotifyCard.scss"
 import { useEffect, useState } from "react";
+import { useLanyard } from "react-use-lanyard";
 
 
-const spotifyApi = new SpotifyWebApi({
-  clientId: process.env.CLIENT_ID,
-  clientSecret: process.env.CLIENT_SECRET,
-  redirectUri: process.env.REDIRECT_URI
-});
+// const spotifyApi = new SpotifyWebApi({
+//   clientId: process.env.CLIENT_ID,
+//   clientSecret: process.env.CLIENT_SECRET,
+//   redirectUri: process.env.REDIRECT_URI
+// });
 
 const SpotifyCard = () => {
 
   const { t } = useTranslation("global");
-
-
-  const [recentTrack, setRecentTrack] = useState(null);
-
-  useEffect(() => {
-    // Aquí obtienes la última canción escuchada del usuario
-    async function fetchRecentTrack() {
-      try {
-        const response = await spotifyApi.getMyRecentlyPlayedTracks({
-          limit: 1, // Obtener solo la última canción
-        });
-
-        if (response.body.items.length > 0) {
-          // Si hay canciones recientes, establece la última en el estado
-          setRecentTrack(response.body.items[0].track);
-        }
-      } catch (error) {
-        console.error("Error al obtener la canción reciente de Spotify:", error);
-      }
-    }
-
-    fetchRecentTrack();
-    console.log(recentTrack)
-  }, []);
-
+    const { status } = useLanyard({
+      userId: "952910556250136586",
+      socket: true,
+    });
 
   return (
-    <a href="https://developer.spotify.com/" className='spotifyCard'>
-
+    <a 
+    href={`https://open.spotify.com/track/${status?.spotify?.track_id}` || `https://open.spotify.com/track/6Qi1MNFHCLo4bVsV14MOmz`} 
+    target="_blank"
+    rel="noopener noreferrer" 
+    className='spotifyCard'
+    >
       <p className="title">{t("aboutPage.spotify.recent")} <span><SlSocialSpotify /> </span></p>
       <h3 className="">
-        {/* Nombre cancion */}
+        {status?.spotify?.song || "Libertad"}
       </h3>
+      <p className="">
+        {status?.spotify?.artist || "Nil Moliner"}
+      </p>
       <div>
       </div>
-
     </a>
   )
 }

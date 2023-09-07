@@ -10,6 +10,7 @@ import CV from "../../Assets/CV/CV_Irene_Alcaine.pdf";
 import { BsDownload } from "react-icons/bs";
 import SpotifyCard from "../../Components/SpotifyCard/SpotifyCard"
 import DiscordCard from "../../Components/DiscordCard/DiscordCard"
+import MapsCard from "../../Components/MapsCard/MapsCard";
 
 const About = () => {
   useEffect(() => {
@@ -97,6 +98,9 @@ const About = () => {
             <div className="others">
               <div className={`discord ${neonOn && "on"}`}>
                 <DiscordCard />
+              </div>
+              <div className={`maps ${neonOn && "on"}`}>
+                <MapsCard />
               </div>
               <div className={`spotify ${neonOn && "on"}`}>
                 <SpotifyCard />

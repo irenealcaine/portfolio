@@ -6,7 +6,7 @@ import { useLanyard } from "react-use-lanyard";
 const DiscordCard = () => {
 
 
-    const { loading, status } = useLanyard({
+    const { status } = useLanyard({
       userId: "952910556250136586",
       socket: true,
     });
@@ -16,6 +16,7 @@ const DiscordCard = () => {
       <p className="title">
       {/* <Status />  */}
       {status?.discord_status}
+      {console.log(status)}
        <span><RiDiscordLine /> </span>
       </p>
       <h3 className="">

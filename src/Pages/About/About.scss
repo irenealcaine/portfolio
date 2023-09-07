@@ -87,7 +87,7 @@
         margin-top: 40px;
 
         .discord,
-        .spotify {
+        .spotify, .maps {
           border: 2px solid white;
           border-radius: 10px;
           padding: 5px 20px;
@@ -112,6 +112,9 @@
         .spotify {
           --color: var(--green)
         }
+        .maps {
+          --color: var(--yellow)
+        }
       }
     }
   }
@@ -133,7 +136,7 @@
           justify-content: center;
 
           .discord,
-          .spotify {
+          .spotify, .maps {
             width: 40%
           }
         }
@@ -170,7 +173,7 @@
           flex-direction: column;
 
           .discord,
-          .spotify {
+          .spotify, .maps {
             width: 90%
           }
         }
