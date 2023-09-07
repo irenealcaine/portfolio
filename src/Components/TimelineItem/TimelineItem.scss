@@ -48,9 +48,10 @@
       padding: 5px 20px;
       display: inline-block;
     }
-
+    
     & p {
       margin-bottom: 10px;
+      border-bottom:1px solid white;
 
       span {
         font-weight: 700;
@@ -59,13 +60,18 @@
   }
 
   & .timeline-body {
+    padding-left:15px;
+    padding-right:15px;
     & p {
-      font-size: 14px;
+      font-size: 16px;
+      color: #bbb;
+      
     }
   }
 
   & .timeline-footer {
     margin-top: 10px;
+    border-top:1px solid white;
   }
 
   &.timeline-block-right {
@@ -73,7 +79,6 @@
     & ul {
       & li {
         margin-bottom: 5px;
-        text-indent: 0.5rem;
         display: flex;
         // justify-content: space-between;
         // clear: both;
@@ -88,8 +93,7 @@
       text-align: right;
 
       & li {
-        margin-bottom: 5px;
-        text-indent: 0.5rem;
+        margin-bottom: 12px;
         display: flex;
       }
     }
@@ -127,7 +131,7 @@
     padding: 0 10px;
 
     & .timeline-body {
-      width: 80%;
+      width: 95%;
     }
   }
 }

@@ -96,11 +96,11 @@ const About = () => {
               ))}
             </div>
             <div className="others">
-              <div className={`discord ${neonOn && "on"}`}>
-                <DiscordCard />
-              </div>
               <div className={`maps ${neonOn && "on"}`}>
                 <MapsCard />
+              </div>
+              <div className={`discord ${neonOn && "on"}`}>
+                <DiscordCard />
               </div>
               <div className={`spotify ${neonOn && "on"}`}>
                 <SpotifyCard />

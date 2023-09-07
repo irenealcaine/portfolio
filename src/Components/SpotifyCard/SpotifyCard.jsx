@@ -31,6 +31,7 @@ const SpotifyCard = () => {
       <h3 className="">
         {status?.spotify?.song || "Libertad"}
       </h3>
+      {" - "}
       <p className="">
         {status?.spotify?.artist || "Nil Moliner"}
       </p>
