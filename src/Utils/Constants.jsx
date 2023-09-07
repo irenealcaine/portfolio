@@ -9,14 +9,14 @@ export const colors = [
 ];
 
 
-export const favouriteSongs =[
-    {
-      "song":"Melendi", 
-      "artist":"Caminando por la vida"
-    },{
-      "song":"Estopa", 
-      "artist":"Como Camarón"
-    },
+export const favouriteSongs = [
+  {
+    "song": "Melendi",
+    "artist": "Caminando por la vida"
+  }, {
+    "song": "Estopa",
+    "artist": "Como Camarón"
+  },
   {
     "song": "Ricky Martin",
     "artist": "Livin' la Vida Loca"
@@ -33,11 +33,11 @@ export const favouriteSongs =[
     "song": "Juanes",
     "artist": "A Dios le Pido"
   }
-  ]
+]
 
-  export function calculateDaysUntilBirthday() {
-    const today = new Date();
-    const year = today.getFullYear();
-    const birthday = new Date(year + 1, 6, 26);
-    return Math.floor((birthday - today) / (1000 * 60 * 60 * 24));
-  }
+export function calculateDaysUntilBirthday() {
+  const today = new Date();
+  const year = today.getFullYear();
+  const birthday = new Date(year + 1, 6, 26);
+  return Math.floor((birthday - today) / (1000 * 60 * 60 * 24));
+}

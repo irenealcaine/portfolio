@@ -51,11 +51,11 @@ const About = () => {
 
             <h2>{t("aboutPage.education")}</h2>
             <p>{t("aboutPage.educationSubtitle")}</p>
-<ul className="timeline">{renderTimelineItems(education)}</ul>
+            <ul className="timeline">{renderTimelineItems(education)}</ul>
 
             <h2>{t("aboutPage.experience")}</h2>
             <p>{t("aboutPage.experienceSubtitle")}</p>
-<ul className="timeline">{renderTimelineItems(experience)}</ul>
+            <ul className="timeline">{renderTimelineItems(experience)}</ul>
 
             <a
               className={`cv ${neonOn && "on"}`}
@@ -83,7 +83,7 @@ const About = () => {
                 />
               ))}
             </div>
-            
+
             <div className="others">
               <div className={`maps ${neonOn && "on"}`}>
                 <MapsCard />

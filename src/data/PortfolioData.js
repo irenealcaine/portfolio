@@ -45,26 +45,6 @@ export const projects = [
         "Website that offers pet sitting services in Llíria, Valencia, providing information about various services for dogs. It showcases reviews from satisfied clients and a photo gallery of the hosted dogs, along with contact details.",
     },
   },
-  // {
-  //   id: "amigaria",
-  //   images: {
-  //     main: amigaria,
-  //     icon: amigarialogo,
-  //   },
-  //   tech: ["VueJS", "Sass", "Firebase"],
-  //   category: "web",
-  //   github: "https://github.com/AmigariaWeb/web-app",
-  //   web: "https://amigaria-app.vercel.app/login",
-  //   es: {
-  //     title: "Amigaria",
-  //     description:
-  //       "Web de integración social 100% accesible y para todos los públicos. Red social donde colgar en forma de ticket tus peticiones de ayuda, que cuando otro usuario acepta, ésta se elimina del tablón para el resto de usuarios. Cada ticket consta de un título, una breve descripción, fecha, categoría y autor. Hay una sección personal donde aparecen tus tickets, los cuales se pueden editar o borrar y los de otros usuarios que tu hayas aceptado.",
-  //   },
-  //   en: {
-  //     title: "Pet nanny",
-  //     description: "Pets nursery",
-  //   },
-  // },
   {
     id: "el-rincon-de-no-pensar",
     images: {
