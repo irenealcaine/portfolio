@@ -1,4 +1,5 @@
 .about {
+
   h1,
   h2 {
     filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
@@ -10,75 +11,175 @@
     margin: 15px 0;
   }
 
-  > p {
+  >p {
     margin: 15px auto 30px auto;
     width: 70%;
   }
 
-  .timeline {
-    width: 100%;
-    padding: 20px 0;
-    margin: 0px auto;
-    position: relative;
-    overflow: hidden;
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -1px;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(transparent 0%, var(--pink), transparent 90%);
-      z-index: 1;
+    .work {
+      padding: 0 20px;
+
+      .timeline {
+        width: 100%;
+        padding: 20px 0;
+        margin: 0px auto;
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -1px;
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(transparent 0%, var(--pink), transparent 90%);
+          z-index: 1;
+        }
+      }
+
+      .cv {
+        width: 100%;
+        display: block;
+        text-align: end;
+        padding: 0 40px;
+        margin-bottom: 50px;
+
+        &.on {
+          filter: drop-shadow(0 0 2px var(--pink)) drop-shadow(0 0 8px var(--pink));
+          transition: all 0.2s ease;
+
+          &:hover {
+            filter: drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
+          }
+        }
+      }
+
     }
-  }
 
-  .cv {
-    width: 100%;
-    display: block;
-    text-align: end;
-    padding: 0 40px;
-    margin-bottom: 50px;
-    &.on {
-      filter: drop-shadow(0 0 2px var(--pink)) drop-shadow(0 0 8px var(--pink));
-      transition: all 0.2s ease;
+    .personal {
+      border-right: 1px solid #f0e2;
 
-      &:hover {
-        filter: drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--pink))
-          drop-shadow(0 0 10px var(--pink));
+      .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 50px auto;
+        text-decoration: underline;
+        // border-bottom: 1px solid white;
+        padding-bottom: 50px;
+      }
+
+      .others {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+
+        .discord,
+        .spotify, .maps {
+          border: 2px solid white;
+          border-radius: 10px;
+          padding: 5px 20px;
+          display: inline-block;
+          cursor: pointer;
+          width: 70%;
+
+          &.on {
+            filter: drop-shadow(0 0 2px var(--color)) drop-shadow(0 0 8px var(--color));
+            transition: all 0.2s ease;
+
+            &:hover {
+              filter: drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
+            }
+          }
+        }
+
+        .discord {
+          --color: var(--purple)
+        }
+
+        .spotify {
+          --color: var(--green)
+        }
+        .maps {
+          --color: var(--yellow)
+        }
       }
     }
   }
+}
 
-  .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 50px auto;
-    text-decoration: underline;
+@media screen and (max-width: 1200px) {
+  .about {
+    .container {
+      flex-direction: column;
+
+      .personal {
+        border:none;
+        .contact {
+          justify-content: center;
+        }
+
+        .others {
+          flex-direction: row;
+          justify-content: center;
+
+          .discord,
+          .spotify, .maps {
+            width: 40%
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
   .about {
-    > p {
+    >p {
       width: 90%;
     }
-    .timeline {
-      overflow: visible;
-      &:before {
-        left: 4px;
-        width: 2px;
+
+    .container {
+      .work {
+        .timeline {
+          overflow: visible;
+
+          &:before {
+            left: 4px;
+            width: 2px;
+          }
+        }
+      }
+
+      .personal {
+        .contact {
+          gap: 15px;
+          margin: 30px auto;
+        }
+
+        .others {
+          flex-direction: column;
+
+          .discord,
+          .spotify, .maps {
+            width: 90%
+          }
+        }
       }
     }
-    .contact {
-      gap: 15px;
-      margin: 30px auto;
-    }
+
+
   }
 }
