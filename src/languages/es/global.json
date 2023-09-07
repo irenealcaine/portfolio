@@ -18,8 +18,9 @@
     "educationSubtitle": "Desde principios de 2022, he estado saciando mi curiosidad y aprendiendo por mi cuenta. Además, he realizado algunos cursos de frontend y publicación de páginas web.",
     "CV": "Descagar CV",
     "contact": "Contacto",
-    "spotify":{
-      "recent":"Escuchando"
+    "spotify": {
+      "current": "Sonando ahora",
+      "recent": "Escuchado recientemente"
     },
     "birthday": "Días hasta mi cumpleaños"
   },
