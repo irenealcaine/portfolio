@@ -1,5 +1,3 @@
-// import amigaria from "../Assets/Images/amigaria.png";
-// import amigarialogo from "../Assets/Images/amigarialogo.svg";
 import mascotas from "../Assets/Images/mascotas.PNG";
 import mascotaslogo from "../Assets/Images/mascotaslogo.png";
 import crypto from "../Assets/Images/crypto.PNG";
@@ -22,6 +20,9 @@ import todo from "../Assets/Images/todo.PNG";
 import todologo from "../Assets/Images/todologo.png";
 import gallery from "../Assets/Images/gallery.png";
 import gallerylogo from "../Assets/Images/gallerylogo.png";
+import casinoslogo from "../Assets/Images/escudo.png"
+import patrimoni from "../Assets/Images/patrimoni.PNG"
+import directori from "../Assets/Images/directori.PNG"
 
 export const projects = [
   {
@@ -45,26 +46,46 @@ export const projects = [
         "Website that offers pet sitting services in Llíria, Valencia, providing information about various services for dogs. It showcases reviews from satisfied clients and a photo gallery of the hosted dogs, along with contact details.",
     },
   },
-  // {
-  //   id: "amigaria",
-  //   images: {
-  //     main: amigaria,
-  //     icon: amigarialogo,
-  //   },
-  //   tech: ["VueJS", "Sass", "Firebase"],
-  //   category: "web",
-  //   github: "https://github.com/AmigariaWeb/web-app",
-  //   web: "https://amigaria-app.vercel.app/login",
-  //   es: {
-  //     title: "Amigaria",
-  //     description:
-  //       "Web de integración social 100% accesible y para todos los públicos. Red social donde colgar en forma de ticket tus peticiones de ayuda, que cuando otro usuario acepta, ésta se elimina del tablón para el resto de usuarios. Cada ticket consta de un título, una breve descripción, fecha, categoría y autor. Hay una sección personal donde aparecen tus tickets, los cuales se pueden editar o borrar y los de otros usuarios que tu hayas aceptado.",
-  //   },
-  //   en: {
-  //     title: "Pet nanny",
-  //     description: "Pets nursery",
-  //   },
-  // },
+  {
+    id: "directorio-de-empresas",
+    images: {
+      main: directori,
+      icon: casinoslogo,
+    },
+    tech: ["WordPress"],
+    category: "web",
+    web: "https://directori.aytocasinos.es/",
+    es: {
+      title: "Comercios de Casinos",
+      description:
+        "Web que ofrece información sobre los comercios de Casinos, Valencia, ordenados por categorías. Se indican los datos de contacto, horarios y servicios de los diferentes negocios.",
+    },
+    en: {
+      title: "Businesses in Casinos",
+      description:
+        "Website that provides information about businesses in Casinos, Valencia, sorted by categories. Contact details, opening hours, and services of various businesses are provided.",
+    },
+  },
+  {
+    id: "patrimonio-de-casinos",
+    images: {
+      main: patrimoni,
+      icon: casinoslogo,
+    },
+    tech: ["WordPress"],
+    category: "web",
+    web: "https://patrimoni.aytocasinos.es/",
+    es: {
+      title: "Patrimonio de Casinos",
+      description:
+        "Web que ofrece información sobre el pueblo de Casinos, Valencia. Cuenta la historia del pueblo y sus fiestas y costumbres, además de mostrar los diferentes puntos de interés y rutas de senderismo.",
+    },
+    en: {
+      title: "Heritage of Casinos",
+      description:
+        "Website that provides information about the town of Casinos, Valencia. It tells the history of the town and its festivals and customs, in addition to showcasing various points of interest and hiking trails.",
+    },
+  },
   {
     id: "el-rincon-de-no-pensar",
     images: {

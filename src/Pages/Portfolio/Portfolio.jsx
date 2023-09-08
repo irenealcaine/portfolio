@@ -4,56 +4,25 @@ import { projects } from "../../data/PortfolioData";
 import { useTranslation } from "react-i18next";
 import "./Portfolio.scss";
 import Modal from "../../Components/Modal/Modal";
-import { FaReact, FaVuejs, FaSass } from "react-icons/fa";
-import {
-  BiLogoJavascript,
-  BiLogoTailwindCss,
-  BiLogoFirebase,
-} from "react-icons/bi";
-import { SiMui } from "react-icons/si";
-import { RiBootstrapLine } from "react-icons/ri";
+
 import { NeonOnContext } from "../../Context/neonOnContext";
+import { colors, filterOptions } from "../../Utils/Constants";
 
 const Portfolio = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
+
   const { i18n, t } = useTranslation("global");
   const [selectedProject, setSelectedProject] = useState(null);
   const { neonOn } = useContext(NeonOnContext);
-
-  const filterOptions = [
-    { text: "Todos", value: "all" },
-
-    { icon: <BiLogoJavascript />, value: "JavaScript" },
-    { icon: <FaReact />, value: "ReactJS" },
-    { icon: <FaVuejs />, value: "VueJS" },
-
-    { icon: <BiLogoTailwindCss />, value: "TailwindCSS" },
-    { icon: <SiMui />, value: "MaterialUI" },
-    { icon: <FaSass />, value: "Sass" },
-    { icon: <RiBootstrapLine />, value: "Bootstrap" },
-
-    { icon: <BiLogoFirebase />, value: "Firebase" },
-  ];
-
-  const colors = [
-    "pink",
-    "green",
-    "yellow",
-    "lightBlue",
-    "orange",
-    "red",
-    "purple",
-  ];
 
   const renderProject = (project) => (
     <div
       key={project.id}
       onClick={() => setSelectedProject(project)}
-      className={`project ${
-        colors[Math.floor(Math.random() * colors.length)]
-      } ${neonOn && "on"}`}
+      className={`project ${colors[Math.floor(Math.random() * colors.length)]
+        } ${neonOn && "on"}`}
     >
       <h3>{i18n.language === "es" ? project.es.title : project.en.title}</h3>
       <div className="project-body">
@@ -102,6 +71,7 @@ const Portfolio = () => {
     <MainLayout>
       <div className="portfolio">
         <h1>{t("portfolioPage.title")}</h1>
+        
         <div className="selector">
           {filterOptions.map((option) => {
             return option.icon ? (
@@ -121,17 +91,20 @@ const Portfolio = () => {
             );
           })}
         </div>
+
         <h2>{t("portfolioPage.webs")}</h2>
-        {/* <hr /> */}
         <div className="projects">{renderProjectsByCategory("web")}</div>
+
         <h2>{t("portfolioPage.projects")}</h2>
         <div className="projects">{renderProjectsByCategory("project")}</div>
+
         {selectedProject && (
           <Modal
             selectedProject={selectedProject}
             setSelectedProject={setSelectedProject}
           />
         )}
+
       </div>
     </MainLayout>
   );

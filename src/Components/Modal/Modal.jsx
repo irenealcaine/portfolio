@@ -18,12 +18,12 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
       </p>
       <img src={selectedProject.images.main} alt="enlarged pic" />
       {i18n.language === "es" ? (
-        <div>
+        <div className="content">
           <h2>{selectedProject.es.title}</h2>
           <p>{selectedProject.es.description}</p>
         </div>
       ) : (
-        <div>
+        <div className="content">
           <h2>{selectedProject.en.title}</h2>
           <p>{selectedProject.en.description}</p>
         </div>
@@ -41,9 +41,11 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
         <a href={selectedProject.web}>
           {t("portfolioPage.buttons.web")} <AiOutlineLink />
         </a>
+        {selectedProject.github &&
         <a href={selectedProject.github}>
           {t("portfolioPage.buttons.github")} <AiOutlineLink />
         </a>
+        }
       </div>
     </div>
   );
