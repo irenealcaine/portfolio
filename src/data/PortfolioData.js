@@ -21,6 +21,8 @@ import todologo from "../Assets/Images/todologo.png";
 import gallery from "../Assets/Images/gallery.png";
 import gallerylogo from "../Assets/Images/gallerylogo.png";
 import casinoslogo from "../Assets/Images/escudo.png"
+import patrimoni from "../Assets/Images/patrimoni.PNG"
+import directori from "../Assets/Images/directori.PNG"
 
 export const projects = [
   {
@@ -47,7 +49,7 @@ export const projects = [
   {
     id: "directorio-de-empresas",
     images: {
-      main: mascotas,
+      main: directori,
       icon: casinoslogo,
     },
     tech: ["WordPress"],
@@ -67,7 +69,7 @@ export const projects = [
   {
     id: "patrimonio-de-casinos",
     images: {
-      main: mascotas,
+      main: patrimoni,
       icon: casinoslogo,
     },
     tech: ["WordPress"],
