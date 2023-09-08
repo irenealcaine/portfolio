@@ -28,15 +28,23 @@
     filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px red);
   }
 
-  & img {
+  & .smallPic {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 35px;
+    filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
+  }
+
+  & .enlargedPic {
     width: 90%;
     max-width: 700px;
     border-radius: 15px;
   }
 
-  & .content{
-    width:80%;
-    margin:0 auto
+  & .content {
+    width: 80%;
+    margin: 0 auto
   }
 
   &::-webkit-scrollbar {
@@ -52,9 +60,10 @@
       background: var(--blue);
     }
   }
+
   & .techs {
-    width:80%;
-    margin:15px auto;
+    width: 80%;
+    margin: 15px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -84,14 +93,15 @@
       font-size: 25px;
     }
 
-    & img{
-      width:100%;
+    & img {
+      width: 100%;
       // margin-left: -20px;
       // margin-right: -20px;
     }
-    & .content{
-    width:100%;
-  }
+
+    & .content {
+      width: 100%;
+    }
 
     & .techs {
       justify-content: center;

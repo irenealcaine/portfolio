@@ -24,27 +24,28 @@ const Portfolio = () => {
       className={`project ${colors[Math.floor(Math.random() * colors.length)]
         } ${neonOn && "on"}`}
     >
-        <img className="favicon" src={project.images.icon} alt={`${project.en.title} icon`} />
-      <div className="project-body">
+      <div className="cover"></div>
+      <h3 className="title">{i18n.language === "es" ? project.es.title : project.en.title}</h3>
+      <img className="favicon" src={project.images.icon} alt={`${project.en.title} icon`} />
+      {/* <div className="project-body"> */}
 
-      <h3>{i18n.language === "es" ? project.es.title : project.en.title}</h3>
-        <div className="techs">
-          {project.tech.map((tech, index) => {
-            const matchingOption = filterOptions.find(
-              (option) => option.value === tech
+      <div className="techs">
+        {project.tech.map((tech, index) => {
+          const matchingOption = filterOptions.find(
+            (option) => option.value === tech
+          );
+          if (matchingOption) {
+            return (
+              <div key={index} className="tech">
+                {matchingOption.icon}
+              </div>
             );
-            if (matchingOption) {
-              return (
-                <div key={index} className="tech">
-                  {matchingOption.icon}
-                </div>
-              );
-            } else {
-              return <p key={index}>{tech}</p>;
-            }
-          })}
-        </div>
+          } else {
+            return <p key={index}>{tech}</p>;
+          }
+        })}
       </div>
+      {/* </div> */}
     </div>
     // <div
     //   key={project.id}
@@ -99,7 +100,7 @@ const Portfolio = () => {
     <MainLayout>
       <div className="portfolio">
         <h1>{t("portfolioPage.title")}</h1>
-        
+
         <div className="selector">
           {filterOptions.map((option) => {
             return option.icon ? (

@@ -16,7 +16,8 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
         {" "}
         <IoIosCloseCircleOutline />{" "}
       </p>
-      <img src={selectedProject.images.main} alt="enlarged pic" />
+      <img className="smallPic" src={selectedProject.images.icon} alt="small pic" />
+      <img className="enlargedPic" src={selectedProject.images.main} alt="enlarged pic" />
       {i18n.language === "es" ? (
         <div className="content">
           <h2>{selectedProject.es.title}</h2>
@@ -42,9 +43,9 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
           {t("portfolioPage.buttons.web")} <AiOutlineLink />
         </a>
         {selectedProject.github &&
-        <a href={selectedProject.github}>
-          {t("portfolioPage.buttons.github")} <AiOutlineLink />
-        </a>
+          <a href={selectedProject.github}>
+            {t("portfolioPage.buttons.github")} <AiOutlineLink />
+          </a>
         }
       </div>
     </div>
