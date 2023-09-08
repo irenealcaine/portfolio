@@ -25,27 +25,7 @@ import patrimoni from "../Assets/Images/patrimoni.PNG"
 import directori from "../Assets/Images/directori.PNG"
 
 export const projects = [
-  {
-    id: "canguro-de-mascotas",
-    images: {
-      main: mascotas,
-      icon: mascotaslogo,
-    },
-    tech: ["ReactJS", "TailwindCSS"],
-    category: "web",
-    github: "https://github.com/irenealcaine/cangurodemascotas",
-    web: "https://www.canguromascotas.com",
-    es: {
-      title: "Canguro de mascotas",
-      description:
-        "Web que ofrece servicios de canguro de mascotas en Llíria, Valencia, donde se ofrence información sobre los diferentes servicios para perros. Se muestran opiniones de clientes satisfechos y una galería de fotos de los perros alojados, así como datos de contacto.",
-    },
-    en: {
-      title: "Pet sitter",
-      description:
-        "Website that offers pet sitting services in Llíria, Valencia, providing information about various services for dogs. It showcases reviews from satisfied clients and a photo gallery of the hosted dogs, along with contact details.",
-    },
-  },
+
   {
     id: "directorio-de-empresas",
     images: {
@@ -84,6 +64,27 @@ export const projects = [
       title: "Heritage of Casinos",
       description:
         "Website that provides information about the town of Casinos, Valencia. It tells the history of the town and its festivals and customs, in addition to showcasing various points of interest and hiking trails.",
+    },
+  },
+  {
+    id: "canguro-de-mascotas",
+    images: {
+      main: mascotas,
+      icon: mascotaslogo,
+    },
+    tech: ["ReactJS", "TailwindCSS"],
+    category: "web",
+    github: "https://github.com/irenealcaine/cangurodemascotas",
+    web: "https://www.canguromascotas.com",
+    es: {
+      title: "Canguro de mascotas",
+      description:
+        "Web que ofrece servicios de canguro de mascotas en Llíria, Valencia, donde se ofrence información sobre los diferentes servicios para perros. Se muestran opiniones de clientes satisfechos y una galería de fotos de los perros alojados, así como datos de contacto.",
+    },
+    en: {
+      title: "Pet sitter",
+      description:
+        "Website that offers pet sitting services in Llíria, Valencia, providing information about various services for dogs. It showcases reviews from satisfied clients and a photo gallery of the hosted dogs, along with contact details.",
     },
   },
   {
