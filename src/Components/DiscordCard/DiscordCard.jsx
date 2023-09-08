@@ -2,7 +2,6 @@ import { RiDiscordLine } from "react-icons/ri";
 import "./DiscordCard.scss";
 import { useLanyard } from "react-use-lanyard";
 
-
 const DiscordCard = () => {
 
     const { status } = useLanyard({

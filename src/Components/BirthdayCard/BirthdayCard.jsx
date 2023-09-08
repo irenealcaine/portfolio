@@ -9,13 +9,12 @@ const BirthdayCard = () => {
   const { t } = useTranslation("global");
   const [days] = useState(calculateDaysUntilBirthday())
 
-
   return (
     <a
-    href="https://sendwishonline.com/en/group-cards/congratulation"
-    target="_blank" 
-    rel="noreferrer"
-   className="birthdayCard"
+      href="https://sendwishonline.com/en/group-cards/congratulation"
+      target="_blank" 
+      rel="noreferrer"
+      className="birthdayCard"
     >
       <p className="title">
         {t("aboutPage.birthday")}
