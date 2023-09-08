@@ -3,6 +3,7 @@ import {
   BiLogoJavascript,
   BiLogoTailwindCss,
   BiLogoFirebase,
+  BiLogoWordpress
 } from "react-icons/bi";
 import { SiMui } from "react-icons/si";
 import { RiBootstrapLine } from "react-icons/ri";
@@ -31,6 +32,7 @@ export const colors = [
     { icon: <RiBootstrapLine />, value: "Bootstrap" },
 
     { icon: <BiLogoFirebase />, value: "Firebase" },
+    { icon: <BiLogoWordpress />, value: "WordPress" },
   ];
 
 

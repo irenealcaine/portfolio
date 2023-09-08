@@ -1,5 +1,3 @@
-// import amigaria from "../Assets/Images/amigaria.png";
-// import amigarialogo from "../Assets/Images/amigarialogo.svg";
 import mascotas from "../Assets/Images/mascotas.PNG";
 import mascotaslogo from "../Assets/Images/mascotaslogo.png";
 import crypto from "../Assets/Images/crypto.PNG";
@@ -22,6 +20,7 @@ import todo from "../Assets/Images/todo.PNG";
 import todologo from "../Assets/Images/todologo.png";
 import gallery from "../Assets/Images/gallery.png";
 import gallerylogo from "../Assets/Images/gallerylogo.png";
+import casinoslogo from "../Assets/Images/escudo.png"
 
 export const projects = [
   {
@@ -43,6 +42,46 @@ export const projects = [
       title: "Pet sitter",
       description:
         "Website that offers pet sitting services in Llíria, Valencia, providing information about various services for dogs. It showcases reviews from satisfied clients and a photo gallery of the hosted dogs, along with contact details.",
+    },
+  },
+  {
+    id: "directorio-de-empresas",
+    images: {
+      main: mascotas,
+      icon: casinoslogo,
+    },
+    tech: ["WordPress"],
+    category: "web",
+    web: "https://directori.aytocasinos.es/",
+    es: {
+      title: "Comercios de Casinos",
+      description:
+        "Web que ofrece información sobre los comercios de Casinos, Valencia, ordenados por categorías. Se indican los datos de contacto, horarios y servicios de los diferentes negocios.",
+    },
+    en: {
+      title: "Businesses in Casinos",
+      description:
+        "Website that provides information about businesses in Casinos, Valencia, sorted by categories. Contact details, opening hours, and services of various businesses are provided.",
+    },
+  },
+  {
+    id: "patrimonio-de-casinos",
+    images: {
+      main: mascotas,
+      icon: casinoslogo,
+    },
+    tech: ["WordPress"],
+    category: "web",
+    web: "https://patrimoni.aytocasinos.es/",
+    es: {
+      title: "Patrimonio de Casinos",
+      description:
+        "Web que ofrece información sobre el pueblo de Casinos, Valencia. Cuenta la historia del pueblo y sus fiestas y costumbres, además de mostrar los diferentes puntos de interés y rutas de senderismo.",
+    },
+    en: {
+      title: "Heritage of Casinos",
+      description:
+        "Website that provides information about the town of Casinos, Valencia. It tells the history of the town and its festivals and customs, in addition to showcasing various points of interest and hiking trails.",
     },
   },
   {

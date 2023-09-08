@@ -41,9 +41,11 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
         <a href={selectedProject.web}>
           {t("portfolioPage.buttons.web")} <AiOutlineLink />
         </a>
+        {selectedProject.github &&
         <a href={selectedProject.github}>
           {t("portfolioPage.buttons.github")} <AiOutlineLink />
         </a>
+        }
       </div>
     </div>
   );
