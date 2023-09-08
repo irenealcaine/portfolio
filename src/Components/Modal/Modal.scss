@@ -34,6 +34,11 @@
     border-radius: 15px;
   }
 
+  & .content{
+    width:80%;
+    margin:0 auto
+  }
+
   &::-webkit-scrollbar {
     width: 10px;
     margin: 5px;
@@ -48,8 +53,8 @@
     }
   }
   & .techs {
-    margin-top: 15px;
-    width: 100%;
+    width:80%;
+    margin:15px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -84,9 +89,13 @@
       // margin-left: -20px;
       // margin-right: -20px;
     }
+    & .content{
+    width:100%;
+  }
 
     & .techs {
       justify-content: center;
+      width: 100%
     }
 
     & .links {
