@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { LiaBirthdayCakeSolid } from "react-icons/lia"
 import "./BirthdayCard.scss"
 import {useState} from "react"
-import { calculateDaysUntilBirthday } from "../../Utils/Constants";
+import { calculateDaysUntilBirthday } from "../../Utils/Functions";
 
 const BirthdayCard = () => {
 

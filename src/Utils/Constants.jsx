@@ -1,3 +1,12 @@
+import { FaReact, FaVuejs, FaSass } from "react-icons/fa";
+import {
+  BiLogoJavascript,
+  BiLogoTailwindCss,
+  BiLogoFirebase,
+} from "react-icons/bi";
+import { SiMui } from "react-icons/si";
+import { RiBootstrapLine } from "react-icons/ri";
+
 export const colors = [
   "blue",
   "green",
@@ -6,7 +15,25 @@ export const colors = [
   "orange",
   "red",
   "purple",
+  "pink"
 ];
+
+export const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+ export const filterOptions = [
+    { text: "Todos", value: "all" },
+
+    { icon: <BiLogoJavascript />, value: "JavaScript" },
+    { icon: <FaReact />, value: "ReactJS" },
+    { icon: <FaVuejs />, value: "VueJS" },
+
+    { icon: <BiLogoTailwindCss />, value: "TailwindCSS" },
+    { icon: <SiMui />, value: "MaterialUI" },
+    { icon: <FaSass />, value: "Sass" },
+    { icon: <RiBootstrapLine />, value: "Bootstrap" },
+
+    { icon: <BiLogoFirebase />, value: "Firebase" },
+  ];
 
 
 export const favouriteSongs = [
@@ -34,10 +61,3 @@ export const favouriteSongs = [
     "artist": "A Dios le Pido"
   }
 ]
-
-export function calculateDaysUntilBirthday() {
-  const today = new Date();
-  const year = today.getFullYear();
-  const birthday = new Date(year + 1, 6, 26);
-  return Math.floor((birthday - today) / (1000 * 60 * 60 * 24));
-}
