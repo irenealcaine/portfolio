@@ -1,7 +1,6 @@
 import "./Modal.scss";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { useTranslation } from "react-i18next";
-import { AiOutlineLink } from "react-icons/ai";
 import {TbExternalLink} from "react-icons/tb";
 import {FiGithub} from "react-icons/fi"
 
