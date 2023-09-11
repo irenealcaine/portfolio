@@ -24,8 +24,8 @@
     top: 20px;
     right: 20px;
     font-size: 35px;
-    color: rgb(255, 112, 112);
-    filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px red);
+    color: white;
+    filter: drop-shadow(0 0 1px var(--red)) drop-shadow(0 0 5px var(--red)) drop-shadow(0 0 10px var(--red));
   }
 
   & .smallPic {
