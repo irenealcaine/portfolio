@@ -27,7 +27,6 @@ const Portfolio = () => {
       <div className="cover"></div>
       <h3 className="title">{i18n.language === "es" ? project.es.title : project.en.title}</h3>
       <img className="favicon" src={project.images.icon} alt={`${project.en.title} icon`} />
-      {/* <div className="project-body"> */}
 
       <div className="techs">
         {project.tech.map((tech, index) => {
@@ -45,36 +44,8 @@ const Portfolio = () => {
           }
         })}
       </div>
-      {/* </div> */}
-    </div>
-    // <div
-    //   key={project.id}
-    //   onClick={() => setSelectedProject(project)}
-    //   className={`project ${colors[Math.floor(Math.random() * colors.length)]
-    //     } ${neonOn && "on"}`}
-    // >
-    //   <h3>{i18n.language === "es" ? project.es.title : project.en.title}</h3>
-    //   <div className="project-body">
-    //     <img src={project.images.icon} alt={`${project.en.title} icon`} />
 
-    //     <div className="techs">
-    //       {project.tech.map((tech, index) => {
-    //         const matchingOption = filterOptions.find(
-    //           (option) => option.value === tech
-    //         );
-    //         if (matchingOption) {
-    //           return (
-    //             <div key={index} className="tech">
-    //               {matchingOption.icon}
-    //             </div>
-    //           );
-    //         } else {
-    //           return <p key={index}>{tech}</p>;
-    //         }
-    //       })}
-    //     </div>
-    //   </div>
-    // </div>
+    </div>
   );
 
   const [filter, setFilter] = useState("all");

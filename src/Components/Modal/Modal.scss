@@ -84,15 +84,23 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+
+    & .link{
+      
+    transition: .3s;
+    filter: drop-shadow(0 0 1px var(--blue));
+    
+      &:hover{
+      filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
+    }
+  }
   }
 }
 
 @media screen and (max-width: 768px) {
   .backdrop {
     border: 3px solid #ccc;
-  padding:  0px;
-  padding-bottom: 30px;
-
+  padding: 30px;
 
     & .closeButton {
       top: 5px;
@@ -107,11 +115,11 @@
 
     & .enlargedPic {
       width: 100%;
-      border-radius: 0px;
+      border-radius:10px;
     }
 
     & .content {
-      width: 80%;
+      width: 100%;
     }
 
     & .techs {
@@ -121,9 +129,13 @@
 
     & .links {
       width: 80%;
-      padding: 10px;
-      flex-direction: column;
+     margin-top: 10px;
       gap: 10px;
+      font-size: 25px;
+
+      span{
+        display: none;
+      }
     }
   }
 }

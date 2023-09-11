@@ -2,6 +2,8 @@ import "./Modal.scss";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 import { AiOutlineLink } from "react-icons/ai";
+import {TbExternalLink} from "react-icons/tb";
+import {FiGithub} from "react-icons/fi"
 
 const Modal = ({ selectedProject, setSelectedProject }) => {
   const { i18n, t } = useTranslation("global");
@@ -18,6 +20,18 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
       </p>
       <img className="smallPic" src={selectedProject.images.icon} alt="small pic" />
       <img className="enlargedPic" src={selectedProject.images.main} alt="enlarged pic" />
+      
+<div className="links">
+        <a className="link" href={selectedProject.web}>
+          <span>{t("portfolioPage.buttons.web")}</span> <TbExternalLink />
+        </a>
+        {selectedProject.github &&
+          <a className="link" href={selectedProject.github}>
+            <span>{t("portfolioPage.buttons.github")}</span> <FiGithub />
+          </a>
+        }
+      </div>
+
       {i18n.language === "es" ? (
         <div className="content">
           <h2>{selectedProject.es.title}</h2>
@@ -29,8 +43,7 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
           <p>{selectedProject.en.description}</p>
         </div>
       )}
-      {/* <h2>{i18n.language === "es" ? selectedProject.es.title : selectedProject.en.title}</h2>
-      <p>{i18n.language === "es" ? selectedProject.es.description : selectedProject.en.description}</p> */}
+
       <div className="techs">
         {selectedProject.tech.map((tech, index) => (
           <p key={index} className="tech">
@@ -38,16 +51,7 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
           </p>
         ))}
       </div>
-      <div className="links">
-        <a href={selectedProject.web}>
-          {t("portfolioPage.buttons.web")} <AiOutlineLink />
-        </a>
-        {selectedProject.github &&
-          <a href={selectedProject.github}>
-            {t("portfolioPage.buttons.github")} <AiOutlineLink />
-          </a>
-        }
-      </div>
+      
     </div>
   );
 };
