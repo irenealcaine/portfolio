@@ -24,15 +24,15 @@
     top: 20px;
     right: 20px;
     font-size: 35px;
-    color: rgb(255, 112, 112);
-    filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px red);
+    color: white;
+    filter: drop-shadow(0 0 1px var(--red)) drop-shadow(0 0 5px var(--red)) drop-shadow(0 0 10px var(--red));
   }
 
   & .smallPic {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 35px;
+    width: 50px;
     filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
   }
 
@@ -40,6 +40,10 @@
     width: 90%;
     max-width: 700px;
     border-radius: 15px;
+  }
+
+  h2{
+    margin-top: 30px;
   }
 
   & .content {
@@ -80,23 +84,38 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+
+    & .link{
+      
+    transition: .3s;
+    filter: drop-shadow(0 0 1px var(--blue));
+    
+      &:hover{
+      filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
+    }
+  }
   }
 }
 
 @media screen and (max-width: 768px) {
   .backdrop {
     border: 3px solid #ccc;
+  padding: 30px;
 
     & .closeButton {
-      top: 15px;
-      right: 15px;
+      top: 5px;
+      right: 5px;
       font-size: 25px;
     }
+    & .smallPic {
+    top: 5px;
+    left: 5px;
+    width: 25px;
+  }
 
-    & img {
+    & .enlargedPic {
       width: 100%;
-      // margin-left: -20px;
-      // margin-right: -20px;
+      border-radius:10px;
     }
 
     & .content {
@@ -109,10 +128,14 @@
     }
 
     & .links {
-      width: 100%;
-      padding-left: 10px;
-      flex-direction: column;
+      width: 80%;
+      margin-top: 10px;
       gap: 10px;
+      font-size: 25px;
+
+      span{
+        display: none;
+      }
     }
   }
 }
