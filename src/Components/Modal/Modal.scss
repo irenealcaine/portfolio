@@ -90,7 +90,8 @@
 @media screen and (max-width: 768px) {
   .backdrop {
     border: 3px solid #ccc;
-  padding: 30px 20px;
+  padding:  0px;
+  padding-bottom: 30px;
 
 
     & .closeButton {
@@ -104,12 +105,13 @@
     width: 25px;
   }
 
-    & img {
+    & .enlargedPic {
       width: 100%;
+      border-radius: 0px;
     }
 
     & .content {
-      width: 90%;
+      width: 80%;
     }
 
     & .techs {
@@ -118,8 +120,8 @@
     }
 
     & .links {
-      width: 100%;
-      padding-left: 10px;
+      width: 80%;
+      padding: 10px;
       flex-direction: column;
       gap: 10px;
     }
