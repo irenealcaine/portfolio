@@ -27,7 +27,7 @@ import directori from "../Assets/Images/directori.PNG"
 export const projects = [
 
   {
-    id: "directorio-de-empresas",
+    id: "1",
     images: {
       main: directori,
       icon: casinoslogo,
@@ -47,7 +47,7 @@ export const projects = [
     },
   },
   {
-    id: "patrimonio-de-casinos",
+    id: "2",
     images: {
       main: patrimoni,
       icon: casinoslogo,
@@ -67,7 +67,7 @@ export const projects = [
     },
   },
   {
-    id: "canguro-de-mascotas",
+    id: "3",
     images: {
       main: mascotas,
       icon: mascotaslogo,
@@ -88,7 +88,7 @@ export const projects = [
     },
   },
   {
-    id: "el-rincon-de-no-pensar",
+    id: "4",
     images: {
       main: ERDNP,
       icon: ERDNPlogo,
@@ -109,7 +109,7 @@ export const projects = [
     },
   },
   {
-    id: "netfliclon",
+    id: "5",
     images: {
       main: netfliclon,
       icon: netfliclonlogo,
@@ -130,7 +130,7 @@ export const projects = [
     },
   },
   {
-    id: "catalogo",
+    id: "6",
     images: {
       main: shop,
       icon: shoplogo,
@@ -151,7 +151,7 @@ export const projects = [
     },
   },
   {
-    id: "dashboard",
+    id: "7",
     images: {
       main: dashboard,
       icon: dashboardlogo,
@@ -172,7 +172,7 @@ export const projects = [
     },
   },
   {
-    id: "gallery",
+    id: "8",
     images: {
       main: gallery,
       icon: gallerylogo,
@@ -193,7 +193,7 @@ export const projects = [
     },
   },
   {
-    id: "spotyclon",
+    id: "9",
     images: {
       main: spoty,
       icon: spotylogo,
@@ -214,7 +214,7 @@ export const projects = [
     },
   },
   {
-    id: "weaher-app",
+    id: "10",
     images: {
       main: weather,
       icon: weatherlogo,
@@ -235,7 +235,7 @@ export const projects = [
     },
   },
   {
-    id: "todo-list",
+    id: "11",
     images: {
       main: todo,
       icon: todologo,
@@ -256,7 +256,7 @@ export const projects = [
     },
   },
   {
-    id: "cryptotracker",
+    id: "12",
     images: {
       main: crypto,
       icon: cryptologo,
@@ -277,7 +277,7 @@ export const projects = [
     },
   },
   {
-    id: "tic-tac-toe",
+    id: "13",
     images: {
       main: ttt,
       icon: tttlogo,

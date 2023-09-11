@@ -1,8 +1,10 @@
 import "./Modal.scss";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { useTranslation } from "react-i18next";
-import {TbExternalLink} from "react-icons/tb";
-import {FiGithub} from "react-icons/fi"
+import { TbExternalLink } from "react-icons/tb";
+import { FiGithub } from "react-icons/fi"
+import { BiLeftArrowCircle, BiRightArrowCircle } from "react-icons/bi"
+import { projects } from "../../data/PortfolioData";
 
 const Modal = ({ selectedProject, setSelectedProject }) => {
   const { i18n, t } = useTranslation("global");
@@ -11,16 +13,40 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
     setSelectedProject(null);
   };
 
+  const handleNext = () => {
+    const currentIndex = projects.findIndex((project) => project.id === selectedProject.id);
+    if (currentIndex >= 0 && currentIndex < projects.length - 1) {
+      const nextProject = projects[currentIndex + 1];
+      setSelectedProject(nextProject);
+    }
+  };
+
+  const handlePrev = () => {
+    const currentIndex = projects.findIndex((project) => project.id === selectedProject.id);
+    if (currentIndex >= 1 && currentIndex < projects.length) {
+      const prevProject = projects[currentIndex - 1];
+      setSelectedProject(prevProject);
+    }
+  };
+
   return (
     <div className="backdrop">
       <p onClick={handleCloseClick} className="closeButton">
-        {" "}
-        <IoIosCloseCircleOutline />{" "}
+        <IoIosCloseCircleOutline />
       </p>
+
+      <p onClick={handleNext} className="nextButton">
+        <BiRightArrowCircle />
+      </p>
+
+      <p onClick={handlePrev} className="prevButton">
+        <BiLeftArrowCircle />
+      </p>
+
       <img className="smallPic" src={selectedProject.images.icon} alt="small pic" />
       <img className="enlargedPic" src={selectedProject.images.main} alt="enlarged pic" />
-      
-<div className="links">
+
+      <div className="links">
         <a className="link" href={selectedProject.web}>
           <span>{t("portfolioPage.buttons.web")}</span> <TbExternalLink />
         </a>
@@ -50,7 +76,7 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
           </p>
         ))}
       </div>
-      
+
     </div>
   );
 };
