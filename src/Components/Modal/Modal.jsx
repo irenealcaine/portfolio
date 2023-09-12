@@ -47,11 +47,11 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
       <img className="enlargedPic" src={selectedProject.images.main} alt="enlarged pic" />
 
       <div className="links">
-        <a className="link" href={selectedProject.web}>
+        <a className="link" href={selectedProject.web} target="_blank" rel="noreferrer">
           <span>{t("portfolioPage.buttons.web")}</span> <TbExternalLink />
         </a>
         {selectedProject.github &&
-          <a className="link" href={selectedProject.github}>
+          <a className="link" href={selectedProject.github} target="_blank" rel="noreferrer">
             <span>{t("portfolioPage.buttons.github")}</span> <FiGithub />
           </a>
         }
