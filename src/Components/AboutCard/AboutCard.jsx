@@ -21,7 +21,10 @@ const AboutCard = () => {
         <span>{t("about.button")}</span>{" "}
         <MdKeyboardDoubleArrowRight className={`arow ${neonOn && "on"}`} />
       </p>
-      <img src={me} alt="me" className={`image ${neonOn && "on"}`} />
+      <picture>
+
+        <img src={me} alt="me" className={`image ${neonOn && "on"}`} />
+      </picture>
     </div>
   );
 };

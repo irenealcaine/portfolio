@@ -8,6 +8,7 @@
     position: relative;
     z-index: 2;
   }
+
   h1 {
     margin-bottom: 5px;
   }
@@ -30,9 +31,9 @@
 
     svg {
       font-size: 20px;
+
       &.on {
-        filter: drop-shadow(0 0 5px var(--pink))
-          drop-shadow(0 0 10px var(--pink));
+        filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
       }
     }
   }
@@ -49,25 +50,37 @@
     transition: 0.3s;
 
     animation: fadeIn 1s ease;
-    opacity: 0.5;
+    // opacity: 0.5;
 
     &.on {
-      filter: grayscale(0) drop-shadow(0 0 1px white)
-        drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
+      filter: grayscale(0) contrast(1.1) drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
       opacity: 1;
 
     }
-    &:before {
-      position: absolute;
-      top: 0;
-      z-index: 2;
-      display: block;
-      content: "sdgsdhsdhs";
-      width: 50%;
-      height: 100%;
-      background:red;
-    }
+
   }
+
+  // picture {
+  //   &::before {
+  //     position: absolute;
+  //     top: 0;
+  //     left: -75%;
+  //     margin-top: -20px;
+  //     z-index: 2;
+  //     display: block;
+  //     content: "";
+  //     width: 50%;
+  //     height: calc(100% + 40px);
+  //     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+  //     transform: skew(-60deg, 0deg);
+  //   }
+
+  //   &:hover::before {
+  //     animation: shine .5s ease;
+
+  //   }
+
+  // }
 }
 
 @media screen and (max-width: 768px) {
@@ -75,6 +88,7 @@
     .presentation {
       width: 100%;
     }
+
     img {
       display: none;
     }
@@ -83,25 +97,31 @@
 
 @keyframes fadeIn {
   0% {
-  opacity: 0;
-  filter: contrast(1);
+    opacity: 0;
+    filter: contrast(0.5);
 
   }
 
-  70%{
-    filter: contrast(1.25);
-  }
 
- 100% {
-  filter: contrast(1);
-   
+  100% {
+    filter: contrast(1.1);
+
   }
 }
+
 @keyframes shine {
-  0%{
+  0% {
     left: -75%;
+    opacity: 0;
   }
-	100% {
-		left: 125%;
-	}
+
+  50% {
+    opacity: 1
+  }
+
+  100% {
+    left: 125%;
+    opacity: 0;
+
+  }
 }
