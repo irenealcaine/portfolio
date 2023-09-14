@@ -17,7 +17,7 @@ const SpotifyCard = () => {
 
   return (
     <a
-      href={`https://open.spotify.com/track/${status?.spotify?.track_id}` || `https://open.spotify.com/playlist/01Fvemoc0peRcK1CoU3ohz`}
+      href={status?.spotify ? `https://open.spotify.com/track/${status?.spotify?.track_id}` : `https://open.spotify.com/playlist/37i9dQZF1DXb0AsvHMF4aM`}
       target="_blank"
       rel="noopener noreferrer"
       className='spotifyCard'
