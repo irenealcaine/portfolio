@@ -1,15 +1,22 @@
 .projects-card {
   .examples {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
     .project-image {
-      width: 100px;
+      width: 20%;
+      max-width: 100px;
+
       filter: grayscale(1) contrast(1.5) drop-shadow(0 0 1px white)
         brightness(0.5);
       mix-blend-mode: screen;
 
       &.on {
         filter: grayscale(1) contrast(2) drop-shadow(0 0 1px white)
-          brightness(1.5) drop-shadow(0 0 2px var(--blue))
-          drop-shadow(0 0 5px var(--blue));
+          drop-shadow(0 0 2px var(--blue)) drop-shadow(0 0 5px var(--blue));
       }
     }
   }
@@ -32,6 +39,15 @@
         filter: drop-shadow(0 0 5px var(--blue))
           drop-shadow(0 0 10px var(--blue));
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-card {
+    .examples {
+      justify-content: space-around;
+      gap: 5px;
     }
   }
 }

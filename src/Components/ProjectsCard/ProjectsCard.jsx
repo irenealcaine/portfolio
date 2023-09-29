@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import { useTranslation } from "react-i18next";
-import logo from "../../Assets/Images/monsterslogo.png";
 import "./ProjectsCard.scss";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { projects } from "../../data/PortfolioData";
