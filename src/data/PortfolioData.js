@@ -122,7 +122,7 @@ export const projects = [
     es: {
       title: "Base de datos de Monster Hunter",
       description:
-        "Web con multitud de datos sobre Monster Hunter, informacion sobre los monstruos, armas, armaduras, localizaciones, habilidades, objetos, estados y su relación entre ellos. Utilizando la api de AP deMonster Hunter World.",
+        "Web con multitud de datos sobre Monster Hunter, informacion sobre los monstruos, armas, armaduras, localizaciones, habilidades, objetos, estados y su relación entre ellos. Utilizando la api de AP de Monster Hunter World.",
     },
     en: {
       title: "Monster Hunter Database",
