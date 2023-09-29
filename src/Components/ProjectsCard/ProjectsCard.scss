@@ -1,0 +1,37 @@
+.projects-card {
+  .examples {
+    .project-image {
+      width: 100px;
+      filter: grayscale(1) contrast(1.5) drop-shadow(0 0 1px white)
+        brightness(0.5);
+      mix-blend-mode: screen;
+
+      &.on {
+        filter: grayscale(1) contrast(2) drop-shadow(0 0 1px white)
+          brightness(1.5) drop-shadow(0 0 2px var(--blue))
+          drop-shadow(0 0 5px var(--blue));
+      }
+    }
+  }
+
+  .button {
+    margin-top: 20px;
+    padding: 5px 20px;
+    background-color: #0005;
+    width: fit-content;
+    font-size: 14px;
+    border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      font-size: 20px;
+
+      &.on {
+        filter: drop-shadow(0 0 5px var(--blue))
+          drop-shadow(0 0 10px var(--blue));
+      }
+    }
+  }
+}
