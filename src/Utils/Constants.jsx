@@ -3,7 +3,7 @@ import {
   BiLogoJavascript,
   BiLogoTailwindCss,
   BiLogoFirebase,
-  BiLogoWordpress
+  BiLogoWordpress,
 } from "react-icons/bi";
 import { SiMui } from "react-icons/si";
 import { RiBootstrapLine } from "react-icons/ri";
@@ -16,48 +16,64 @@ export const colors = [
   "orange",
   "red",
   "purple",
-  "pink"
+  "pink",
 ];
 
- export const filterOptions = [
-    { text: "Todos", value: "all" },
+export const filterOptions = [
+  { text: "Todos", value: "all" },
 
-    { icon: <BiLogoJavascript />, value: "JavaScript" },
-    { icon: <FaReact />, value: "ReactJS" },
-    { icon: <FaVuejs />, value: "VueJS" },
+  { icon: <BiLogoJavascript />, value: "JavaScript" },
+  { icon: <FaReact />, value: "ReactJS" },
+  { icon: <FaVuejs />, value: "VueJS" },
 
-    { icon: <BiLogoTailwindCss />, value: "TailwindCSS" },
-    { icon: <SiMui />, value: "MaterialUI" },
-    { icon: <FaSass />, value: "Sass" },
-    { icon: <RiBootstrapLine />, value: "Bootstrap" },
+  { icon: <BiLogoTailwindCss />, value: "TailwindCSS" },
+  { icon: <SiMui />, value: "MaterialUI" },
+  { icon: <FaSass />, value: "Sass" },
+  { icon: <RiBootstrapLine />, value: "Bootstrap" },
 
-    { icon: <BiLogoFirebase />, value: "Firebase" },
-    { icon: <BiLogoWordpress />, value: "WordPress" },
-  ];
-
+  { icon: <BiLogoFirebase />, value: "Firebase" },
+  { icon: <BiLogoWordpress />, value: "WordPress" },
+];
 
 export const favouriteSongs = [
   {
-    "song": "Melendi",
-    "artist": "Caminando por la vida"
-  }, {
-    "song": "Estopa",
-    "artist": "Como Camarón"
+    song: "Caminando por la vida",
+    artist: "Melendi",
   },
   {
-    "song": "Ricky Martin",
-    "artist": "Livin' la Vida Loca"
+    song: "Como camarón",
+    artist: "Estopa",
   },
   {
-    "song": "Chayanne",
-    "artist": "Torero"
+    song: "Livin' la Vida Loca",
+    artist: "Ricky Martin",
   },
   {
-    "song": "Shakira",
-    "artist": "Ciega, Sordomuda"
+    song: "Torero",
+    artist: "Chayanne",
   },
   {
-    "song": "Juanes",
-    "artist": "A Dios le Pido"
-  }
-]
+    song: "Ciega, sordomuda",
+    artist: "Shakira",
+  },
+  {
+    song: "A Dios le pido",
+    artist: "Juanes",
+  },
+  {
+    song: "Insoportable",
+    artist: "El canto del loco",
+  },
+  {
+    song: "Princesas",
+    artist: "Pereza",
+  },
+  {
+    song: "Me voy",
+    artist: "Julieta Venegas",
+  },
+  {
+    song: "No puedo vivir sin ti",
+    artist: "Los Ronaldos",
+  },
+];

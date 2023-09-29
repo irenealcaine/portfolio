@@ -99,7 +99,7 @@
 
     &.on {
       filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px var(--color))
-        drop-shadow(0 0 10px var(--color)) drop-shadow(0 0 20px var(--color));
+        drop-shadow(0 0 10px var(--color));
     }
   }
 }
@@ -116,21 +116,39 @@
     border: 3px solid #fff;
     outline-color: #fff;
     color: #fff;
-    box-shadow: 0 0 2px #fff, 0 0 5px var(--color), 0 0 10px var(--color),
-      0 0 20px var(--color), 0 0 40px var(--color), 0 0 50px var(--color),
-      inset 0 0 2px #fff, inset 0 0 5px var(--color),
-      inset 0 0 10px var(--color), inset 0 0 20px var(--color);
-    text-shadow: 0 0 2px #fff, 0 0 5px var(--color), 0 0 10px var(--color),
+    box-shadow:
+      0 0 2px #fff,
+      0 0 5px var(--color),
+      0 0 10px var(--color),
+      0 0 20px var(--color),
+      0 0 40px var(--color),
+      inset 0 0 2px #fff,
+      inset 0 0 5px var(--color),
+      inset 0 0 10px var(--color),
+      inset 0 0 20px var(--color);
+    text-shadow:
+      0 0 2px #fff,
+      0 0 5px var(--color),
+      0 0 10px var(--color),
       0 0 20px var(--color);
   }
 
   20%,
   24%,
   55% {
-    box-shadow: 0 0 2px #ffffff, 0 0 5px var(--color), 0 0 12px var(--color),
-      0 0 50px var(--color), inset 0 0 2px #ffffff, inset 0 0 5px var(--color),
-      inset 0 0 12px var(--color), inset 0 0 22px var(--color);
-    text-shadow: 0 0 1px #ffffff, 0 0 5px var(--color), 0 0 12px var(--color),
+    box-shadow:
+      0 0 2px #ffffff,
+      0 0 5px var(--color),
+      0 0 12px var(--color),
+      0 0 30px var(--color),
+      inset 0 0 2px #ffffff,
+      inset 0 0 5px var(--color),
+      inset 0 0 12px var(--color),
+      inset 0 0 22px var(--color);
+    text-shadow:
+      0 0 1px #ffffff,
+      0 0 5px var(--color),
+      0 0 12px var(--color),
       0 0 22px var(--color);
   }
 }
