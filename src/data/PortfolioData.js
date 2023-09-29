@@ -20,12 +20,13 @@ import todo from "../Assets/Images/todo.PNG";
 import todologo from "../Assets/Images/todologo.png";
 import gallery from "../Assets/Images/gallery.png";
 import gallerylogo from "../Assets/Images/gallerylogo.png";
-import casinoslogo from "../Assets/Images/escudo.png"
-import patrimoni from "../Assets/Images/patrimoni.PNG"
-import directori from "../Assets/Images/directori.PNG"
+import casinoslogo from "../Assets/Images/escudo.png";
+import patrimoni from "../Assets/Images/patrimoni.PNG";
+import directori from "../Assets/Images/directori.PNG";
+import monsterslogo from "../Assets/Images/monsterslogo.png";
+import monsters from "../Assets/Images/monsters.png";
 
 export const projects = [
-
   {
     id: "1",
     images: {
@@ -111,6 +112,27 @@ export const projects = [
   {
     id: "5",
     images: {
+      main: monsters,
+      icon: monsterslogo,
+    },
+    tech: ["ReactJS"],
+    category: "web",
+    github: "https://github.com/irenealcaine/mh-api/",
+    web: "https://celadon-kheer-920e58.netlify.app/",
+    es: {
+      title: "Base de datos de Monster Hunter",
+      description:
+        "Web con multitud de datos sobre Monster Hunter, informacion sobre los monstruos, armas, armaduras, localizaciones, habilidades, objetos, estados y su relación entre ellos. Utilizando la api de AP deMonster Hunter World.",
+    },
+    en: {
+      title: "Monster Hunter Database",
+      description:
+        "Website with a wealth of data on Monster Hunter, information about monsters, weapons, armor, locations, skills, items, ailments, and their relationships with each other. Using the API of Monster Hunter World.",
+    },
+  },
+  {
+    id: "6",
+    images: {
       main: netfliclon,
       icon: netfliclonlogo,
     },
@@ -130,7 +152,7 @@ export const projects = [
     },
   },
   {
-    id: "6",
+    id: "7",
     images: {
       main: shop,
       icon: shoplogo,
@@ -151,7 +173,7 @@ export const projects = [
     },
   },
   {
-    id: "7",
+    id: "8",
     images: {
       main: dashboard,
       icon: dashboardlogo,
@@ -172,7 +194,7 @@ export const projects = [
     },
   },
   {
-    id: "8",
+    id: "9",
     images: {
       main: gallery,
       icon: gallerylogo,
@@ -193,7 +215,7 @@ export const projects = [
     },
   },
   {
-    id: "9",
+    id: "10",
     images: {
       main: spoty,
       icon: spotylogo,
@@ -214,7 +236,7 @@ export const projects = [
     },
   },
   {
-    id: "10",
+    id: "11",
     images: {
       main: weather,
       icon: weatherlogo,
@@ -235,7 +257,7 @@ export const projects = [
     },
   },
   {
-    id: "11",
+    id: "12",
     images: {
       main: todo,
       icon: todologo,
@@ -256,7 +278,7 @@ export const projects = [
     },
   },
   {
-    id: "12",
+    id: "13",
     images: {
       main: crypto,
       icon: cryptologo,
@@ -277,7 +299,7 @@ export const projects = [
     },
   },
   {
-    id: "13",
+    id: "14",
     images: {
       main: ttt,
       icon: tttlogo,
