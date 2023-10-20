@@ -1,22 +1,24 @@
 .projects-card {
   .examples {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     padding: 20px 0;
     gap: 20px;
+
     .project-image {
       width: 20%;
       max-width: 100px;
 
-      filter: grayscale(1) contrast(1.5) drop-shadow(0 0 1px white)
-        brightness(0.5);
+      filter: brightness(0) drop-shadow(0 0 1px white);
       mix-blend-mode: screen;
 
       &.on {
-        filter: grayscale(1) contrast(2) drop-shadow(0 0 1px white)
-          drop-shadow(0 0 2px var(--blue)) drop-shadow(0 0 5px var(--blue));
+        filter: brightness(0) drop-shadow(0 0 2px white)
+          drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue))
+          drop-shadow(0 0 10px var(--blue));
       }
     }
   }
@@ -24,13 +26,14 @@
   .button {
     margin-top: 20px;
     padding: 5px 20px;
-    background-color: #0005;
+    background-color: #0009;
     width: fit-content;
     font-size: 14px;
     border-radius: 100rem;
     display: flex;
     align-items: center;
     gap: 10px;
+    border: 1px solid var(--blue);
 
     svg {
       font-size: 20px;
@@ -48,6 +51,14 @@
     .examples {
       justify-content: space-around;
       gap: 5px;
+      width: 100%;
+
+      .project-image {
+        &.on {
+          filter: brightness(0) drop-shadow(0 0 2px white)
+            drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue));
+        }
+      }
     }
   }
 }
