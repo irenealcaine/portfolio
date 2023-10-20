@@ -17,7 +17,8 @@
 
       &.on {
         filter: brightness(0) drop-shadow(0 0 2px white)
-          drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue));
+          drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue))
+          drop-shadow(0 0 10px var(--blue));
       }
     }
   }
