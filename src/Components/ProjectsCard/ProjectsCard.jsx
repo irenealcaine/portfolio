@@ -9,12 +9,23 @@ const ProjectsCard = () => {
   const { t } = useTranslation("global");
   const { neonOn } = useContext(NeonOnContext);
 
+  const shuffledProjects = [...projects];
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  shuffleArray(shuffledProjects);
+
   return (
     <div className="projects-card">
       <h2>{t("projects.title")}</h2>
       <p>{t("projects.description")}</p>
       <div className="examples">
-        {projects.slice(1, 5).map((project) => (
+        {shuffledProjects.slice(1, 9).map((project) => (
           <img
             src={project.images.icon}
             className={`project-image ${neonOn && "on"}`}
