@@ -99,10 +99,14 @@ const Portfolio = () => {
         <div className="projects">{renderProjectsByCategory("project")}</div>
 
         {selectedProject && (
-          <Modal
-            selectedProject={selectedProject}
-            setSelectedProject={setSelectedProject}
-          />
+          <div>
+            <Modal
+              selectedProject={selectedProject}
+              setSelectedProject={setSelectedProject}
+            />
+
+            <div className="background"></div>
+          </div>
         )}
 
       </div>

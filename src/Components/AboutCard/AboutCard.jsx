@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";
-import me from "../../Assets/Images/me.png";
+// import me from "../../Assets/Images/me.png";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import "./AboutCard.scss";
 import ReactMarkdown from "react-markdown";
@@ -23,7 +23,7 @@ const AboutCard = () => {
       </p>
       <picture>
 
-        <img src={me} alt="me" className={`image ${neonOn && "on"}`} />
+        {/* <img src={me} alt="me" className={`image ${neonOn && "on"}`} /> */}
       </picture>
     </div>
   );
