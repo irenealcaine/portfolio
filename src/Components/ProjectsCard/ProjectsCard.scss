@@ -13,12 +13,9 @@
       max-width: 100px;
 
       filter: brightness(0) drop-shadow(0 0 1px white);
-      mix-blend-mode: screen;
 
       &.on {
-        filter: brightness(0) drop-shadow(0 0 2px white)
-          drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue))
-          drop-shadow(0 0 10px var(--blue));
+        filter: brightness(0) drop-shadow(0 0 2px white) drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
       }
     }
   }
@@ -39,8 +36,7 @@
       font-size: 20px;
 
       &.on {
-        filter: drop-shadow(0 0 5px var(--blue))
-          drop-shadow(0 0 10px var(--blue));
+        filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
       }
     }
   }
@@ -55,8 +51,7 @@
 
       .project-image {
         &.on {
-          filter: brightness(0) drop-shadow(0 0 2px white)
-            drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue));
+          filter: brightness(0) drop-shadow(0 0 2px white) drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue));
         }
       }
     }
