@@ -30,10 +30,16 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 1px solid var(--blue);
+    border: 1px solid white;
+    transition: 0.3s;
+
+    &.on {
+      border: 1px solid var(--blue);
+    }
 
     svg {
       font-size: 20px;
+      transition: 0.3s;
 
       &.on {
         filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));

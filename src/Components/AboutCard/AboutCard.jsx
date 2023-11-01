@@ -17,7 +17,7 @@ const AboutCard = () => {
       <ReactMarkdown className="presentation">
         {t("about.presentation")}
       </ReactMarkdown>
-      <p className="button">
+      <p className={`button ${neonOn && "on"}`}>
         <span>{t("about.button")}</span>{" "}
         <MdKeyboardDoubleArrowRight className={`arow ${neonOn && "on"}`} />
       </p>

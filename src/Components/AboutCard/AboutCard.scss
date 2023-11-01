@@ -28,14 +28,19 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 1px solid var(--pink);
+    border: 1px solid white;
+    transition: 0.3s;
+
+    &.on {
+      border: 1px solid var(--pink);
+    }
 
     svg {
       font-size: 20px;
+      transition: 0.3s;
 
       &.on {
-        filter: drop-shadow(0 0 5px var(--pink))
-          drop-shadow(0 0 10px var(--pink));
+        filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 10px var(--pink));
       }
     }
   }
@@ -55,8 +60,7 @@
     // opacity: 0.5;
 
     &.on {
-      filter: grayscale(0) contrast(1.1) drop-shadow(0 0 1px white)
-        drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
+      filter: grayscale(0) contrast(1.1) drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
       opacity: 1;
     }
   }

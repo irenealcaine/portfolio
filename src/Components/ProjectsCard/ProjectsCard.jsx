@@ -33,7 +33,7 @@ const ProjectsCard = () => {
           />
         ))}
       </div>
-      <p className="button">
+      <p className={`button ${neonOn && "on"}`}>
         <span>{t("about.button")}</span>{" "}
         <MdKeyboardDoubleArrowRight className={`arow ${neonOn && "on"}`} />
       </p>
