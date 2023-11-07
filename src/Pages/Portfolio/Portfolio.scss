@@ -1,5 +1,4 @@
 .portfolio {
-
   h1,
   h2 {
     filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
@@ -22,12 +21,14 @@
       align-items: center;
 
       &:hover {
-        filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue)) drop-shadow(0 0 12px var(--blue));
+        filter: drop-shadow(0 0 5px var(--blue))
+          drop-shadow(0 0 10px var(--blue)) drop-shadow(0 0 12px var(--blue));
       }
     }
 
     & .selected {
-      filter: drop-shadow(0 0 2px var(--blue)) drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 8px var(--blue));
+      filter: drop-shadow(0 0 2px var(--blue)) drop-shadow(0 0 5px var(--blue))
+        drop-shadow(0 0 8px var(--blue));
     }
   }
 
@@ -111,8 +112,10 @@
 
       img {
         width: 100%;
+        height: auto;
         transition: 0.5s;
-        filter: drop-shadow(0 0 1px white) drop-shadow(0 0 2px white) drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
+        filter: drop-shadow(0 0 1px white) drop-shadow(0 0 2px white)
+          drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
       }
 
       .title {
@@ -144,9 +147,11 @@
         height: 100%;
         left: 0;
         top: 0;
-        background: linear-gradient(180deg,
-            transparent -10%,
-            var(--color) 115%);
+        background: linear-gradient(
+          180deg,
+          transparent -10%,
+          var(--color) 115%
+        );
         transition: 0.3s;
         opacity: 0;
       }
