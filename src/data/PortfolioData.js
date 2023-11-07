@@ -16,7 +16,7 @@ import weather from "../Assets/Images/weather.png";
 import weatherlogo from "../Assets/Images/weatherlogo.png";
 import ttt from "../Assets/Images/ttt.png";
 import tttlogo from "../Assets/Images/tttlogo.svg";
-import todo from "../Assets/Images/todo.Ppng";
+import todo from "../Assets/Images/todo.png";
 import todologo from "../Assets/Images/todologo.png";
 import gallery from "../Assets/Images/gallery.png";
 import gallerylogo from "../Assets/Images/gallerylogo.png";
