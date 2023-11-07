@@ -32,7 +32,26 @@
   }
 
   &.on {
-    animation: neonBlink 10s ease infinite;
+    // animation: neonBlink 10s ease infinite;
+
+    border: 3px solid #fff;
+    outline-color: #fff;
+    color: #fff;
+    box-shadow:
+      0 0 2px #fff,
+      0 0 5px var(--color),
+      0 0 10px var(--color),
+      0 0 20px var(--color),
+      0 0 40px var(--color),
+      inset 0 0 2px #fff,
+      inset 0 0 5px var(--color),
+      inset 0 0 10px var(--color),
+      inset 0 0 20px var(--color);
+    text-shadow:
+      0 0 2px #fff,
+      0 0 5px var(--color),
+      0 0 10px var(--color),
+      0 0 20px var(--color);
 
     &:before {
       content: "";
