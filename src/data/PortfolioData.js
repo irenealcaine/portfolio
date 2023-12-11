@@ -194,6 +194,48 @@ export const projects = [
     },
   },
   {
+    id: "8",
+    images: {
+      main: dashboard,
+      icon: dashboardlogo,
+    },
+    tech: ["ReactJS", "MaterialUI", "Sass", "Firebase"],
+    category: "project",
+    github: "https://github.com/irenealcaine/react-sass-mui",
+    web: "https://vermillion-starburst-865331.netlify.app/",
+    es: {
+      title: "Dashboard",
+      description:
+        "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
+    },
+    en: {
+      title: "Dashboard",
+      description:
+        "Administrator dashboard with user registration and authentication using different databases. Real-time statistics on new users and products from the last month, including the percentage growth compared to the previous month, as well as profit and earnings statistics. User tables with the option to add new users, and tables for products and orders that can be deleted.",
+    },
+  },
+  {
+    id: "8",
+    images: {
+      main: dashboard,
+      icon: dashboardlogo,
+    },
+    tech: ["ReactJS", "MaterialUI", "Sass", "Firebase"],
+    category: "project",
+    github: "https://github.com/irenealcaine/react-sass-mui",
+    web: "https://vermillion-starburst-865331.netlify.app/",
+    es: {
+      title: "Dashboard",
+      description:
+        "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
+    },
+    en: {
+      title: "Dashboard",
+      description:
+        "Administrator dashboard with user registration and authentication using different databases. Real-time statistics on new users and products from the last month, including the percentage growth compared to the previous month, as well as profit and earnings statistics. User tables with the option to add new users, and tables for products and orders that can be deleted.",
+    },
+  },
+  {
     id: "9",
     images: {
       main: gallery,
