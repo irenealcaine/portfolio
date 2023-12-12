@@ -61,14 +61,17 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
       />
 
       <div className="links">
-        <a
-          className="link"
-          href={selectedProject.web}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span>{t("portfolioPage.buttons.web")}</span> <TbExternalLink />
-        </a>
+        {selectedProject.web && (
+          <a
+            className="link"
+            href={selectedProject.web}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>{t("portfolioPage.buttons.web")}</span> <TbExternalLink />
+          </a>
+        )}
+
         {selectedProject.github && (
           <a
             className="link"

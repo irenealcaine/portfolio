@@ -186,8 +186,8 @@ export const projects = [
     es: {
       title: "Prueba técnica React, tabla de usuarios",
       description: `
-      * [ ] to do
-      * [x] done
+      - [ ] to do
+      - [x] done
       `,
     },
     en: {
