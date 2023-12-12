@@ -95,7 +95,9 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
       ) : (
         <div className="content">
           <h2>{selectedProject.en.title}</h2>
-          <p>{selectedProject.en.description}</p>
+          <Markdown remarkPlugins={[remarkGfm]}>
+            {selectedProject.en.description}
+          </Markdown>
         </div>
       )}
 
