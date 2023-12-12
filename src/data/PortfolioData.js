@@ -25,6 +25,7 @@ import patrimoni from "../Assets/Images/patrimoni.png";
 import directori from "../Assets/Images/directori.png";
 import monsterslogo from "../Assets/Images/monsterslogo.png";
 import monsters from "../Assets/Images/monsters.png";
+import react from "../Assets/Images/react.svg";
 
 export const projects = [
   {
@@ -176,14 +177,14 @@ export const projects = [
     id: "8",
     images: {
       main: dashboard,
-      icon: dashboardlogo,
+      icon: react,
     },
-    tech: ["ReactJS", "MaterialUI", "Sass", "Firebase"],
+    tech: ["ReactJS", "TypeScript"],
     category: "project",
     github: "https://github.com/irenealcaine/react-sass-mui",
     web: "https://vermillion-starburst-865331.netlify.app/",
     es: {
-      title: "Dashboard",
+      title: "Prueba técnica React",
       description:
         "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
     },
@@ -197,14 +198,14 @@ export const projects = [
     id: "8",
     images: {
       main: dashboard,
-      icon: dashboardlogo,
+      icon: react,
     },
-    tech: ["ReactJS", "MaterialUI", "Sass", "Firebase"],
+    tech: ["ReactJS", "TypeScript"],
     category: "project",
     github: "https://github.com/irenealcaine/react-sass-mui",
     web: "https://vermillion-starburst-865331.netlify.app/",
     es: {
-      title: "Dashboard",
+      title: "Prueba técnica React",
       description:
         "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
     },
