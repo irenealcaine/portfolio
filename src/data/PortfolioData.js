@@ -182,11 +182,13 @@ export const projects = [
     tech: ["ReactJS", "TypeScript"],
     category: "project",
     github: "https://github.com/irenealcaine/react-sass-mui",
-    web: "https://vermillion-starburst-865331.netlify.app/",
+    // web: "https://vermillion-starburst-865331.netlify.app/",
     es: {
-      title: "Prueba técnica React",
-      description:
-        "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
+      title: "Prueba técnica React, tabla de usuarios",
+      description: `
+      * [ ] to do
+      * [x] done
+      `,
     },
     en: {
       title: "Dashboard",
@@ -195,7 +197,7 @@ export const projects = [
     },
   },
   {
-    id: "8",
+    id: "9",
     images: {
       main: dashboard,
       icon: react,
@@ -205,7 +207,7 @@ export const projects = [
     github: "https://github.com/irenealcaine/react-sass-mui",
     web: "https://vermillion-starburst-865331.netlify.app/",
     es: {
-      title: "Prueba técnica React",
+      title: "Prueba técnica React, agregar items",
       description:
         "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
     },
@@ -216,7 +218,7 @@ export const projects = [
     },
   },
   {
-    id: "8",
+    id: "10",
     images: {
       main: dashboard,
       icon: dashboardlogo,
@@ -237,7 +239,7 @@ export const projects = [
     },
   },
   {
-    id: "9",
+    id: "11",
     images: {
       main: gallery,
       icon: gallerylogo,
@@ -258,7 +260,7 @@ export const projects = [
     },
   },
   {
-    id: "10",
+    id: "12",
     images: {
       main: spoty,
       icon: spotylogo,
@@ -279,7 +281,7 @@ export const projects = [
     },
   },
   {
-    id: "11",
+    id: "13",
     images: {
       main: weather,
       icon: weatherlogo,
@@ -300,7 +302,7 @@ export const projects = [
     },
   },
   {
-    id: "12",
+    id: "14",
     images: {
       main: todo,
       icon: todologo,
@@ -321,7 +323,7 @@ export const projects = [
     },
   },
   {
-    id: "13",
+    id: "15",
     images: {
       main: crypto,
       icon: cryptologo,
@@ -342,7 +344,7 @@ export const projects = [
     },
   },
   {
-    id: "14",
+    id: "16",
     images: {
       main: ttt,
       icon: tttlogo,
