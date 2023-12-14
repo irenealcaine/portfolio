@@ -152,29 +152,9 @@ export const projects = [
         "A website that mimics Netflix's layout using the TMDB API. On the main page, you can view details about a trending movie, as well as lists of new releases, popular films, trending movies, top-rated movies, and documentaries. Each movie has its own page with film information such as a description, release date, duration, and rating. The actors involved and similar movies are also displayed. Each actor also has their own page showcasing their birthdate, date of passing if applicable, place of birth, career description, and filmography.",
     },
   },
+
   {
     id: "7",
-    images: {
-      main: shop,
-      icon: shoplogo,
-    },
-    tech: ["ReactJS", "Bootstrap"],
-    category: "project",
-    github: "https://github.com/irenealcaine/commerce-react",
-    web: "https://magenta-lily-93994f.netlify.app/",
-    es: {
-      title: "Catálogo de tienda",
-      description:
-        "Catálogo sencillo de una tienda ficticia. Con barra de búsqueda, ordenación por precio, número de ventas y opiniones de usuarios y filtros de stock, nota de usuarios y categorías. Posibilidad de añadir al carrito, el cual tiene una página propia donde gestiona los productos añadidos.",
-    },
-    en: {
-      title: "Shop catalog",
-      description:
-        "Simple catalog of a fictional store. With a search bar, sorting by price, number of sales, and user reviews, as well as filters for stock availability, user ratings, and categories. The option to add items to the shopping cart, which has its own page for managing the added products.",
-    },
-  },
-  {
-    id: "8",
     images: {
       main: dashboard,
       icon: react,
@@ -182,7 +162,6 @@ export const projects = [
     tech: ["ReactJS", "TypeScript"],
     category: "project",
     github: "https://github.com/irenealcaine/react-sass-mui",
-    // web: "https://vermillion-starburst-865331.netlify.app/",
     es: {
       title: "Prueba técnica React, tabla de usuarios",
       description: `
@@ -197,7 +176,7 @@ export const projects = [
     },
   },
   {
-    id: "9",
+    id: "8",
     images: {
       main: dashboard,
       icon: react,
@@ -215,6 +194,27 @@ export const projects = [
       title: "Dashboard",
       description:
         "Administrator dashboard with user registration and authentication using different databases. Real-time statistics on new users and products from the last month, including the percentage growth compared to the previous month, as well as profit and earnings statistics. User tables with the option to add new users, and tables for products and orders that can be deleted.",
+    },
+  },
+  {
+    id: "9",
+    images: {
+      main: shop,
+      icon: shoplogo,
+    },
+    tech: ["ReactJS", "Bootstrap"],
+    category: "project",
+    github: "https://github.com/irenealcaine/commerce-react",
+    web: "https://magenta-lily-93994f.netlify.app/",
+    es: {
+      title: "Catálogo de tienda",
+      description:
+        "Catálogo sencillo de una tienda ficticia. Con barra de búsqueda, ordenación por precio, número de ventas y opiniones de usuarios y filtros de stock, nota de usuarios y categorías. Posibilidad de añadir al carrito, el cual tiene una página propia donde gestiona los productos añadidos.",
+    },
+    en: {
+      title: "Shop catalog",
+      description:
+        "Simple catalog of a fictional store. With a search bar, sorting by price, number of sales, and user reviews, as well as filters for stock availability, user ratings, and categories. The option to add items to the shopping cart, which has its own page for managing the added products.",
     },
   },
   {
