@@ -26,6 +26,8 @@ import directori from "../Assets/Images/directori.png";
 import monsterslogo from "../Assets/Images/monsterslogo.png";
 import monsters from "../Assets/Images/monsters.png";
 import react from "../Assets/Images/react.svg";
+import userstable from "../Assets/Images/tablausuarios.PNG";
+import additems from "../Assets/Images/additems.PNG";
 
 export const projects = [
   {
@@ -156,7 +158,7 @@ export const projects = [
   {
     id: "7",
     images: {
-      main: react,
+      main: userstable,
       icon: react,
     },
     tech: ["ReactJS", "TypeScript"],
@@ -176,7 +178,7 @@ export const projects = [
   {
     id: "8",
     images: {
-      main: react,
+      main: additems,
       icon: react,
     },
     tech: ["ReactJS", "TypeScript"],
