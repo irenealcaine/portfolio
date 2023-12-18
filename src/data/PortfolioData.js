@@ -156,44 +156,41 @@ export const projects = [
   {
     id: "7",
     images: {
-      main: dashboard,
+      main: react,
       icon: react,
     },
     tech: ["ReactJS", "TypeScript"],
     category: "project",
-    github: "https://github.com/irenealcaine/react-sass-mui",
+    github: "https://github.com/irenealcaine/prueba-tecnica-tabla-usuarios",
     es: {
       title: "Prueba técnica React, tabla de usuarios",
-      description: `
-      * [ ] to do
-      * [x] done
-      `,
+      description:
+        "Prueba técnica de React, en la que hay que crear una tabla de usuarios utilizando la API de randomuser.me. Los requisitos específicos incluyen: obtener 100 filas de datos mediante la API, mostrarlos en un formato de tabla similar al del ejemplo, y ofrecer la posibilidad de colorear las filas tal como se muestra. Además, se debe permitir la ordenación de datos por país, la eliminación de filas y la capacidad de restaurar el estado inicial de la tabla, recuperando así todas las filas eliminadas. Es esencial manejar cualquier error que pueda surgir, implementar un filtro por país y asegurarse de que los datos no se reordenen al cambiar este filtro. Por último, se requiere que la ordenación de los datos se realice mediante clics en los encabezados de las columnas.",
     },
     en: {
-      title: "Dashboard",
+      title: "React technical test, users table",
       description:
-        "Administrator dashboard with user registration and authentication using different databases. Real-time statistics on new users and products from the last month, including the percentage growth compared to the previous month, as well as profit and earnings statistics. User tables with the option to add new users, and tables for products and orders that can be deleted.",
+        "React technical test, in which a user table must be created using the randomuser.me API. The specific requirements include: fetching 100 rows of data via the API, displaying them in a table format similar to the example, and offering the option to color the rows as shown. Additionally, it should allow sorting of data by country, deleting rows, and the ability to restore the initial state of the table, thereby recovering all deleted rows. It's essential to handle any errors that may arise, implement a filter by country, and ensure that the data does not get resorted when changing this filter. Finally, the data sorting should be done by clicking on the column headers.",
     },
   },
   {
     id: "8",
     images: {
-      main: dashboard,
+      main: react,
       icon: react,
     },
     tech: ["ReactJS", "TypeScript"],
     category: "project",
-    github: "https://github.com/irenealcaine/react-sass-mui",
-    web: "https://vermillion-starburst-865331.netlify.app/",
+    github: "https://github.com/irenealcaine/prueba-tecnica-add-items-react",
     es: {
       title: "Prueba técnica React, agregar items",
       description:
-        "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
+        "Se busca desarrollar una aplicación en React que incluya un campo de texto y un botón para añadir elementos. Al pulsar el botón, el texto ingresado en el campo se añadirá a una lista de elementos que aparece a continuación. Adicionalmente, al hacer click en cualquier elemento de esta lista, este se eliminará. El enfoque principal debe estar en la funcionalidad y la usabilidad, por encima del diseño visual. Es esencial que todo el código sea desarrollado utilizando Typescript.",
     },
     en: {
-      title: "Dashboard",
+      title: "React technical test, add items",
       description:
-        "Administrator dashboard with user registration and authentication using different databases. Real-time statistics on new users and products from the last month, including the percentage growth compared to the previous month, as well as profit and earnings statistics. User tables with the option to add new users, and tables for products and orders that can be deleted.",
+        "The goal is to develop a React application that includes a text field and a button to add items. When the button is clicked, the text entered in the field will be added to a list of items displayed below. Additionally, clicking on any item in this list will remove it. The primary focus should be on functionality and usability, rather than visual design. It is essential that all code be developed using Typescript.",
     },
   },
   {
