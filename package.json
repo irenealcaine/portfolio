@@ -20,6 +20,7 @@
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "react-use-lanyard": "^0.3.0",
+    "remark-gfm": "^4.0.0",
     "spotify-web-api-js": "^1.5.2",
     "spotify-web-api-node": "^5.0.2",
     "swr": "^2.2.2",

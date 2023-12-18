@@ -25,6 +25,9 @@ import patrimoni from "../Assets/Images/patrimoni.png";
 import directori from "../Assets/Images/directori.png";
 import monsterslogo from "../Assets/Images/monsterslogo.png";
 import monsters from "../Assets/Images/monsters.png";
+import react from "../Assets/Images/react.svg";
+import userstable from "../Assets/Images/tablausuarios.PNG";
+import additems from "../Assets/Images/additems.PNG";
 
 export const projects = [
   {
@@ -151,8 +154,49 @@ export const projects = [
         "A website that mimics Netflix's layout using the TMDB API. On the main page, you can view details about a trending movie, as well as lists of new releases, popular films, trending movies, top-rated movies, and documentaries. Each movie has its own page with film information such as a description, release date, duration, and rating. The actors involved and similar movies are also displayed. Each actor also has their own page showcasing their birthdate, date of passing if applicable, place of birth, career description, and filmography.",
     },
   },
+
   {
     id: "7",
+    images: {
+      main: userstable,
+      icon: react,
+    },
+    tech: ["ReactJS", "TypeScript"],
+    category: "project",
+    github: "https://github.com/irenealcaine/prueba-tecnica-tabla-usuarios",
+    es: {
+      title: "Prueba técnica React, tabla de usuarios",
+      description:
+        "Prueba técnica de React, en la que hay que crear una tabla de usuarios utilizando la API de randomuser.me. Los requisitos específicos incluyen: obtener 100 filas de datos mediante la API, mostrarlos en un formato de tabla similar al del ejemplo, y ofrecer la posibilidad de colorear las filas tal como se muestra. Además, se debe permitir la ordenación de datos por país, la eliminación de filas y la capacidad de restaurar el estado inicial de la tabla, recuperando así todas las filas eliminadas. Es esencial manejar cualquier error que pueda surgir, implementar un filtro por país y asegurarse de que los datos no se reordenen al cambiar este filtro. Por último, se requiere que la ordenación de los datos se realice mediante clics en los encabezados de las columnas.",
+    },
+    en: {
+      title: "React technical test, users table",
+      description:
+        "React technical test, in which a user table must be created using the randomuser.me API. The specific requirements include: fetching 100 rows of data via the API, displaying them in a table format similar to the example, and offering the option to color the rows as shown. Additionally, it should allow sorting of data by country, deleting rows, and the ability to restore the initial state of the table, thereby recovering all deleted rows. It's essential to handle any errors that may arise, implement a filter by country, and ensure that the data does not get resorted when changing this filter. Finally, the data sorting should be done by clicking on the column headers.",
+    },
+  },
+  {
+    id: "8",
+    images: {
+      main: additems,
+      icon: react,
+    },
+    tech: ["ReactJS", "TypeScript"],
+    category: "project",
+    github: "https://github.com/irenealcaine/prueba-tecnica-add-items-react",
+    es: {
+      title: "Prueba técnica React, agregar items",
+      description:
+        "Se busca desarrollar una aplicación en React que incluya un campo de texto y un botón para añadir elementos. Al pulsar el botón, el texto ingresado en el campo se añadirá a una lista de elementos que aparece a continuación. Adicionalmente, al hacer click en cualquier elemento de esta lista, este se eliminará. El enfoque principal debe estar en la funcionalidad y la usabilidad, por encima del diseño visual. Es esencial que todo el código sea desarrollado utilizando Typescript.",
+    },
+    en: {
+      title: "React technical test, add items",
+      description:
+        "The goal is to develop a React application that includes a text field and a button to add items. When the button is clicked, the text entered in the field will be added to a list of items displayed below. Additionally, clicking on any item in this list will remove it. The primary focus should be on functionality and usability, rather than visual design. It is essential that all code be developed using Typescript.",
+    },
+  },
+  {
+    id: "9",
     images: {
       main: shop,
       icon: shoplogo,
@@ -173,7 +217,7 @@ export const projects = [
     },
   },
   {
-    id: "8",
+    id: "10",
     images: {
       main: dashboard,
       icon: dashboardlogo,
@@ -194,7 +238,7 @@ export const projects = [
     },
   },
   {
-    id: "9",
+    id: "11",
     images: {
       main: gallery,
       icon: gallerylogo,
@@ -215,7 +259,7 @@ export const projects = [
     },
   },
   {
-    id: "10",
+    id: "12",
     images: {
       main: spoty,
       icon: spotylogo,
@@ -236,7 +280,7 @@ export const projects = [
     },
   },
   {
-    id: "11",
+    id: "13",
     images: {
       main: weather,
       icon: weatherlogo,
@@ -257,7 +301,7 @@ export const projects = [
     },
   },
   {
-    id: "12",
+    id: "14",
     images: {
       main: todo,
       icon: todologo,
@@ -278,7 +322,7 @@ export const projects = [
     },
   },
   {
-    id: "13",
+    id: "15",
     images: {
       main: crypto,
       icon: cryptologo,
@@ -299,7 +343,7 @@ export const projects = [
     },
   },
   {
-    id: "14",
+    id: "16",
     images: {
       main: ttt,
       icon: tttlogo,
