@@ -5,7 +5,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 1fr 1fr auto 1fr;
 
-  width: 70%;
+  width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
 
   #about {
@@ -89,7 +90,6 @@
     grid-template-rows: auto;
     padding: 20px;
     gap: 35px;
-    width: 100%;
 
     #about {
       grid-column: 1 / 3;

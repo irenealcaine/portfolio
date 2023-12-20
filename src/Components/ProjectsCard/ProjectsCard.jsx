@@ -24,7 +24,7 @@ const ProjectsCard = () => {
     <div className="projects-card">
       <h2>{t("projects.title")}</h2>
       <p>{t("projects.description")}</p>
-      <div className="examples">
+      {/* <div className="examples">
         {shuffledProjects.slice(1, 9).map((project) => (
           <img
             src={project.images.icon}
@@ -32,7 +32,7 @@ const ProjectsCard = () => {
             alt={project.es.title}
           />
         ))}
-      </div>
+      </div> */}
       <p className={`button ${neonOn && "on"}`}>
         <span>{t("about.button")}</span>{" "}
         <MdKeyboardDoubleArrowRight className={`arow ${neonOn && "on"}`} />
