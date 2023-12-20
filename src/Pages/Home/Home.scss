@@ -5,6 +5,9 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 1fr 1fr auto 1fr;
 
+  width: 70%;
+  margin: 0 auto;
+
   #about {
     grid-column: 1 / 4;
     grid-row: 1 / 4;
@@ -30,7 +33,10 @@
       margin: 2px;
       transition: 0.2s;
       border: 2px solid #ff1818dd;
-      box-shadow: 0 0 5px #ff1818aa, 0 0 10px #ff1818aa, inset 0 0 5px #ff1818aa,
+      box-shadow:
+        0 0 5px #ff1818aa,
+        0 0 10px #ff1818aa,
+        inset 0 0 5px #ff1818aa,
         inset 0 0 10px #ff1818aa;
       color: #ff1818dd;
       display: flex;
@@ -51,7 +57,6 @@
 }
 
 @keyframes blink {
-
   0%,
   19%,
   21%,
@@ -62,14 +67,19 @@
   88%,
   90%,
   100% {
-    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow:
+      0 0 5px #ffffff,
+      0 0 10px #ffffff,
+      0 0 20px #ffffff;
   }
 
   20%,
   24%,
   55%,
   89% {
-    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+    box-shadow:
+      0 0 5px #ffffff,
+      0 0 10px #ffffff;
   }
 }
 
@@ -79,6 +89,7 @@
     grid-template-rows: auto;
     padding: 20px;
     gap: 35px;
+    width: 100%;
 
     #about {
       grid-column: 1 / 3;

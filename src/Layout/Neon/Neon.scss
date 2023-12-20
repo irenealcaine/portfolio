@@ -21,10 +21,6 @@
   cursor: pointer;
   transition: all 0.2s ease;
 
-  &:hover {
-    transform: scale(1.02);
-  }
-
   &:has(.icon) {
     display: flex;
     justify-content: flex-end;
@@ -40,18 +36,28 @@
     box-shadow:
       0 0 2px #fff,
       0 0 5px var(--color),
-      0 0 10px var(--color),
-      0 0 20px var(--color),
-      0 0 40px var(--color),
-      inset 0 0 2px #fff,
-      inset 0 0 5px var(--color),
-      inset 0 0 10px var(--color),
+      0 0 30px var(--color),
+      inset 0 0 1px #fff,
       inset 0 0 20px var(--color);
     text-shadow:
       0 0 2px #fff,
       0 0 5px var(--color),
       0 0 10px var(--color),
       0 0 20px var(--color);
+
+    &:hover {
+      // transform: scale(1.02);
+      box-shadow:
+        0 0 2px #fff,
+        0 0 5px var(--color),
+        0 0 10px var(--color),
+        0 0 20px var(--color),
+        0 0 40px var(--color),
+        inset 0 0 2px #fff,
+        inset 0 0 5px var(--color),
+        inset 0 0 10px var(--color),
+        inset 0 0 20px var(--color);
+    }
 
     &:before {
       content: "";
