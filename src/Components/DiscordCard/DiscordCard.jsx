@@ -4,26 +4,26 @@ import { useLanyard } from "react-use-lanyard";
 
 const DiscordCard = () => {
 
-    const { status } = useLanyard({
-      userId: "952910556250136586",
-      socket: true,
-    });
+  const { status } = useLanyard({
+    userId: "952910556250136586",
+    socket: true,
+  });
 
   return (
-    <a 
-    href="https://discordapp.com/users/952910556250136586" 
-    className="discordCard" 
-    target="_blank" 
-    rel="noreferrer"
+    <a
+      href="https://discordapp.com/users/952910556250136586"
+      className="discordCard"
+      target="_blank"
+      rel="noreferrer"
     >
       <p className="title">
-      {status?.discord_status}
-       <span><RiDiscordLine /> </span>
+        {status?.discord_status}
+        <span><RiDiscordLine /> </span>
       </p>
       <h3 className="">
         @{status?.discord_user.username}
       </h3>
-    
+
     </a>
   );
 };
