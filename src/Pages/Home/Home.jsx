@@ -14,7 +14,7 @@ import AboutCard from "../../Components/AboutCard/AboutCard";
 import ProjectsCard from "../../Components/ProjectsCard/ProjectsCard";
 import LanguageSelector from "../../Components/LanguageSelector/LanguageSelector";
 import { NeonOnContext } from "../../Context/neonOnContext";
-import about from "../../Assets/Images/me.png";
+// import about from "../../Assets/Images/me.png";
 // import { global } from "../../languages/global"
 
 const Home = () => {
