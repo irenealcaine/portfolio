@@ -1,51 +1,20 @@
 .projects-card {
-  .examples {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 70%;
-    margin: 0 auto;
-    padding: 20px 0;
-    gap: 20px;
-
-    .project-image {
-      width: 100px;
-      height: 100px;
-
-      filter: brightness(0) drop-shadow(0 0 1px white);
-
-      &.on {
-        filter: brightness(0) drop-shadow(0 0 2px white)
-          drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue))
-          drop-shadow(0 0 10px var(--blue));
-      }
-    }
-  }
+  position: relative;
 
   .button {
-    margin-top: 20px;
-    padding: 5px 20px;
-    background-color: #0009;
+    position: absolute;
+    top: 5px;
+    right: 0px;
     width: fit-content;
     font-size: 14px;
-    border-radius: 100rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid white;
     transition: 0.3s;
-
-    &.on {
-      border: 1px solid var(--blue);
-    }
 
     svg {
       font-size: 20px;
       transition: 0.3s;
 
       &.on {
-        filter: drop-shadow(0 0 5px var(--blue))
-          drop-shadow(0 0 10px var(--blue));
+        filter: drop-shadow(0 0 5px var(--blue)) drop-shadow(0 0 10px var(--blue));
       }
     }
   }
@@ -63,8 +32,7 @@
         height: 50px;
 
         &.on {
-          filter: brightness(0) drop-shadow(0 0 2px white)
-            drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue));
+          filter: brightness(0) drop-shadow(0 0 2px white) drop-shadow(0 0 4px var(--blue)) drop-shadow(0 0 5px var(--blue));
         }
       }
     }

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import { useTranslation } from "react-i18next";
 import "./ProjectsCard.scss";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { projects } from "../../data/PortfolioData";
 
 const ProjectsCard = () => {
@@ -33,9 +33,8 @@ const ProjectsCard = () => {
           />
         ))}
       </div> */}
-      <p className={`button ${neonOn && "on"}`}>
-        <span>{t("about.button")}</span>{" "}
-        <MdKeyboardDoubleArrowRight className={`arow ${neonOn && "on"}`} />
+      <p className={`button`}>
+        <FaExternalLinkAlt className={`arow ${neonOn && "on"}`} />
       </p>
     </div>
   );

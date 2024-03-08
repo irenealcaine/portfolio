@@ -19,21 +19,12 @@
   }
 
   .button {
-    margin-top: 20px;
-    padding: 5px 20px;
-    background-color: #0009;
+    position: absolute;
+    top: 5px;
+    right: 0px;
     width: fit-content;
     font-size: 14px;
-    border-radius: 100rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid white;
     transition: 0.3s;
-
-    &.on {
-      border: 1px solid var(--pink);
-    }
 
     svg {
       font-size: 20px;
@@ -45,47 +36,6 @@
     }
   }
 
-  .image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: -10px;
-    height: calc(100% + 40px);
-    margin-top: -20px;
-    z-index: 0;
-    filter: grayscale(1);
-    transition: 0.3s;
-
-    animation: fadeIn 1s ease;
-    // opacity: 0.5;
-
-    &.on {
-      filter: grayscale(0) contrast(1.1) drop-shadow(0 0 1px white) drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
-      opacity: 1;
-    }
-  }
-
-  // picture {
-  //   &::before {
-  //     position: absolute;
-  //     top: 0;
-  //     left: -75%;
-  //     margin-top: -20px;
-  //     z-index: 2;
-  //     display: block;
-  //     content: "";
-  //     width: 50%;
-  //     height: calc(100% + 40px);
-  //     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
-  //     transform: skew(-60deg, 0deg);
-  //   }
-
-  //   &:hover::before {
-  //     animation: shine .5s ease;
-
-  //   }
-
-  // }
 }
 
 @media screen and (max-width: 768px) {
@@ -93,36 +43,5 @@
     .presentation {
       width: 100%;
     }
-
-    img {
-      display: none;
-    }
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    filter: contrast(0.5);
-  }
-
-  100% {
-    filter: contrast(1.1);
-  }
-}
-
-@keyframes shine {
-  0% {
-    left: -75%;
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    left: 125%;
-    opacity: 0;
   }
 }

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import "./AboutCard.scss";
 import ReactMarkdown from "react-markdown";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const AboutCard = () => {
   const { t } = useTranslation("global");
@@ -17,14 +17,9 @@ const AboutCard = () => {
       <ReactMarkdown className="presentation">
         {t("about.presentation")}
       </ReactMarkdown>
-      <p className={`button ${neonOn && "on"}`}>
-        <span>{t("about.button")}</span>{" "}
-        <MdKeyboardDoubleArrowRight className={`arow ${neonOn && "on"}`} />
+      <p className={`button`}>
+        <FaExternalLinkAlt className={`arow ${neonOn && "on"}`} />
       </p>
-      <picture>
-
-        {/* <img src={me} alt="me" className={`image ${neonOn && "on"}`} /> */}
-      </picture>
     </div>
   );
 };
