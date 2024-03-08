@@ -2,7 +2,7 @@ import React from 'react'
 import "./Neon.scss"
 import { Link } from 'react-router-dom'
 
-const Neon = ({ color, children, id, to, target, rel, onClick }) => {
+const Neon = ({ color, children, id, to, target, rel, onClick, bgImage }) => {
   return (
     <Link
       to={to}
@@ -11,6 +11,7 @@ const Neon = ({ color, children, id, to, target, rel, onClick }) => {
       target={target}
       rel={rel}
       onClick={onClick}
+      style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}
     >
       {children}
     </Link>

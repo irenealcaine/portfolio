@@ -44,7 +44,7 @@
       0 0 5px var(--color),
       0 0 10px var(--color),
       // 0 0 20px var(--color)
-;
+    ;
 
     &:hover {
       // transform: scale(1.02);
@@ -60,21 +60,18 @@
         inset 0 0 20px var(--color);
     }
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: var(--color);
-      opacity: 0;
-      transition: opacity 0.2s ease;
-    }
+  }
 
-    &:hover:before {
-      opacity: 0.05;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+    // opacity: 0.7;
   }
 
   &.pink {
@@ -124,13 +121,13 @@
     margin: 0 auto;
 
     &.on {
-      filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px var(--color))
-        drop-shadow(0 0 10px var(--color));
+      filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 10px var(--color));
     }
   }
 }
 
 @keyframes neonBlink {
+
   0%,
   19%,
   21%,
@@ -181,8 +178,15 @@
 
 @media screen and (max-width: 768px) {
   .neon {
+
+    background-image: none;
+
     .icon {
       font-size: 50px;
+    }
+
+    &::before {
+      // opacity: 0.7;
     }
   }
 }
