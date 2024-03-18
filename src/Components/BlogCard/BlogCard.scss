@@ -1,0 +1,21 @@
+.blog-card {
+  position: relative;
+
+  .button {
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    width: fit-content;
+    font-size: 14px;
+    transition: 0.3s;
+
+    svg {
+      font-size: 20px;
+      transition: 0.3s;
+
+      &.on {
+        filter: drop-shadow(0 0 5px var(--orange)) drop-shadow(0 0 10px var(--orange));
+      }
+    }
+  }
+}

@@ -6,6 +6,10 @@
     "title": "Portafolio",
     "description": "Colección de webs y proyectos, donde practico y perfecciono mis habilidades. Si echas un vistazo todo feedback es bienvenido."
   },
+  "blog": {
+    "title": "Blog",
+    "description": "Pensaminetos y divagaciones."
+  },
   "languageSelector": "ES",
   "aboutPage": {
     "title": "Sobre mí",

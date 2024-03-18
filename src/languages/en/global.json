@@ -6,6 +6,10 @@
     "title": "Projects",
     "description": "Collection of websites and projects, where I practice and perfect my skills. If you take a look, all feedback is welcome."
   },
+  "blog": {
+    "title": "Blog",
+    "description": "Thoughts and ramblings."
+  },
   "languageSelector": "EN",
   "aboutPage": {
     "title": "About me",

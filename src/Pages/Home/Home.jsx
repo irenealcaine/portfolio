@@ -14,6 +14,7 @@ import AboutCard from "../../Components/AboutCard/AboutCard";
 import ProjectsCard from "../../Components/ProjectsCard/ProjectsCard";
 import LanguageSelector from "../../Components/LanguageSelector/LanguageSelector";
 import { NeonOnContext } from "../../Context/neonOnContext";
+import BlogCard from "../../Components/BlogCard/BlogCard";
 // import about from "../../Assets/Images/me.png";
 // import { global } from "../../languages/global"
 
@@ -68,6 +69,8 @@ const Home = () => {
         <ProjectsCard />
       </Neon>
 
+
+
       <Neon
         color={`red ${neonOn && "on"}`}
         to={"mailto:irenealcainealvarez@gmail.com?Subject=Charlemos"}
@@ -102,6 +105,16 @@ const Home = () => {
         rel={"noopener noreferrer"}
       >
         <AiOutlineWhatsApp className={`icon ${neonOn && "on"}`} />
+      </Neon>
+
+      <Neon
+        to={"https://poetic-twilight-7de85d.netlify.app/"}
+        color={`orange ${neonOn && "on"}`}
+        target={"_blank"}
+        rel={"noopener noreferrer"}
+        id='blog'
+      >
+        <BlogCard />
       </Neon>
     </div>
   );
