@@ -41,11 +41,11 @@ const Modal = ({ selectedProject, setSelectedProject }) => {
         <IoIosCloseCircleOutline />
       </p>
 
-      <p onClick={handleNext} className="nextButton">
+      <p onClick={handlePrev} className="nextButton">
         <BiRightArrowCircle />
       </p>
 
-      <p onClick={handlePrev} className="prevButton">
+      <p onClick={handleNext} className="prevButton">
         <BiLeftArrowCircle />
       </p>
 

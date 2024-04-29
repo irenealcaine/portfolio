@@ -58,7 +58,7 @@ const Portfolio = () => {
       (project) =>
         project.category === category &&
         (filter === "all" ? project.tech : project.tech.includes(filter))
-    );
+    ).reverse();
 
     if (filteredProjects.length === 0) {
       return "No se encontraron proyectos que coincidan con la búsqueda.";
@@ -76,6 +76,7 @@ const Portfolio = () => {
           {filterOptions.map((option) => {
             return option.icon ? (
               <p
+                key={option.value}
                 onClick={() => handleFilterChange(option.value)}
                 className={option.value === filter ? "selected" : ""}
               >
