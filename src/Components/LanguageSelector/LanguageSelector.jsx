@@ -6,7 +6,7 @@ import { NeonOnContext } from "../../Context/neonOnContext";
 
 const LanguageSelector = () => {
   const { i18n, t } = useTranslation("global");
-  const { dispatch, neonOn } = useContext(NeonOnContext);
+  const { neonOn } = useContext(NeonOnContext);
 
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
