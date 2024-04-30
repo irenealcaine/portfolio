@@ -11,7 +11,7 @@ const Neon = ({ color, children, id, to, target, rel, onClick, bgImage }) => {
       target={target}
       rel={rel}
       onClick={onClick}
-      style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}
+    // style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}
     >
       {children}
     </Link>

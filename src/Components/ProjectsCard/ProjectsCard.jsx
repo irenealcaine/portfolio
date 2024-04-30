@@ -3,40 +3,23 @@ import { NeonOnContext } from "../../Context/neonOnContext";
 import { useTranslation } from "react-i18next";
 import "./ProjectsCard.scss";
 import { FaExternalLinkAlt } from "react-icons/fa";
-// import { projects } from "../../data/PortfolioData";
+import Neon from "../../Layout/Neon/Neon";
 
 const ProjectsCard = () => {
   const { t } = useTranslation("global");
   const { neonOn } = useContext(NeonOnContext);
 
-  // const shuffledProjects = [...projects];
-
-  // function shuffleArray(array) {
-  //   for (let i = array.length - 1; i > 0; i--) {
-  //     const j = Math.floor(Math.random() * (i + 1));
-  //     [array[i], array[j]] = [array[j], array[i]];
-  //   }
-  // }
-
-  // shuffleArray(shuffledProjects);
-
   return (
-    <div className="projects-card">
-      <h2>{t("projects.title")}</h2>
-      <p>{t("projects.description")}</p>
-      {/* <div className="examples">
-        {shuffledProjects.slice(1, 9).map((project) => (
-          <img
-            src={project.images.icon}
-            className={`project-image ${neonOn && "on"}`}
-            alt={project.es.title}
-          />
-        ))}
-      </div> */}
-      <p className={`button`}>
-        <FaExternalLinkAlt className={`arow ${neonOn && "on"}`} />
-      </p>
-    </div>
+    <Neon to="/portfolio" color={`blue ${neonOn && "on"}`} id="projects">
+      <div className="projects-card">
+        <h2>{t("projects.title")}</h2>
+        <p>{t("projects.description")}</p>
+
+        <p className={`button`}>
+          <FaExternalLinkAlt className={`arow ${neonOn && "on"}`} />
+        </p>
+      </div>
+    </Neon>
   );
 };
 

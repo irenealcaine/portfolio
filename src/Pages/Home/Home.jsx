@@ -9,42 +9,26 @@ import {
 } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
-import { useTranslation } from "react-i18next";
 import AboutCard from "../../Components/AboutCard/AboutCard";
 import ProjectsCard from "../../Components/ProjectsCard/ProjectsCard";
 import LanguageSelector from "../../Components/LanguageSelector/LanguageSelector";
 import { NeonOnContext } from "../../Context/neonOnContext";
 import BlogCard from "../../Components/BlogCard/BlogCard";
-// import about from "../../Assets/Images/me.png";
-// import { global } from "../../languages/global"
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // const [isOn, setIsOn] = useState(false);
-  const { i18n } = useTranslation("global");
   const { dispatch, neonOn } = useContext(NeonOnContext);
-
-  const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
-  };
 
   return (
     <div id="grid">
-      <Neon
-        to="/about"
-        color={`pink ${neonOn && "on"}`}
-        id="about"
-      // bgImage={about}
-      >
-        <AboutCard />
-      </Neon>
+
+      <AboutCard />
 
       <div
         className={`toggle ${!neonOn && "toggleOn"}`}
-        // onClick={() => setIsOn((prevIsOn) => !prevIsOn)}
         onClick={() => dispatch({ type: "TOGGLE" })}
       >
         <div className="switch">
@@ -52,9 +36,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Neon onClick={toggleLanguage} color={`orange ${neonOn && "on"}`}>
-        <LanguageSelector />
-      </Neon>
+      <LanguageSelector />
 
       <Neon
         color={`yellow ${neonOn && "on"}`}
@@ -65,11 +47,7 @@ const Home = () => {
         <FiGithub className={`icon ${neonOn && "on"}`} />
       </Neon>
 
-      <Neon to="/portfolio" color={`blue ${neonOn && "on"}`} id="projects">
-        <ProjectsCard />
-      </Neon>
-
-
+      <ProjectsCard />
 
       <Neon
         color={`red ${neonOn && "on"}`}
@@ -107,15 +85,8 @@ const Home = () => {
         <AiOutlineWhatsApp className={`icon ${neonOn && "on"}`} />
       </Neon>
 
-      <Neon
-        to={"https://poetic-twilight-7de85d.netlify.app/"}
-        color={`orange ${neonOn && "on"}`}
-        target={"_blank"}
-        rel={"noopener noreferrer"}
-        id='blog'
-      >
-        <BlogCard />
-      </Neon>
+      <BlogCard />
+
     </div>
   );
 };
