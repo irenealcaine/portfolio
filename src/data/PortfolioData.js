@@ -42,7 +42,7 @@ export const projects = [
     tech: ["ReactJS", "MaterialUI"],
     category: "web",
     github: "https://github.com/irenealcaine/cryptotracker",
-    web: "https://deft-moonbeam-671bbb.netlify.app",
+    web: "https://cryptotracker-irene.netlify.app/",
     es: {
       title: "Seguimiento de cryptos",
       description:
@@ -60,19 +60,19 @@ export const projects = [
       main: todo,
       icon: todologo,
     },
-    tech: ["VueJS", "TailwindCSS"],
+    tech: ["ReactJS", "TailwindCSS", "Firebase"],
     category: "project",
-    github: "https://github.com/irenealcaine/todo-vue",
-    web: "https://melodic-pony-2cdb8b.netlify.app",
+    github: "https://github.com/irenealcaine/todododo",
+    web: "https://todododo-irene.netlify.app/",
     es: {
       title: "App de lista de tareas",
       description:
-        "Web de lista de tareas pendientes, cada tarea está asignada a una categoría (trabajo o personal) y se muestran con colores diferentes. Cada tarea se puede editar, marcar como realizada o borrar. Los datos se almacenan en localStorage.",
+        "Web de lista de tareas pendientes, cada tarea está asignada a una categoría y se muestran con colores diferentes. Cada tarea se puede editar, marcar como realizada o borrar. Los datos se almacenan en localStorage si entras como invitado, pero puedes registrate para accedes a tus tareas en otros dispositivos.",
     },
     en: {
       title: "To-do list app",
       description:
-        "App for a to-do list, where each task is assigned to a category (work or personal) and displayed with different colors. Each task can be edited, marked as done, or deleted. The data is stored in localStorage.",
+        "App for a to-do list, where each task is assigned to a category and displayed with different colors. Each task can be edited, marked as done, or deleted. The data is stored in localStorage if you enter as a guest, but you can register if you want to see your tasks in other devices.",
     },
   },
   {
@@ -81,44 +81,21 @@ export const projects = [
       main: weather,
       icon: weatherlogo,
     },
-    tech: ["JavaScript", "TailwindCSS"],
+    tech: ["ReactJS", "TailwindCSS"],
     category: "project",
-    github: "https://github.com/irenealcaine/weather-API",
-    web: "https://prismatic-chaja-00b433.netlify.app",
+    github: "https://github.com/irenealcaine/eltiempo",
+    web: "https://eltiempodeirene.netlify.app",
     es: {
       title: "App del tiempo",
       description:
-        "Web de pronóstico del tiempo que proporciona información detallada sobre el clima actual y los pronósticos para los próximos días utilizando la API de Openweathermap. Con detección automática de ubicación, muestra la fecha y hora actual, así como la temperatura, humedad y velocidad del viento. Además, muestra una gráfica de las próximas 12 horas con la temperatura y probabilidad de lluvia, y una vista de siete días con información sobre la temperatura, humedad, velocidad del viento y probabilidad de lluvia para cada día.",
+        "Web de pronóstico del tiempo que proporciona información detallada sobre el clima actual y los pronósticos para los próximos días utilizando la API de Open Meteo. Muestra la fecha y hora actual, así como la temperatura, humedad y velocidad del viento. Además, muestra una gráfica de las próximas 24 horas con la temperatura y probabilidad de lluvia, y una vista de siete días con información sobre la temperatura, velocidad del viento y probabilidad de lluvia para cada día.",
     },
     en: {
       title: "Weather app",
       description:
-        "Weather forecast website that offers detailed information about the current weather and forecasts for the upcoming days using the OpenWeatherMap API. With automatic location detection, it displays the current date and time, as well as temperature, humidity, and wind speed. Additionally, it presents a graph for the next 12 hours showing temperature and rainfall probability, along with a seven-day view providing information about temperature, humidity, wind speed, and rain probability for each day.",
+        "Weather forecast website that offers detailed information about the current weather and forecasts for the upcoming days using the Open Meteo API. It displays the current date and time, as well as temperature, humidity, and wind speed. Additionally, it presents a graph for the next 24 hours showing temperature and rainfall probability, along with a seven-day view providing information about temperature, wind speed, and rain probability for each day.",
     },
   },
-  
-  {
-    id: 6,
-    images: {
-      main: gallery,
-      icon: gallerylogo,
-    },
-    tech: ["ReactJS", "Firebase"],
-    category: "project",
-    github: "https://github.com/irenealcaine/gallery",
-    web: "https://cosmic-cheesecake-074bb8.netlify.app",
-    es: {
-      title: "Galería",
-      description:
-        "Galería donde puedes subir tus fotos mediante Firebase. Al darle click a una foto se puede ver en tamaño aumentado.",
-    },
-    en: {
-      title: "Gallery",
-      description:
-        "Gallery where you can upload your photos using Firebase. By clicking on a photo, you can view it in an enlarged size.",
-    },
-  },
-  
   {
     id: 8,
     images: {
@@ -128,7 +105,7 @@ export const projects = [
     tech: ["ReactJS", "Bootstrap"],
     category: "project",
     github: "https://github.com/irenealcaine/commerce-react",
-    web: "https://magenta-lily-93994f.netlify.app/",
+    web: "https://ecommerce-irene.netlify.app/",
     es: {
       title: "Catálogo de tienda",
       description:
@@ -151,7 +128,7 @@ export const projects = [
     tech: ["ReactJS", "TailwindCSS", "Firebase"],
     category: "web",
     github: "https://github.com/irenealcaine/netfliclon",
-    web: "https://magenta-halva-e5d59d.netlify.app/",
+    web: "https://netfliclon-irene.netlify.app/",
     es: {
       title: "Clon de Netflix",
       description:
@@ -172,7 +149,7 @@ export const projects = [
     tech: ["ReactJS"],
     category: "web",
     github: "https://github.com/irenealcaine/mh-api/",
-    web: "https://celadon-kheer-920e58.netlify.app/",
+    web: "https://mh-api-irene.netlify.app/",
     es: {
       title: "Base de datos de Monster Hunter",
       description:
@@ -193,7 +170,7 @@ export const projects = [
     tech: ["ReactJS", "TailwindCSS"],
     category: "web",
     github: "https://github.com/irenealcaine/el-rincon-de-no-pensar",
-    web: "https://glowing-klepon-fa3a77.netlify.app",
+    web: "https://elrincondenopensar.netlify.app/",
     es: {
       title: "El rincón de no pensar",
       description:
@@ -205,8 +182,6 @@ export const projects = [
         "A website where you'll find small yet charming projects, all made with React and Tailwind. Here, I present a collection of modest creations that, although too small to have their own website, deserve to be appreciated and shared.",
     },
   },
-  
- 
   
   {
     id: 17,
