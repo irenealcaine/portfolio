@@ -32,27 +32,7 @@ import mealwikilogo from "../Assets/Images/mealwiki.png"
 import mealwiki from "../Assets/Images/mealwikidesktop.png"
 
 export const projects = [
-  {
-    id: 1,
-    images: {
-      main: ttt,
-      icon: tttlogo,
-    },
-    tech: ["VueJS", "TailwindCSS"],
-    category: "project",
-    github: "https://github.com/irenealcaine/tic-tac-toe-in-vue",
-    web: "https://coruscating-mooncake-d025e2.netlify.app/",
-    es: {
-      title: "Tres en raya",
-      description:
-        "Juego del tres en raya, que indica a que jugador le toca jugar, además de un contador de victorias. Cuando acaba el juego aparece un cartel diciendo el ganador o si es un empate, así como un botón para resetear el juego y empezar otra partida.",
-    },
-    en: {
-      title: "Tic-tac-toe",
-      description:
-        "Tic-tac-toe game that indicates which player's turn it is, along with a victory counter. When the game ends, a message appears stating the winner or if it's a draw, along with a button to reset the game and start a new match.",
-    },
-  },
+  
   {
     id: 2,
     images: {
@@ -116,27 +96,7 @@ export const projects = [
         "Weather forecast website that offers detailed information about the current weather and forecasts for the upcoming days using the OpenWeatherMap API. With automatic location detection, it displays the current date and time, as well as temperature, humidity, and wind speed. Additionally, it presents a graph for the next 12 hours showing temperature and rainfall probability, along with a seven-day view providing information about temperature, humidity, wind speed, and rain probability for each day.",
     },
   },
-  {
-    id: 5,
-    images: {
-      main: spoty,
-      icon: spotylogo,
-    },
-    tech: ["ReactJS", "TailwindCSS"],
-    category: "web",
-    github: "https://github.com/irenealcaine/spotyclon",
-    web: "https://majestic-macaron-741bec.netlify.app/",
-    es: {
-      title: "Clon de Spotify",
-      description:
-        "Web que imita la página de Spotify antigua, usando la API de Shazam, incluso se pueden escuchar las canciones. En la página principal se ven las canciones populares del momento a nivel mundial ordenadas por categoría, también se puede acceder mediante el menú a las canciones populares de tu zona, los artistas y los discos populares.",
-    },
-    en: {
-      title: "Spotify clone",
-      description:
-        "Website that mimics the old Spotify page, using the Shazam API, even allowing users to listen to songs. On the main page, you can see the current popular songs worldwide, sorted by category. You can also access popular songs from your region, as well as popular artists and albums, through the menu.",
-    },
-  },
+  
   {
     id: 6,
     images: {
@@ -158,27 +118,7 @@ export const projects = [
         "Gallery where you can upload your photos using Firebase. By clicking on a photo, you can view it in an enlarged size.",
     },
   },
-  {
-    id: 7,
-    images: {
-      main: dashboard,
-      icon: dashboardlogo,
-    },
-    tech: ["ReactJS", "MaterialUI", "Sass", "Firebase"],
-    category: "project",
-    github: "https://github.com/irenealcaine/react-sass-mui",
-    web: "https://vermillion-starburst-865331.netlify.app/",
-    es: {
-      title: "Dashboard",
-      description:
-        "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
-    },
-    en: {
-      title: "Dashboard",
-      description:
-        "Administrator dashboard with user registration and authentication using different databases. Real-time statistics on new users and products from the last month, including the percentage growth compared to the previous month, as well as profit and earnings statistics. User tables with the option to add new users, and tables for products and orders that can be deleted.",
-    },
-  },
+  
   {
     id: 8,
     images: {
@@ -200,46 +140,8 @@ export const projects = [
         "Simple catalog of a fictional store. With a search bar, sorting by price, number of sales, and user reviews, as well as filters for stock availability, user ratings, and categories. The option to add items to the shopping cart, which has its own page for managing the added products.",
     },
   },
-  {
-    id: 9,
-    images: {
-      main: additems,
-      icon: react,
-    },
-    tech: ["ReactJS", "TypeScript"],
-    category: "project",
-    github: "https://github.com/irenealcaine/prueba-tecnica-add-items-react",
-    es: {
-      title: "Prueba técnica React, agregar items",
-      description:
-        "Se busca desarrollar una aplicación en React que incluya un campo de texto y un botón para añadir elementos. Al pulsar el botón, el texto ingresado en el campo se añadirá a una lista de elementos que aparece a continuación. Adicionalmente, al hacer click en cualquier elemento de esta lista, este se eliminará. El enfoque principal debe estar en la funcionalidad y la usabilidad, por encima del diseño visual. Es esencial que todo el código sea desarrollado utilizando Typescript.",
-    },
-    en: {
-      title: "React technical test, add items",
-      description:
-        "The goal is to develop a React application that includes a text field and a button to add items. When the button is clicked, the text entered in the field will be added to a list of items displayed below. Additionally, clicking on any item in this list will remove it. The primary focus should be on functionality and usability, rather than visual design. It is essential that all code be developed using Typescript.",
-    },
-  },
-  {
-    id: 10,
-    images: {
-      main: userstable,
-      icon: react,
-    },
-    tech: ["ReactJS", "TypeScript"],
-    category: "project",
-    github: "https://github.com/irenealcaine/prueba-tecnica-tabla-usuarios",
-    es: {
-      title: "Prueba técnica React, tabla de usuarios",
-      description:
-        "Prueba técnica de React, en la que hay que crear una tabla de usuarios utilizando la API de randomuser.me. Los requisitos específicos incluyen: obtener 100 filas de datos mediante la API, mostrarlos en un formato de tabla similar al del ejemplo, y ofrecer la posibilidad de colorear las filas tal como se muestra. Además, se debe permitir la ordenación de datos por país, la eliminación de filas y la capacidad de restaurar el estado inicial de la tabla, recuperando así todas las filas eliminadas. Es esencial manejar cualquier error que pueda surgir, implementar un filtro por país y asegurarse de que los datos no se reordenen al cambiar este filtro. Por último, se requiere que la ordenación de los datos se realice mediante clics en los encabezados de las columnas.",
-    },
-    en: {
-      title: "React technical test, users table",
-      description:
-        "React technical test, in which a user table must be created using the randomuser.me API. The specific requirements include: fetching 100 rows of data via the API, displaying them in a table format similar to the example, and offering the option to color the rows as shown. Additionally, it should allow sorting of data by country, deleting rows, and the ability to restore the initial state of the table, thereby recovering all deleted rows. It's essential to handle any errors that may arise, implement a filter by country, and ensure that the data does not get resorted when changing this filter. Finally, the data sorting should be done by clicking on the column headers.",
-    },
-  },
+ 
+ 
   {
     id: 11,
     images: {
@@ -303,67 +205,9 @@ export const projects = [
         "A website where you'll find small yet charming projects, all made with React and Tailwind. Here, I present a collection of modest creations that, although too small to have their own website, deserve to be appreciated and shared.",
     },
   },
-  {
-    id: 14,
-    images: {
-      main: mascotas,
-      icon: mascotaslogo,
-    },
-    tech: ["ReactJS", "TailwindCSS"],
-    category: "web",
-    github: "https://github.com/irenealcaine/cangurodemascotas",
-    web: "https://www.canguromascotas.com",
-    es: {
-      title: "Canguro de mascotas",
-      description:
-        "Web que ofrece servicios de canguro de mascotas en Llíria, Valencia, donde se ofrence información sobre los diferentes servicios para perros. Se muestran opiniones de clientes satisfechos y una galería de fotos de los perros alojados, así como datos de contacto.",
-    },
-    en: {
-      title: "Pet sitter",
-      description:
-        "Website that offers pet sitting services in Llíria, Valencia, providing information about various services for dogs. It showcases reviews from satisfied clients and a photo gallery of the hosted dogs, along with contact details.",
-    },
-  },
-  {
-    id: 15,
-    images: {
-      main: patrimoni,
-      icon: casinoslogo,
-    },
-    tech: ["WordPress"],
-    category: "web",
-    web: "https://patrimoni.aytocasinos.es/",
-    es: {
-      title: "Patrimonio de Casinos",
-      description:
-        "Web que ofrece información sobre el pueblo de Casinos, Valencia. Cuenta la historia del pueblo y sus fiestas y costumbres, además de mostrar los diferentes puntos de interés y rutas de senderismo.",
-    },
-    en: {
-      title: "Heritage of Casinos",
-      description:
-        "Website that provides information about the town of Casinos, Valencia. It tells the history of the town and its festivals and customs, in addition to showcasing various points of interest and hiking trails.",
-    },
-  },
-  {
-    id: 16,
-    images: {
-      main: directori,
-      icon: casinoslogo,
-    },
-    tech: ["WordPress"],
-    category: "web",
-    web: "https://directori.aytocasinos.es/",
-    es: {
-      title: "Comercios de Casinos",
-      description:
-        "Web que ofrece información sobre los comercios de Casinos, Valencia, ordenados por categorías. Se indican los datos de contacto, horarios y servicios de los diferentes negocios.",
-    },
-    en: {
-      title: "Businesses in Casinos",
-      description:
-        "Website that provides information about businesses in Casinos, Valencia, sorted by categories. Contact details, opening hours, and services of various businesses are provided.",
-    },
-  },
+  
+ 
+  
   {
     id: 17,
     images: {
