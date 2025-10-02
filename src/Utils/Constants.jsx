@@ -1,10 +1,7 @@
-import { FaReact, FaVuejs, FaSass } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import {
-  BiLogoJavascript,
   BiLogoTailwindCss,
   BiLogoFirebase,
-  BiLogoWordpress,
-  BiLogoTypescript,
 } from "react-icons/bi";
 import { SiMui } from "react-icons/si";
 import { RiBootstrapLine } from "react-icons/ri";
@@ -23,18 +20,13 @@ export const colors = [
 export const filterOptions = [
   { text: "Todos", value: "all" },
 
-  { icon: <BiLogoJavascript />, value: "JavaScript" },
-  { icon: <BiLogoTypescript />, value: "TypeScript" },
   { icon: <FaReact />, value: "ReactJS" },
-  { icon: <FaVuejs />, value: "VueJS" },
 
   { icon: <BiLogoTailwindCss />, value: "TailwindCSS" },
   { icon: <SiMui />, value: "MaterialUI" },
-  { icon: <FaSass />, value: "Sass" },
   { icon: <RiBootstrapLine />, value: "Bootstrap" },
 
   { icon: <BiLogoFirebase />, value: "Firebase" },
-  { icon: <BiLogoWordpress />, value: "WordPress" },
 ];
 
 export const favouriteSongs = [
